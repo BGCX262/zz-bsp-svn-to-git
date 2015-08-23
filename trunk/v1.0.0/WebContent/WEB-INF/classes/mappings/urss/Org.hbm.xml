@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+	<class name="Org" table="URSS_ORG_TREE">
+		<id name="orgId" type="string" unsaved-value="">
+			<column name="org_Id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		<property name="orgName" column="org_Name" type="string"/>
+		<property name="parentId" column="parent_Id" type="string"/>
+		<property name="orgTypeCode" column="org_Type_Code" type="string" update="false"/>
+		<property name="allParentId" column="all_Parent_Id" type="string"/>
+		<property name="orderIndex" column="order_index" type="float"/>
+		<property name="orgCode" column="org_Code" type="string"/>
+		<property name="userId" column="user_Id" type="string"/>
+		<property name="allParentName" column="all_Parent_Name" type="string"/>	
+		<property name="allParentCode" column="all_Parent_Code" type="string"/> 
+		<property name="queryCode" column="query_Code" type="string"/> 
+	</class>
+</hibernate-mapping>

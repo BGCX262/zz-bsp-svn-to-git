@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+ <bean name="/showAgent_wfss,/saveAgent_wfss"
+          class="com.youthor.bsp.view.wfss.web.action.AgentAction" singleton="false">
+        <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>   
+   </bean>
+   
+  <bean name="/listProcessEdition_wfss,/showProcessEdition_wfss,/saveProcessEdition_wfss,/initProcessEdition_wfss,/offerProcessSelect_wfss,/addProcessToEdition_wfss"
+          class="com.youthor.bsp.view.wfss.web.action.ProcessEditionAction" singleton="false">
+        <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>   
+   </bean>
+
+  <bean name="/showButton_wfss,/saveButton_wfss,/deleteButton_wfss,/initButton_wfss,/listButton_wfss"
+          class="com.youthor.bsp.view.wfss.web.action.ButtonAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>   
+   </bean>
+   
+     <bean name="/initProcessAttach_wfss,/saveProcessAttach_wfss,/deleteProcessAttach_wfss,/downloadProcessAttach_wfss"
+          class="com.youthor.bsp.view.wfss.web.action.ProcessAttachAction" singleton="false">
+           <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+           <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+   </bean>
+   
+ <bean name="/openRouteWindow_wfss,/wfOrgAsynSpread_wfss,/listWorkItemDoing_wfss,/showWorkItemDoing_wfss,
+ /listWorkItemDoen_wfss,/showWorkItemDoen_wfss,/showNextWorkItemDoing_wfss,/showLoopWorkItemDoen_wfss,
+ /affirmDoThisWorkItem_wfss,/submitBatchProcessWorkItem,/assignOtherUserProcess_wfss,/jumpToOtherActivity_wfss,
+ /redoWorkItem_wfss,/listProcessInstByOrgId_wfss,/showProcessInst_wfss,
+ /cancelProcessInst_wfss,/hangProcessInst_wfss,/cancelHangProcessInst_wfss" 
+          class="com.youthor.bsp.view.wfss.common.FlowAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+ 	     <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	    
+   </bean>
+
+
+   <bean name="/queryPageAppForm_wfss,/initAppForm_wfss,/saveAppForm_wfss,/deleteAppForm_wfss,/showAppForm_wfss"
+          class="com.youthor.bsp.view.wfss.web.action.AppFormAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean>
+ 	
+   <bean name="/getFormFieldByFormId_wfss,/initFormField_wfss,/showFormField_wfss,/saveFormField_wfss,/deleteFormField_wfss"
+          class="com.youthor.bsp.view.wfss.web.action.AppFormFieldAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean>
+ 	
+   <bean name="/queryPageProcess_wfss,/initProcess_wfss,/saveProcess_wfss,/deleteProcess_wfss,/showProcess_wfss"
+          class="com.youthor.bsp.view.wfss.web.action.ProcessAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+ 	   
+   </bean>
+ 	
+    <bean name="/initActivity_wfss,/saveActivity_wfss,/deleteActivity_wfss,/showActivity_wfss"
+          class="com.youthor.bsp.view.wfss.web.action.ActivityAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean>   
+   
+   <bean name="/initRoute_wfss,/saveRoute_wfss,/deleteRoute_wfss,/showRoute_wfss"
+          class="com.youthor.bsp.view.wfss.web.action.RouteAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean> 
+   
+   
+    <bean name="/listExpression_wfss,/saveExpression_wfss,/showExpression_wfss,/deleteExpression_wfss,/initExpression_wfss"
+          class="com.youthor.bsp.view.wfss.web.action.ExpressionAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean> 
+    
+</beans>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.wfss.model">
+    <class name="AgentItem" table="WFSS_AGENT_ITEM">
+        <id name="id" type="string" unsaved-value="">
+            <column name="ID" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+                  
+                   <property name="orgId" column="ORG_ID" type="string"/>
+                   <property name="orgName" column="ORG_NAME" type="string"/>
+                   <property name="agentOrgId" column="AGENT_ORG_ID" type="string"/>
+                   <property name="agentOrgName" column="AGENT_ORG_NAME" type="string"/>
+                   <property name="fromDate" column="FROM_DATE" type="java.util.Date"/>
+                   <property name="toDate" column="TO_DATE" type="java.util.Date"/>
+                   <property name="processId" column="PROCESS_ID" type="string"/>
+                   <property name="activityId" column="ACTIVITY_ID" type="string"/>
+            
+    </class>
+</hibernate-mapping>

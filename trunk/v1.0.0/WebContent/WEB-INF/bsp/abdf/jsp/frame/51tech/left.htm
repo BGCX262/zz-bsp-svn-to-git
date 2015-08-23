@@ -1,0 +1,130 @@
+﻿
+
+
+
+<HTML>
+<HEAD>
+
+<script type="text/javascript" src="js/tree/xtree.js"></script>
+<link type="text/css" rel="stylesheet" href="skins/default/css/tree/xtree.css">
+<link rel="stylesheet" type="text/css" href="skins/style.css" >
+<link rel="stylesheet" type="text/css" href="skins/default/css/mian.css" >
+<META http-equiv=Content-Type content="text/html; charset=UTF-8">
+<script>
+    
+
+var webFXTreeConfig = {
+    rootIcon        : 'skins/default/img/xloadtree/openfolder.png',
+    openRootIcon    : 'skins/default/img/xloadtree/openfolder.png',
+    folderIcon      : 'skins/default/img/xloadtree/folder.png',
+    openFolderIcon  : 'skins/default/img/xloadtree/openfolder.png',
+    fileIcon        : 'skins/default/img/xloadtree/openfolder.png',
+    iIcon           : 'skins/default/img/xloadtree/I.png',
+    lIcon           : 'skins/default/img/xloadtree/L.png',
+    lMinusIcon      : 'skins/default/img/xloadtree/Lminus.png',
+    lPlusIcon       : 'skins/default/img/xloadtree/Lplus.png',
+    tIcon           : 'skins/default/img/xloadtree/T.png',
+    tMinusIcon      : 'skins/default/img/xloadtree/Tminus.png',
+    tPlusIcon       : 'skins/default/img/xloadtree/Tplus.png',
+    blankIcon       : 'skins/default/img/xloadtree/blank.png',
+    defaultText     : 'Tree Item',
+    defaultAction   : 'javascript:void(0);',
+    defaultBehavior : 'classic',
+    usePersistence    : false
+};
+
+function doChangeMain(url,fold){
+    
+        
+  }
+
+function doNothing()
+{
+  
+}
+
+    </script>
+  
+
+</HEAD>
+<body class="right_body_left" >
+<TABLE cellSpacing=1 cellPadding=0 width="100%" bgColor=#3366FF border=0 style="cursor:auto">
+    <TBODY>
+
+        <TR>
+            <TD align=middle bgColor=#ffd83b height=24 >
+            <P><A href="#" onclick="openWorkItemDoing()">我的待办</A></P>
+            </TD>
+            <TD align=middle bgColor=#ffd83b><A
+                href="#" onclick="openWorkItemDoen()">我的已办</A></TD>
+        </TR>
+        <TR>
+            <TD align=middle bgColor=#ffd83b height=24 >
+            <P><A href="#">我的传阅</A></P>
+            </TD>
+            <TD align=middle bgColor=#ffd83b><A
+                href="#">我的已阅</A></TD>
+        </TR>
+        <TR>
+            <TD align=middle bgColor=#ffd83b height=24 colspan="2">
+            <A href="#">快捷方式</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A href="#">菜单</A>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<A
+href="#" onclick="showContextMenuShowBuzi()">个人设置</A>
+            </TD>
+            
+        </TR>
+    </TBODY>
+</TABLE>
+
+ <SPAN class="right_middle_left" id="cccc" style = "heigth:100%">
+    <script>
+          var t0 = new WebFXTree('刘正仁','')
+var tff8080811759435c011759487a470001 = new WebFXTreeItem('开发管理','javascript:doChangeMain(\'\',\'Y\')',t0,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff80808116fddc9d0116fde90d620001 = new WebFXTreeItem('数据字典类型','javascript:doChangeMain(\'\',\'N\')',tff8080811759435c011759487a470001,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff80808117010a2f0117011870070001 = new WebFXTreeItem('平面数据字典类型','javascript:doChangeMain(\'jsp/dict_type/dict_type_frame.jsp\',\'N\')',tff80808116fddc9d0116fde90d620001,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff80808117010a2f01170118d3170002 = new WebFXTreeItem('树型数据字典类型','javascript:doChangeMain(\'/listDictTypeTree_abdf.do\',\'N\')',tff80808116fddc9d0116fde90d620001,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff8080811897deee011897fda1a40001 = new WebFXTreeItem('在线帮助管理','javascript:doChangeMain(\'jsp/online_helper/online_helper_frame.jsp\',\'N\')',tff8080811759435c011759487a470001,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff80808116fddc9d0116fdeecc930003 = new WebFXTreeItem('代码生成器/表单定义','javascript:doChangeMain(\'\',\'Y\')',tff8080811759435c011759487a470001,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff80808116fddc9d0116fdf01ca20004 = new WebFXTreeItem('生成基础代码','javascript:doChangeMain(\'\',\'N\')',tff80808116fddc9d0116fdeecc930003,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff8080811707101301170745c89d0001 = new WebFXTreeItem('从数据表生成','javascript:doChangeMain(\'/getDataTable.do\',\'N\')',tff80808116fddc9d0116fdf01ca20004,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff8080811797dd78011797e031fe0001 = new WebFXTreeItem('工作流管理','javascript:doChangeMain(\'\',\'N\')',tff8080811759435c011759487a470001,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff8080811797dd78011797e1391d0002 = new WebFXTreeItem('业务表单配置','javascript:doChangeMain(\'/bsp/wfss/app_form/app_form_frame.jsp\',\'N\')',tff8080811797dd78011797e031fe0001,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff8080811797dd78011797e2138f0003 = new WebFXTreeItem('流程定义','javascript:doChangeMain(\'/bsp/wfss/process/process_frame.jsp\',\'N\')',tff8080811797dd78011797e031fe0001,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff808081195a47de01195a4994850001 = new WebFXTreeItem('公用按钮定义','javascript:doChangeMain(\'/listButton.do\',\'N\')',tff8080811797dd78011797e031fe0001,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff8080811759435c0117596aa0b50002 = new WebFXTreeItem('DEMO','javascript:doChangeMain(\'\',\'Y\')',tff8080811759435c011759487a470001,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var tff80808118019962011801a035d80001 = new WebFXTreeItem('平面数据字典','javascript:doChangeMain(\'/listDict_abdf.do?dictTypeCode=sex\',\'N\')',tff8080811759435c0117596aa0b50002,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+var t8a90247317b485ec0117b48838360001 = new WebFXTreeItem('流程DEMO','javascript:doChangeMain(\'jsp/demo/process/flow_demo_list.jsp\',\'N\')',tff8080811759435c0117596aa0b50002,'skins/default/img/xloadtree/openfolder.png','skins/default/img/xloadtree/folder.png')
+
+        try
+        {
+        document.write(t0)
+        t0.expandAll();
+        }
+        catch(e)
+        {
+        }
+       
+        </script>
+     
+    </span>
+
+    <script language=javascript>
+    document.getElementById("cccc").style.height=document.body.clientHeight-97;
+    window.onresize = onresizeBB;
+    function onresizeBB() {
+     document.getElementById("cccc").style.height=document.body.clientHeight-97;
+    }
+    document.body.height=document.body.clientHeight-4;
+    oldresize = window.onresize;
+    window.onresize = function() {
+      document.body.height=document.body.clientHeight-4;
+      if (oldresize) oldresize();
+      }
+</script>
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+<tr>
+ <td align=center class="right_bottom_left">在线人数:</td>
+</tr>
+</table>
+</BODY>
+</HTML>
+

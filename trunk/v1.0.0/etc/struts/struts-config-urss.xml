@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="AppForm" type="com.youthor.bsp.view.urss.web.form.AppForm"/>
+   <form-bean name="RegCompanyForm" type="com.youthor.bsp.view.urss.web.form.RegCompanyForm" />
+    <form-bean name="ComUserForm" type="com.youthor.bsp.view.urss.web.form.ComUserForm" />
+   <form-bean name="DeskForm" type="com.youthor.bsp.view.urss.web.form.DeskForm" />
+   <form-bean name="RoleForm" type="com.youthor.bsp.view.urss.web.form.RoleForm" />
+   <form-bean name="FunctionForm" type="com.youthor.bsp.view.urss.web.form.FunctionForm" />
+   <form-bean name="ResourceForm" type="com.youthor.bsp.view.urss.web.form.ResourceForm" />
+   <form-bean name="ReportQueryParaForm" type="com.youthor.bsp.view.abdf.web.form.ReportQueryParaForm" />
+   <form-bean name="ReportFileForm" type="com.youthor.bsp.view.abdf.web.form.ReportFileForm" />
+   <form-bean name="CoopAreaForm" type="com.youthor.bsp.view.urss.web.form.CoopAreaForm" />
+    <form-bean name="OrgForm" type="com.youthor.bsp.view.urss.web.form.OrgForm" />
+    <form-bean name="UserForm" type="com.youthor.bsp.view.urss.web.form.UserForm" />
+    <form-bean name="PostForm" type="com.youthor.bsp.view.urss.web.form.PostForm" />
+    <form-bean name="OrgTypeForm" type="com.youthor.bsp.view.urss.web.form.OrgTypeForm" />
+  </form-beans>
+ <global-forwards>
+ </global-forwards>
+  <action-mappings>
+  <action path="/forwardPwdEdit_urss" forward="/WEB-INF/bsp/urss/user/pwd_edit.jsp" />
+  <action path="/forwardCoopAreaTree_urss" forward="/WEB-INF/bsp/urss/coop_area/coop_area_tree.jsp" />
+  <action path="/forwardTop_urss" forward="/WEB-INF/bsp/urss/frame/top.jsp" />
+  <action path="/forwardLeft_urss" forward="/WEB-INF/bsp/urss/frame/left.jsp" />
+  <action path="/forwardSelectCoop_urss" forward="/WEB-INF/bsp/urss/function/resource/select_coop.jsp" />
+  <action path="/forwardResCoopAreaTree_urss" forward="/WEB-INF/bsp/urss/function/resource/coop_area_tree.jsp" />
+  <action path="/forwardFunctionTree_urss" forward="/WEB-INF/bsp/urss/function/function_tree.jsp" />
+  <action path="/forwardOfferOrgSelect_urss" forward="/WEB-INF/bsp/urss/org/org_select/offer_org_select.jsp" />
+  <action path="/forwardSelectHandle_urss" forward="/WEB-INF/bsp/urss/org/org_select/select_handle.jsp" />
+  <action path="/forwardSelectOrg_urss" forward="/WEB-INF/bsp/urss/org/org_select/selected_org.jsp" />
+  <action path="/forwardBottomOrg_urss" forward="/WEB-INF/bsp/urss/org/org_select/bottom_org.jsp" />
+  <action path="/forwardPostOfferOrgSelect_urss" forward="/WEB-INF/bsp/urss/post/post_assign/org_select/offer_org_select.jsp" />
+  <action path="/forwardPostOrgSelectHandle_urss" forward="/WEB-INF/bsp/urss/post/post_assign/org_select/select_handle.jsp" />
+  <action path="/forwardPostSelectOrg_urss" forward="/WEB-INF/bsp/urss/post/post_assign/org_select/selected_org.jsp" />
+  <action path="/forwardPostBottomOrg_urss" forward="/WEB-INF/bsp/urss/post/post_assign/org_select/bottom_org.jsp" />
+  
+  <action path="/forwardOfferPostSelect_urss" forward="/WEB-INF/bsp/urss/post/post_assign/select_post/offer_post_select.jsp" />
+  <action path="/forwardPostSelectHandle_urss" forward="/WEB-INF/bsp/urss/post/post_assign/select_post/select_handle.jsp" />
+  <action path="/forwardPostSelectPost_urss" forward="/WEB-INF/bsp/urss/post/post_assign/select_post/selected_post.jsp" />
+  <action path="/forwardPostBottomPost_urss" forward="/WEB-INF/bsp/urss/post/post_assign/select_post/bottom_post.jsp" />
+  
+  <action path="/forwardPostAssignDes_urss" forward="/WEB-INF/bsp/urss/post/post_assign/post_assign_des.jsp" />
+  <action path="/forwardPostSelectFrame_urss" forward="/WEB-INF/bsp/urss/post/post_assign/select_post/post_select_frame.jsp" />
+  <action path="/forwardOrgSelectFrame_urss" forward="/WEB-INF/bsp/urss/org/org_select/org_select_frame.jsp" />
+  
+  <action path="/forwardRoleTree_urss" forward="/WEB-INF/bsp/urss/role/role_tree.jsp" />
+  <action path="/forwardRoleOrgQuery_urss" forward="/WEB-INF/bsp/urss/role/role_org_query.jsp" />
+  <action path="/forwardRoleRightTree_urss" forward="/WEB-INF/bsp/urss/role_right/role_tree.jsp" />
+  <action path="/forwardRightFunctionTree_urss" forward="/WEB-INF/bsp/urss/role_right/function_tree.jsp" />
+  <action path="/forwardRoleRightDes_urss" forward="/WEB-INF/bsp/urss/role_right/role_right_des.jsp" />
+  <action path="/forwardUserRightDes_urss" forward="/WEB-INF/bsp/urss/user_right/function_tree.jsp" />
+  <action path="/forwardUserRightDes_urss" forward="/WEB-INF/bsp/urss/user_right/user_right_des.jsp" />
+  
+  <action path="/forwardOrgFrame_urss" forward="/WEB-INF/bsp/urss/org/org_frame.jsp" />
+  <action path="/forwardUserFrame_urss" forward="/WEB-INF/bsp/urss/user/user_frame.jsp" />
+  <action path="/forwardRoleFrame_urss" forward="/WEB-INF/bsp/urss/role/role_frame.jsp" />
+  <action path="/forwardRoleRightFrame_urss" forward="/WEB-INF/bsp/urss/role_right/role_right_frame.jsp" />
+  <action path="/forwardUserRightFrame_urss" forward="/WEB-INF/bsp/urss/user_right/user_right_frame.jsp" />
+  <action path="/forwardFunctionFrame_urss" forward="/WEB-INF/bsp/urss/function/function_frame.jsp" />
+   
+   <action path="/mrgLogonToSystem_urss"   parameter="mrgLogonToSystem" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="Window" path="/WEB-INF/bsp/urss/frame/window.jsp" />
+    </action>
+
+    <action path="/getAllApp_urss"   parameter="getAllApp" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appList" path="/WEB-INF/bsp/urss/app/app_list.jsp" />
+    </action>
+    
+    <action path="/getAllAppWithApply_urss"   parameter="getAllAppWithApply" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="listWithApply" path="/WEB-INF/bsp/urss/app/app_list_apply.jsp" />
+    </action>
+    
+       <action path="/comApplyApp_urss"   parameter="comApplyApp" type="org.springframework.web.struts.DelegatingActionProxy">
+    </action>
+    
+     <action path="/comCancelApp_urss"   parameter="comCancelApp" type="org.springframework.web.struts.DelegatingActionProxy">
+    </action>
+    
+
+    
+    <action path="/listComApplyApp_urss"   parameter="listComApplyApp" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="listComApplyApp" path="/WEB-INF/bsp/urss/app/list_com_apply_app.jsp" />
+    </action>
+    
+    
+    
+    <action path="/initApp_urss"  name="AppForm" scope="request"  parameter="initApp" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appEdit" path="/WEB-INF/bsp/urss/app/app_edit.jsp" />
+    </action>
+    
+    <action path="/showApp_urss"   parameter="showApp" name="AppForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appEdit" path="/WEB-INF/bsp/urss/app/app_edit.jsp" />
+    </action>
+    
+     <action path="/showAppByCode_urss"  name="AppForm" scope="request"  parameter="showAppByCode"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appEdit" path="/WEB-INF/bsp/urss/app/app_edit.jsp" />
+    </action>
+    
+    
+
+    <action path="/saveApp_urss"   parameter="saveApp" name="AppForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appEdit" path="/WEB-INF/bsp/urss/app/app_edit.jsp" />
+    </action>
+    
+    <action path="/deleteApp_urss"   parameter="deleteApp"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/getAllApp.do" />
+    </action>
+    
+    <action path="/queryPageRegCompany_urss"   parameter="queryPageRegCompany"  name="RegCompanyForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="regCompanyList" path="/WEB-INF/bsp/urss/reg_company/reg_company_list.jsp" />
+    </action>
+    
+    
+     <action path="/initRegCompany_urss"   parameter="initRegCompany" name="RegCompanyForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="regCompanyEdit" path="/WEB-INF/bsp/urss/reg_company/reg_company_edit.jsp" />
+    </action>
+    
+    
+    <action path="/saveRegCompany_urss"   parameter="saveRegCompany" name="RegCompanyForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="regCompanyEdit" path="/WEB-INF/bsp/urss/reg_company/reg_company_edit.jsp" />
+    </action>
+    
+    
+    <action path="/deleteRegCompany_urss"   parameter="deleteRegCompany" name="RegCompanyForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/queryPageRegCompany.do" />
+    </action>
+    
+     <action path="/showRegCompany_urss"   parameter="showRegCompany" name="RegCompanyForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="regCompanyEdit" path="/WEB-INF/bsp/urss/reg_company/reg_company_edit.jsp" />
+    </action>
+    
+
+     <action path="/queryPageDesk_urss"   parameter="queryPageDesk"  name="DeskForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="deskList" path="/WEB-INF/bsp/urss/desk/desk_list.jsp" />
+     </action>
+    
+     <action path="/initDesk_urss"   parameter="initDesk" name="DeskForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="deskEdit" path="/WEB-INF/bsp/urss/desk/desk_edit.jsp" />
+    </action>
+    
+    <action path="/saveDesk_urss"   parameter="saveDesk" name="DeskForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="deskEdit" path="/WEB-INF/bsp/urss/desk/desk_edit.jsp" />
+    </action>
+    
+    <action path="/listPageComUser_urss"   parameter="listPageComUser"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="comUserList" path="/WEB-INF/bsp/urss/com_user/com_user_list.jsp" />
+    </action>
+    
+    
+     <action path="/initComUser_urss"   parameter="initComUser" name="ComUserForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="comUserEdit" path="/WEB-INF/bsp/urss/com_user/com_user_edit.jsp" />
+    </action>
+    
+    
+    <action path="/saveComUser_urss"   parameter="saveComUser" name="ComUserForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="comUserEdit" path="/WEB-INF/bsp/urss/com_user/com_user_edit.jsp" />
+    </action>
+    
+    
+    <action path="/deleteComUser_urss"   parameter="deleteComUser" name="ComUserForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/listPageComUser.do" />
+    </action>
+    
+     <action path="/showComUser_urss"   parameter="showComUser" name="ComUserForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="comUserEdit" path="/WEB-INF/bsp/urss/com_user/com_user_edit.jsp" />
+    </action>
+    
+    
+    
+    
+    <action path="/deleteDesk_urss"   parameter="deleteDesk" name="DeskForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/queryPageDesk.do" />
+    </action>
+
+     <action path="/showDesk_urss"   parameter="showDesk" name="DeskForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="deskEdit" path="/WEB-INF/bsp/urss/desk/desk_edit.jsp" />
+    </action>
+    
+     <action path="/getTopRoleByAppIdAndComId_urss"   parameter="getTopRoleByAppIdAndComId"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="roleList" path="/WEB-INF/bsp/urss/role/top_role_list.jsp" />
+    </action>
+    
+    <action path="/initRole_urss"   parameter="initRole" name="RoleForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="roleEdit" path="/WEB-INF/bsp/urss/role/role_edit.jsp" />
+    </action>
+    
+     <action path="/showRole_urss"   parameter="showRole" name="RoleForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="roleEdit" path="/WEB-INF/bsp/urss/role/role_edit.jsp" />
+    </action>
+    
+    <action path="/saveRole_urss"   parameter="saveRole" name="RoleForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="roleEdit" path="/WEB-INF/bsp/urss/role/role_edit.jsp" />
+    </action>
+    
+    <action path="/deleteRole_urss"   parameter="deleteRole" name="RoleForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="roleEdit" path="/WEB-INF/bsp/urss/role/role_edit.jsp" />
+             <forward name="delToList" path="/WEB-INF/bsp/urss/role/top_role_list.jsp" />
+    </action>
+    
+     <action path="/moveRole_urss"   parameter="moveRole" name="RoleForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="roleEdit" path="/WEB-INF/bsp/urss/role/role_edit.jsp" />
+             <forward name="delToList" path="/WEB-INF/bsp/urss/role/top_role_list.jsp" />
+    </action>
+    
+    <action path="/listRoleOrgByRoleId_urss"   parameter="listRoleOrgByRoleId"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="roleOrgList" path="/WEB-INF/bsp/urss/role/role_org_list.jsp" />           
+    </action>
+    
+      <action path="/saveRoleOrg_urss"   parameter="saveRoleOrg"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="roleOrgAddToList" path="/listRoleOrgByRoleId_urss.do" />           
+    </action>
+    
+     <action path="/deleteRoleOrg_urss"   parameter="deleteRoleOrg"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="roleOrgDelToList" path="/listRoleOrgByRoleId_urss.do" />           
+    </action>
+    
+    <action path="/queryRoleOrg_urss"   parameter="queryRoleOrg"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="queryRoleOrg" path="/WEB-INF/bsp/urss/role/handle_query_result.jsp" />           
+    </action>
+    
+    <action path="/addRoleOrgFormQuery_urss"   parameter="addRoleOrgFormQuery"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="addRoleOrgQuery" path="/WEB-INF/bsp/urss/role/handle_add_result.jsp" />           
+    </action>
+    
+    <action path="/deleteRoleOrgFormQuery_urss"   parameter="deleteRoleOrgFormQuery"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="deleteRoleOrgQuery" path="/WEB-INF/bsp/urss/role/handle_del_result.jsp" />           
+    </action>
+    
+    
+    
+    
+    <action path="/getCoopAreaByComId_urss"   parameter="getCoopAreaByComId"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="coopAreaList" path="/WEB-INF/bsp/urss/coop_area/top_coop_area_list.jsp" />
+    </action>
+    
+    <action path="/initCoopArea_urss"   parameter="initCoopArea" name="CoopAreaForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="coopAreaEdit" path="/WEB-INF/bsp/urss/coop_area/coop_area_edit.jsp" />
+    </action>
+    
+     <action path="/showCoopArea_urss"   parameter="showCoopArea" name="CoopAreaForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="coopAreaEdit" path="/WEB-INF/bsp/urss/coop_area/coop_area_edit.jsp" />
+    </action>
+    
+    <action path="/saveCoopArea_urss"   parameter="saveCoopArea" name="CoopAreaForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="coopAreaEdit" path="/WEB-INF/bsp/urss/coop_area/coop_area_edit.jsp" />
+    </action>
+    
+    <action path="/deleteCoopArea_urss"   parameter="deleteCoopArea" name="CoopAreaForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="coopAreaEdit" path="/WEB-INF/bsp/urss/coop_area/coop_area_edit.jsp" />
+             <forward name="delToList" path="/WEB-INF/bsp/urss/coop_area/top_coop_area_list.jsp" />
+    </action>
+    
+   
+    
+    
+
+     <action path="/getTopFunctionByAppId_urss"   parameter="getTopFunctionByAppId"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="functionList" path="/WEB-INF/bsp/urss/function/top_function_list.jsp" />
+    </action>
+    
+    <action path="/initFunction_urss"   parameter="initFunction" name="FunctionForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="functionEdit" path="/WEB-INF/bsp/urss/function/function_edit.jsp" />
+    </action>
+    
+     <action path="/showFunction_urss"   parameter="showFunction" name="FunctionForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="functionEdit" path="/WEB-INF/bsp/urss/function/function_edit.jsp" />
+    </action>
+    
+    <action path="/saveFunction_urss"   parameter="saveFunction" name="FunctionForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="functionEdit" path="/WEB-INF/bsp/urss/function/function_edit.jsp" />
+    </action>
+    
+    <action path="/deleteFunction_urss"   parameter="deleteFunction" name="FunctionForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="functionEdit" path="/WEB-INF/bsp/urss/function/function_edit.jsp" />
+             <forward name="delToList" path="/WEB-INF/bsp/urss/function/top_function_list.jsp" />
+    </action>
+    
+     <action path="/moveFunction_urss"   parameter="moveFunction" name="FunctionForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="functionEdit" path="/WEB-INF/bsp/urss/function/function_edit.jsp" />
+             <forward name="delToList" path="/WEB-INF/bsp/urss/function/top_function_list.jsp" />
+    </action>
+  
+   
+  
+    <action path="/getAllResourceByFunId_urss"   parameter="getAllResourceByFunId"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="resourceList" path="/WEB-INF/bsp/urss/function/resource/resource_list.jsp" />
+    </action>
+    
+   <action path="/initResource_urss"   parameter="initResource" name="ResourceForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="resourceEdit" path="/WEB-INF/bsp/urss/function/resource/resource_edit.jsp" />
+    </action>
+   
+    
+    <action path="/saveResource_urss"   parameter="saveResource" name="ResourceForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="resourceEdit" path="/WEB-INF/bsp/urss/function/resource/resource_edit.jsp" />
+    </action>
+    
+    <action path="/deleteResource_urss"   parameter="deleteResource" name="ResourceForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="delToList" path="/getAllResourceByFunId_urss.do" />
+    </action>
+    
+     <action path="/showResource_urss"   parameter="showResource" name="ResourceForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="resourceEdit" path="/WEB-INF/bsp/urss/function/resource/resource_edit.jsp" />
+    </action>
+    
+    
+     <action path="/getAllReportQueryParaByFunId_urss"   parameter="getAllReportQueryParaByFunId"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="reportQueryParaList" path="/WEB-INF/bsp/urss/function/report_query_para/report_query_para_list.jsp" />
+    </action>
+    
+   <action path="/initReportQueryPara_urss"   parameter="initReportQueryPara" name="ReportQueryParaForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="reportQueryParaEdit" path="/WEB-INF/bsp/urss/function/report_query_para/report_query_para_edit.jsp" />
+    </action>
+   
+   
+    <action path="/saveReportQueryPara_urss"   parameter="saveReportQueryPara" name="ReportQueryParaForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="reportQueryParaEdit" path="/WEB-INF/bsp/urss/function/report_query_para/report_query_para_edit.jsp" />
+    </action>
+    
+    <action path="/deleteReportQueryPara_urss"   parameter="deleteReportQueryPara" name="ReportQueryParaForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="delToList" path="/getAllReportQueryParaByFunId_urss.do" />
+    </action>
+    
+     <action path="/showReportQueryPara_urss"   parameter="showReportQueryPara" name="ReportQueryParaForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="reportQueryParaEdit" path="/WEB-INF/bsp/urss/function/report_query_para/report_query_para_edit.jsp" />
+    </action>
+    
+    
+    
+     <action path="/getAllReportFileByFunId_urss"   parameter="getAllReportFileByFunId"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="reportFileList" path="/WEB-INF/bsp/urss/function/report_file/report_file_list.jsp" />
+    </action>
+    
+   <action path="/initReportFile_urss"   parameter="initReportFile" name="ReportFileForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="reportFileEdit" path="/WEB-INF/bsp/urss/function/report_file/report_file_edit.jsp" />
+    </action>
+   
+   
+    <action path="/saveReportFile_urss"   parameter="saveReportFile" name="ReportFileForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="reportFileEdit" path="/WEB-INF/bsp/urss/function/report_file/report_file_edit.jsp" />
+    </action>
+    
+    <action path="/deleteReportFile_urss"   parameter="deleteReportFile" name="ReportFileForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="delToList" path="/getAllReportFileByFunId_urss.do" />
+    </action>
+    
+     <action path="/showReportFile_urss"   parameter="showReportFile" name="ReportFileForm"  scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="reportFileEdit" path="/WEB-INF/bsp/urss/function/report_file/report_file_edit.jsp" />
+    </action>
+    
+    
+     <action path="/orgTree_urss"   parameter="orgTree"  type="org.springframework.web.struts.DelegatingActionProxy">
+    </action>
+    
+         <action path="/orgTreeUser_urss"   parameter="orgTreeUser"  type="org.springframework.web.struts.DelegatingActionProxy">
+    </action>
+    
+    
+    
+    <action path="/forwardOrgTree_urss"   parameter="forwardOrgTree"  type="org.springframework.web.struts.DelegatingActionProxy">
+     <forward name="orgTree" path="/WEB-INF/bsp/urss/org/org_tree.jsp" />
+    </action>
+    
+     <action path="/showOrg_urss" name="OrgForm"  scope="request"  parameter="showOrg"  type="org.springframework.web.struts.DelegatingActionProxy">
+     <forward name="orgEdit" path="/WEB-INF/bsp/urss/org/org_edit.jsp" />
+    </action>
+    
+     <action path="/saveOrg_urss" name="OrgForm"  scope="request"  parameter="saveOrg"  type="org.springframework.web.struts.DelegatingActionProxy">
+     <forward name="saveToEdit" path="/showOrg_urss.do" />
+    </action>
+    
+    <action path="/initOrg_urss" name="OrgForm"  scope="request"  parameter="initOrg"  type="org.springframework.web.struts.DelegatingActionProxy">
+     <forward name="orgEdit" path="/WEB-INF/bsp/urss/org/org_edit.jsp" />
+    </action>
+    
+    
+    <action path="/listPageUnUserByOrgId_urss"   parameter="listPageUnUserByOrgId"  type="org.springframework.web.struts.DelegatingActionProxy">
+     <forward name="userList" path="/WEB-INF/bsp/urss/user/un_user_list.jsp" />
+    </action>
+    
+     <action path="/listPageUserByOrgId_urss"   parameter="listPageUserByOrgId"  type="org.springframework.web.struts.DelegatingActionProxy">
+     <forward name="userList" path="/WEB-INF/bsp/urss/user/user_list.jsp" />
+    </action>
+    
+    <action path="/forwardUserTree_urss"   parameter="forwardUserTree"  type="org.springframework.web.struts.DelegatingActionProxy">
+     <forward name="userTree" path="/WEB-INF/bsp/urss/user/user_tree.jsp" />
+    </action>
+    
+     <action path="/showUser_urss"   parameter="showUser" name="UserForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+     	<forward name="userEdit" path="/WEB-INF/bsp/urss/user/user_edit.jsp" />
+    </action>
+    
+    
+    <action path="/saveUser_urss"   parameter="saveUser" name="UserForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+     <forward name="userEdit" path="/WEB-INF/bsp/urss/user/user_edit.jsp" />
+    </action>
+    
+    <action path="/modifyPassword_urss"   parameter="modifyPassword" name="UserForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+     	<forward name="modifyPwdResult" path="/WEB-INF/bsp/urss/user/pwd_edit.jsp" />
+    </action>
+    
+    <action path="/initUser_urss"   parameter="initUser" name="UserForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+     <forward name="userEdit" path="/WEB-INF/bsp/urss/user/user_edit.jsp" />
+    </action>
+   
+   
+   <action path="/queryPagePost_urss"   parameter="queryPagePost"  name="DeskForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="postList" path="/WEB-INF/bsp/urss/post/post_list.jsp" />
+     </action>
+    
+     <action path="/initPost_urss"   parameter="initPost" name="PostForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="postEdit" path="/WEB-INF/bsp/urss/post/post_edit.jsp" />
+    </action>
+    
+    <action path="/savePost_urss"   parameter="savePost" name="PostForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="postEdit" path="/WEB-INF/bsp/urss/post/post_edit.jsp" />
+    </action>
+    
+    <action path="/deletePost_urss"   parameter="deletePost" name="PostForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/queryPagePost.do" />
+    </action>
+
+     <action path="/showPost_urss"   parameter="showPost" name="PostForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="postEdit" path="/WEB-INF/bsp/urss/post/post_edit.jsp" />
+    </action>
+    
+    
+    
+   <action path="/getOrgTypeByComId_urss"   parameter="getOrgTypeByComId"  name="DeskForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="orgTypeList" path="/WEB-INF/bsp/urss/org_type/org_type_list.jsp" />
+     </action>
+    
+     <action path="/initOrgType_urss"   parameter="initOrgType" name="OrgTypeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="orgTypeEdit" path="/WEB-INF/bsp/urss/org_type/org_type_edit.jsp" />
+    </action>
+    
+    <action path="/saveOrgType_urss"   parameter="saveOrgType" name="OrgTypeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="orgTypeEdit" path="/WEB-INF/bsp/urss/org_type/org_type_edit.jsp" />
+    </action>
+    
+    <action path="/deleteOrgType_urss"   parameter="deleteOrgType" name="OrgTypeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/queryPageOrgType.do" />
+    </action>
+
+     <action path="/showOrgType_urss"   parameter="showOrgType" name="OrgTypeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="orgTypeEdit" path="/WEB-INF/bsp/urss/org_type/org_type_edit.jsp" />
+    </action>
+    
+    <action path="/getFunctionByRoleId_urss"   parameter="getFunctionByRoleId"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="roleRightList" path="/WEB-INF/bsp/urss/role_right/role_right_edit.jsp" />
+    </action>
+    
+    <action path="/saveRoleRight_urss"   parameter="saveRoleRight"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="saveRoleRightHandle" path="/WEB-INF/bsp/urss/role_right/role_right_handle.jsp" />
+    </action>
+    
+    
+    <action path="/orgTreeUserRight_urss"   parameter="orgTreeUserRight"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="orgTree" path="/WEB-INF/bsp/urss/user_right/org_tree.jsp" />
+    </action>
+    
+     <action path="/showUserRight_urss"   parameter="showUserRight"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="userRightEdit" path="/WEB-INF/bsp/urss/user_right/user_right_edit.jsp" />
+    </action>
+    
+    <action path="/saveUserRight_urss"   parameter="saveUserRight"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="saveUserRightHandle" path="/WEB-INF/bsp/urss/user_right/user_right_handle.jsp" />
+    </action>
+    
+      <action path="/deleteUser_urss"   parameter="deleteUser"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="listPageUserByOrgId" path="/listPageUserByOrgId.do" />
+    </action>
+    
+    
+    <action path="/postAssignForward_urss"   parameter="postAssignForward"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="orgTree" path="/WEB-INF/bsp/urss/post/post_assign/org_tree.jsp" />
+    </action>
+    <action path="/postAssignOrgTree_urss"   parameter="postAssignOrgTree"  type="org.springframework.web.struts.DelegatingActionProxy">
+    </action>
+    
+     <action path="/showPostAssign_urss"   parameter="showPostAssign"  type="org.springframework.web.struts.DelegatingActionProxy">
+      <forward name="postAssignEdit" path="/WEB-INF/bsp/urss/post/post_assign/post_assign.jsp" />
+    </action>
+    
+     <action path="/savePostAssign_urss"   parameter="savePostAssign"  type="org.springframework.web.struts.DelegatingActionProxy">
+      <forward name="postAssignEdit" path="/WEB-INF/bsp/urss/post/post_assign/post_assign.jsp" />
+    </action>
+    
+     <action path="/deletePostAssign_urss"   parameter="deletePostAssign"  type="org.springframework.web.struts.DelegatingActionProxy">
+      <forward name="postAssignEdit" path="/WEB-INF/bsp/urss/post/post_assign/post_assign.jsp" />
+    </action>
+    
+     <action path="/showPostOrg_urss"   parameter="showPostOrg"  type="org.springframework.web.struts.DelegatingActionProxy">
+      <forward name="postOrgEdit" path="/WEB-INF/bsp/urss/post/post_assign/post_org.jsp" />
+    </action>
+    
+     <action path="/validateOrgTypeIsUseing_urss" parameter="validateOrgTypeIsUseing"   type="org.springframework.web.struts.DelegatingActionProxy">
+        </action>
+    
+  </action-mappings>
+  
+  <controller>
+  </controller>
+ 
+</struts-config>

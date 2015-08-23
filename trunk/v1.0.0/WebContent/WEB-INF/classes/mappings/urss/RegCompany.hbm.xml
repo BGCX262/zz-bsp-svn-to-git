@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+	<class name="RegCompany" table="urss_reg_com">
+	
+		<id name="comId" type="string" unsaved-value="">
+			<column name="com_Id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		<property name="regComName" column="reg_Com_Name" type="string"/>
+		<property name="regComCode" column="reg_Com_Code" type="string"/>
+		<property name="regComAddress" column="reg_Com_Address" type="string"/>
+		<property name="regComEmail" column="reg_Com_Email" type="string"/>
+		<property name="regComBoss" column="reg_Com_Boss" type="string"/>
+		<property name="captil" column="captil" type="double"/>
+		<property name="userType" column="user_Type" type="string"/>
+		<property name="createTime" column="create_Time" type="java.util.Date"/>
+		<property name="endTime" column="end_Time" type="java.util.Date"/>
+	</class>
+</hibernate-mapping>

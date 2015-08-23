@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.abdf.model">
+	<class name="MessageSend" table="ABDF_MESSAGE_SEND">
+		<id name="id" type="string" unsaved-value="">
+			<column name="ID" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		 	      
+	    	       <property name="sendOrgId" column="SEND_ORG_ID" type="string"/>
+	    	       <property name="sendOrgName" column="SEND_ORG_NAME" type="string"/>
+	    	       <property name="acceptOrgIds" column="ACCEPT_ORG_IDS" type="string"/>
+	    	       <property name="acceptOrgNames" column="ACCEPT_ORG_NAMES" type="string"/>
+	    	       <property name="acceptOrgTypes" column="ACCEPT_ORG_TYPES" type="string"/>
+	    	       <property name="isSend" column="IS_SEND" type="string"/>
+	    	       <property name="folderType" column="FOLDER_TYPE" type="string"/>
+	    	       <property name="folderId" column="FOLDER_ID" type="string"/>
+	    	       <property name="htmlContent" column="HTML_CONTENT" type="string"/>
+	    	       <property name="isDelete" column="IS_DELETE" type="string"/>
+	    	       <property name="createTime" column="CREATE_TIME" type="java.util.Date"/>
+	    		   <property name="htmlTitle" column="HTML_TITLE" type="string"/>
+	</class>
+</hibernate-mapping>

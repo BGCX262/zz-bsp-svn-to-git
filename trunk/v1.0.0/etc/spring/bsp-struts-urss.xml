@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    
+     <bean name="/mrgLogonToSystem_urss"
+          class="com.youthor.bsp.view.urss.web.action.WindowMrgAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+
+    <bean name="/queryPageRegCompany_urss,/initRegCompany_urss,/saveRegCompany_urss,/deleteRegCompany_urss,/showRegCompany_urss"
+          class="com.youthor.bsp.view.urss.web.action.RegCompanyAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+ 	
+  <bean name="/getAllApp_urss,/initApp_urss,/getAppBymoduleName_urss,/showApp_urss,/saveApp_urss,/deleteApp_urss,
+  /showAppByCode_urss,/getAllAppWithApply_urss,/comApplyApp_urss,/comCancelApp_urss,/listComApplyApp_urss"
+          class="com.youthor.bsp.view.urss.web.action.AppAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+  </bean>
+   
+    <bean name="/listPageComUser_urss,/initComUser_urss,/saveComUser_urss,/deleteComUser_urss,/showComUser_urss"
+          class="com.youthor.bsp.view.urss.web.action.ComUserAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+  </bean>
+   
+   
+  
+    
+   <bean name="/queryPageDesk_urss,/initDesk_urss,/saveDesk_urss,/deleteDesk_urss,/showDesk_urss"
+          class="com.youthor.bsp.view.urss.web.action.DeskAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+ 	<bean name="/getTopRoleByAppIdAndComId_urss,/initRole_urss,/showRole_urss,/saveRole_urss,/deleteRole_urss,/moveRole_urss,
+ 	/listRoleOrgByRoleId_urss,/saveRoleOrg_urss,/deleteRoleOrg_urss,/queryRoleOrg_urss,/addRoleOrgFormQuery_urss,/deleteRoleOrgFormQuery_urss"
+          class="com.youthor.bsp.view.urss.web.action.RoleAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+    <bean name="/getCoopAreaByComId_urss,/initCoopArea_urss,/showCoopArea_urss,/saveCoopArea_urss,/deleteCoopArea_urss"
+          class="com.youthor.bsp.view.urss.web.action.CoopAreaAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+ 	
+ 	<bean name="/getTopFunctionByAppId_urss,/initFunction_urss,/showFunction_urss,/saveFunction_urss,/deleteFunction_urss,/moveFunction_urss"
+          class="com.youthor.bsp.view.urss.web.action.FunctionAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+ 	<bean name="/getAllResourceByFunId_urss,/initResource_urss,/showResource_urss,/saveResource_urss,/deleteResource_urss"
+          class="com.youthor.bsp.view.urss.web.action.ResourceAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+ 	
+ 	<bean name="/getAllReportFileByFunId_urss,/initReportFile_urss,/showReportFile_urss,/saveReportFile_urss,/deleteReportFile_urss"
+          class="com.youthor.bsp.view.urss.web.action.ReportFileAction" singleton="false">
+        <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+        <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+    </bean>
+    
+    
+    <bean name="/getAllReportQueryParaByFunId_urss,/initReportQueryPara_urss,/showReportQueryPara_urss,/saveReportQueryPara_urss,/deleteReportQueryPara_urss"
+          class="com.youthor.bsp.view.urss.web.action.ReportQueryParaAction" singleton="false">
+        <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+    </bean>
+ 	
+ 	<bean name="/orgTree_urss,/forwardOrgTree_urss,/showOrg_urss,/saveOrg_urss,/initOrg_urss"
+          class="com.youthor.bsp.view.urss.web.action.OrgAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+ 	<bean name="/listPageUnUserByOrgId_urss,/listPageUserByOrgId_urss,/forwardUserTree_urss,
+ 	/showUser_urss,/saveUser_urss,/initUser_urss,/deleteUser_urss,/orgTreeUser_urss,/modifyPassword_urss"
+          class="com.youthor.bsp.view.urss.web.action.UserAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+
+ 
+   <bean name="/queryPagePost_urss,/initPost_urss,/savePost_urss,/deletePost_urss,/showPost_urss"
+          class="com.youthor.bsp.view.urss.web.action.PostAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+ 	<bean name="/getOrgTypeByComId_urss,/initOrgType_urss,/saveOrgType_urss,/deleteOrgType_urss,/showOrgType_urss,/validateOrgTypeIsUseing_urss"
+          class="com.youthor.bsp.view.urss.web.action.OrgTypeAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+ 	<bean name="/getFunctionByRoleId_urss,/saveRoleRight_urss"
+          class="com.youthor.bsp.view.urss.web.action.RoleRightAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+ 	<bean name="/orgTreeUserRight_urss,/showUserRight_urss,/saveUserRight_urss"
+          class="com.youthor.bsp.view.urss.web.action.UserRightAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+ 	 	<bean name="/postAssignForward_urss,/postAssignOrgTree_urss,/showPostAssign_urss,/savePostAssign_urss,/deletePostAssign_urss,/showPostOrg_urss"
+          class="com.youthor.bsp.view.urss.web.action.PostAssignAction" singleton="false">
+ 	    <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+ 	</bean>
+ 	
+</beans>

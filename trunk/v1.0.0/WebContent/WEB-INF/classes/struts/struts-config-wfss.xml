@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="AppFormForm" type="com.youthor.bsp.view.wfss.web.form.AppFormForm" />
+    <form-bean name="AppFormFieldForm" type="com.youthor.bsp.view.wfss.web.form.AppFormFieldForm" />
+    <form-bean name="ProcessForm" type="com.youthor.bsp.view.wfss.web.form.ProcessForm" />
+    <form-bean name="ActivityForm" type="com.youthor.bsp.view.wfss.web.form.ActivityForm" />
+    <form-bean name="RouteForm" type="com.youthor.bsp.view.wfss.web.form.RouteForm" />
+    <form-bean name="ExpressionForm" type="com.youthor.bsp.view.wfss.web.form.ExpressionForm" />
+    <form-bean name="ButtonForm" type="com.youthor.bsp.view.wfss.web.form.ButtonForm" />
+    
+  </form-beans>
+ <global-forwards>
+ </global-forwards>
+ 
+  <action-mappings>
+   <action path="/initButton"   parameter="initButton" name="ButtonForm"  type="org.springframework.web.struts.DelegatingActionProxy">
+            <forward name="buttonEdit" path="/bsp/wfss/button/button_edit.jsp" />
+     </action>
+     
+     <action path="/listButton"   parameter="listButton"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="buttonList" path="/bsp/wfss/button/button_list.jsp" />
+     </action>
+  
+      <action path="/showButton"   parameter="showButton" name="ButtonForm"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="buttonEdit" path="/bsp/wfss/button/button_edit.jsp" />
+     </action>
+     
+     <action path="/saveButton"   parameter="saveButton"  name="ButtonForm"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="buttonEdit" path="/bsp/wfss/button/button_edit.jsp" />
+     </action>
+     
+     <action path="/deleteButton"   parameter="deleteButton"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="buttonEdit" path="/bsp/wfss/button/button_edit.jsp" />
+     </action>
+     
+     
+      <action path="/openRouteWindow"   parameter="openRouteWindow"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="routeView" path="/bsp/wfss/common/route_view.jsp" />
+             <forward name="arrestInfo" path="/bsp/wfss/common/arrest_info.jsp" />
+     </action>
+     
+     <action path="/showLoopWorkItemDoen"   parameter="showLoopWorkItemDoen"   type="org.springframework.web.struts.DelegatingActionProxy">
+         <forward name="loopInfo" path="/bsp/wfss/common/loop_info.jsp" />
+     </action>
+     
+     <action path="/showWorkItemDoing"   parameter="showWorkItemDoing"   type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="loopInfo" path="/bsp/wfss/common/loop_info.jsp" />
+     </action>
+     <action path="/showWorkItemDoen"   parameter="showWorkItemDoen"   type="org.springframework.web.struts.DelegatingActionProxy">
+     </action>
+      <action path="/showNextWorkItemDoing"   parameter="showNextWorkItemDoing"   type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="WorkItemDoing" path="/listWorkItemDoing.do" />
+     </action>
+     
+       <action path="/affirmDoThisWorkItem"   parameter="affirmDoThisWorkItem"   type="org.springframework.web.struts.DelegatingActionProxy">
+     </action>
+     
+     
+     
+     
+       <action path="/listWorkItemDoing"   parameter="listWorkItemDoing"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="workItemDoing" path="/bsp/wfss/common/work_item/work_item_doing.jsp" />
+     </action>
+     
+     <action path="/listWorkItemDoen"   parameter="listWorkItemDoen"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="workItemDoen" path="/bsp/wfss/common/work_item/work_item_doen.jsp" />
+     </action>
+     
+     
+     <action path="/wfOrgAsynSpread"   parameter="wfOrgAsynSpread"   type="org.springframework.web.struts.DelegatingActionProxy">
+           
+     </action>
+      
+      
+                                                   
+     <action path="/queryPageAppForm"   parameter="queryPageAppForm"  name="AppFormForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appFormList" path="/bsp/wfss/app_form/top_app_form_list.jsp" />
+     </action>
+    
+     <action path="/initAppForm"   parameter="initAppForm" name="AppFormForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appFormEdit" path="/bsp/wfss/app_form/app_form_edit.jsp" />
+    </action>
+    
+    <action path="/saveAppForm"   parameter="saveAppForm" name="AppFormForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appFormEdit" path="/bsp/wfss/app_form/app_form_edit.jsp" />
+    </action>
+
+    <action path="/deleteAppForm"   parameter="deleteAppForm" name="AppFormForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/queryPageAppForm.do" />
+    </action>
+
+     <action path="/showAppForm"   parameter="showAppForm" name="AppFormForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appFormEdit" path="/bsp/wfss/app_form/app_form_edit.jsp" />
+    </action>
+    
+    
+    <action path="/getFormFieldByFormId"   parameter="getFormFieldByFormId" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appFormFieldList" path="/bsp/wfss/app_form/field/field_list.jsp" />
+    </action>
+    
+    <action path="/initFormField"  name="AppFormFieldForm" scope="request"  parameter="initFormField" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appFormFieldEdit" path="/bsp/wfss/app_form/field/field_edit.jsp" />
+    </action>
+    
+    <action path="/showFormField"   parameter="showFormField" name="AppFormFieldForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appFormFieldEdit" path="/bsp/wfss/app_form/field/field_edit.jsp" />
+    </action>
+
+    <action path="/saveFormField"   parameter="saveFormField" name="AppFormFieldForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="appFormFieldEdit" path="/bsp/wfss/app_form/field/field_edit.jsp" />
+    </action>
+    
+    <action path="/deleteFormField"   parameter="deleteFormField"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/getFormFieldByFormId.do" />
+    </action>
+    
+    <action path="/queryPageProcess"   parameter="queryPageProcess"  name="ProcessForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="processList" path="/bsp/wfss/process/process_list.jsp" />
+    </action>
+    
+    <action path="/initProcess"   parameter="initProcess" name="ProcessForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="processEdit" path="/bsp/wfss/process/process_edit.jsp" />
+    </action>
+    
+    <action path="/saveProcess"   parameter="saveProcess" name="ProcessForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="processEdit" path="/bsp/wfss/process/process_edit.jsp" />
+    </action>
+
+    <action path="/deleteProcess"   parameter="deleteProcess" name="ProcessForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/queryPageProcess.do" />
+    </action>
+
+     <action path="/showProcess"   parameter="showProcess" name="ProcessForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="processEdit" path="/bsp/wfss/process/process_edit.jsp" />
+    </action>
+    
+    
+    
+   <action path="/initActivity"   parameter="initActivity" name="ActivityForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="activityEdit" path="/bsp/wfss/process/activity_edit.jsp" />
+    </action>
+    
+    <action path="/saveActivity"   parameter="saveActivity" name="ActivityForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="activityEdit" path="/bsp/wfss/process/activity_edit.jsp" />
+    </action>
+
+    <action path="/deleteActivity"   parameter="deleteActivity" name="ActivityForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/queryPageActivity.do"/>
+    </action>
+
+     <action path="/showActivity"   parameter="showActivity" name="ActivityForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="activityEdit" path="/bsp/wfss/process/activity_edit.jsp" />
+    </action>
+    
+    
+   <action path="/initRoute"   parameter="initRoute" name="RouteForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="routeEdit" path="/bsp/wfss/process/route_edit.jsp" />
+    </action>
+    
+    <action path="/saveRoute"   parameter="saveRoute" name="RouteForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="routeEdit" path="/bsp/wfss/process/route_edit.jsp" />
+    </action>
+
+    <action path="/deleteRoute"   parameter="deleteRoute" name="RouteForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/queryPageRoute.do"/>
+    </action>
+
+     <action path="/showRoute"   parameter="showRoute" name="RouteForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="routeEdit" path="/bsp/wfss/process/route_edit.jsp" />
+    </action>
+   
+   
+   
+   
+    <action path="/listExpression"   parameter="listExpression"   scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="expressionList" path="/bsp/wfss/expression/expression_list.jsp" />
+     </action>
+    
+     <action path="/saveExpression"   parameter="saveExpression" name="ExpressionForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="expressionEdit" path="/bsp/wfss/expression/expression_edit.jsp" />
+    </action>
+    
+    <action path="/showExpression"   parameter="showExpression" name="ExpressionForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="expressionEdit" path="/bsp/wfss/expression/expression_edit.jsp" />
+    </action>
+
+    <action path="/initExpression"   parameter="initExpression" name="ExpressionForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="expressionEdit" path="/bsp/wfss/expression/expression_edit.jsp" />
+    </action>
+
+     <action path="/deleteExpression"   parameter="deleteExpression" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/listExpression.do" />
+    </action> 
+    
+  </action-mappings>
+  
+ <plug-in className="com.youthor.bsp.view.wfss.common.plugin.InitFlowDataPlugIn">
+       <set-property property="cacheType" value="map" />
+ </plug-in>
+   
+</struts-config>

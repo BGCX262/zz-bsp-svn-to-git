@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.abdf.model">
+	<class name="SubassemblyField" table="ABDF_SUBASSEMBLY_FIELD">
+		<id name="fieldId" type="string" unsaved-value="">
+			<column name="FIELD_ID" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+	    	       <property name="fieldDes" column="FIELD_DES" type="string"/>
+	    	       <property name="dataFieldName" column="DATA_FIELD_NAME" type="string"/>
+	    	       <property name="webInputName" column="WEB_INPUT_NAME" type="string"/>
+	    	       <property name="webInput" column="WEB_INPUT" type="string"/>
+	    	       <property name="dictTypeCode" column="DICT_TYPE_CODE" type="string"/>
+	    	       <property name="subassemblyId" column="SUBASSEMBLY_ID" type="string"/>
+	    	
+	</class>
+</hibernate-mapping>

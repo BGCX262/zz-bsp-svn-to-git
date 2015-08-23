@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<daoExts>
+  <ext code="extText"  type="com.youthor.bsp.view.demo.wfwxt.ActivityStartEventTest" description="活动启动前事件测试"/>
+  
+</daoExts>

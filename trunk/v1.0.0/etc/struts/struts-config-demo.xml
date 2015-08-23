@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="SimpleProcessDemoForm" type="com.youthor.bsp.view.demo.form.SimpleProcessDemoForm" />
+   
+  </form-beans>
+ <global-forwards>
+ </global-forwards>
+ 
+  <action-mappings>
+       <action path="/forwardFlowDemoList_demo" forward="/WEB-INF/demo/process/flow_demo_list.jsp" />
+                                                    
+     <action path="/initSimpleProcessDemo_demo"   parameter="initSimpleProcessDemo"  name="SimpleProcessDemoForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoEdit" path="/WEB-INF/demo/process/flow_demo_edit.jsp" />
+     </action>
+     
+      <action path="/showSimpleProcessDemo_demo"   parameter="showSimpleProcessDemo"  name="SimpleProcessDemoForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoEdit" path="/WEB-INF/demo/process/flow_demo_edit.jsp" />
+     </action>
+     
+     
+    
+    <action path="/saveSimpleProcessDemo_demo"   parameter="saveSimpleProcessDemo"  name="SimpleProcessDemoForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoEdit" path="/WEB-INF/demo/process/flow_demo_edit.jsp" />
+     </action>
+     
+     <action path="/submitSimpleProcessDemo_demo"   parameter="submitSimpleProcessDemo"  name="SimpleProcessDemoForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoEdit" path="/WEB-INF/demo/process/flow_demo_edit.jsp" />
+     </action>
+     
+      <action path="/submitSimpleProcessDemo1_demo"   parameter="submitSimpleProcessDemo1"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoEdit" path="/WEB-INF/demo/process/flow_demo_edit.jsp" />
+     </action>
+     
+      <action path="/showSimpleProcessDemo1_demo"   parameter="showSimpleProcessDemo1"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoForm1" path="/WEB-INF/demo/process/flow_demo_edit_1.jsp" />
+     </action>
+     
+     
+      <action path="/submitSimpleProcessDemo2_demo"   parameter="submitSimpleProcessDemo2"   type="org.springframework.web.struts.DelegatingActionProxy">
+     </action>
+     
+      <action path="/showSimpleProcessDemo2_demo"   parameter="showSimpleProcessDemo2"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoForm2" path="/WEB-INF/demo/process/flow_demo_edit_2.jsp" />
+     </action>
+     
+    
+  </action-mappings>
+  
+  <controller>
+  </controller>
+ 
+</struts-config>

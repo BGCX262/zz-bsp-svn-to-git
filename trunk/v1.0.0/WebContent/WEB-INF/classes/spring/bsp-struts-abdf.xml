@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="proxyTargetClass">
+            <value>true</value>
+        </property>
+        <property name="beanNames">
+            <list>
+                <value>/list*</value>
+                <value>/query*</value>
+            </list>
+        </property>
+        <property name="interceptorNames">
+            <list>
+                <value>pageAdvisor</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="pageAdvice" class="com.youthor.bsp.view.abdf.common.aop.page.PageAdvice" />
+
+    <bean id="pageAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice">
+            <ref local="pageAdvice" />
+        </property>
+        <property name="patterns">
+            <list>
+                <value>.*</value>
+            </list>
+        </property>
+    </bean>
+
+   
+      <bean name="/getTopOnLineHelper,/initOnLineHelper,/saveOnLineHelper,/showOnLineHelper,/moveOnLineHelper,/deleteAttachHelp,/deleteOnLineHelper"
+          class="com.youthor.bsp.view.abdf.web.action.OnLineHelperAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+  <bean name="/downloadFile"
+          class="com.youthor.bsp.view.abdf.common.action.AttachAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+   
+   <bean name="/getAllDictType,/initDictType,/getDictTypeBymoduleName,/showDictType,/saveDictType,/deleteDictType"
+          class="com.youthor.bsp.view.abdf.web.action.DictTypeAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+   <bean name="/initDict_abdf,/showDict_abdf,/saveDict_abdf,/deleteDict_abdf,/listDict_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.DictAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+  
+  <bean name="/listDictTypeTree_abdf,/initDictTypeTree_abdf,
+       /showDictTypeTree_abdf,/saveDictTypeTree_abdf,/getExeProperty_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.DictTreeTypeAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+   <bean name="/listTopNodeObjectByType_abdf,/initTreeNodeObject_abdf,/saveTreeNodeObject_abdf,/showTreeNodeObject_abdf,/moveTreeNode_abdf,/deleteTreeNodeObject_abdf"
+          class="com.youthor.bsp.view.abdf.common.action.TreeComponentAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+  
+  
+  
+   
+ 
+  
+  <bean name="/orgTree_abdf"
+          class="com.youthor.bsp.view.abdf.common.action.OrgAction" singleton="false">
+        <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+  </bean>
+  
+     <bean name="/getDataTable,/buildXMLModelToText,/buildXMLModelToFile"
+          class="com.youthor.bsp.view.abdf.web.action.CodeBuilderAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+  
+    <bean name="/linkDropDown"
+          class="com.youthor.bsp.view.abdf.common.action.ComponentAction" singleton="false">
+        
+  </bean>
+     <bean name="/top_abdf,/leftCoopBar_abdf,/leftMenu_abdf,/userLogonOn_abdf"
+          class="com.youthor.bsp.view.abdf.common.action.WindowAction" singleton="false">
+         <property name="portalUrssServiceFacade"><ref bean="portalUrssServiceFacade"/></property>
+  </bean>
+  
+   <bean name="/getAllSubassembly_abdf,/initSubassembly_abdf,/saveSubassembly_abdf,/showSubassembly_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.SubassemblyAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+    <bean name="/getTopDictTreeByType_abdf,/initDictTree_abdf,/deleteDictTree_abdf,/showDictTree_abdf,/moveDictTree_abdf,/saveDictTree_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.DictTreeAction" singleton="false">
+          <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+     </bean>
+       
+</beans>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+  <bean id="wfCacheEngine" class="com.youthor.bsp.core.wfss.common.cache.mapcache.WFCacheEngineMapImpl" >
+     <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+  </bean>
+
+ <bean id="portalUrssServiceFacade" class="com.youthor.bsp.core.facade.impl.PortalUrssServiceLocationFacade" >
+     <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+  </bean>
+  
+<bean id="wfssServiceFacade" parent="txProxyTemplate" >
+        <property name="target">
+            <bean class="com.youthor.bsp.core.facade.impl.WfssServiceImplFacade">
+             <property name="appFormDao"><ref bean="DAO_AppForm"/></property>
+              <property name="appFormFieldDao"><ref bean="DAO_AppFormField"/></property>
+              <property name="processDao"><ref bean="DAO_Process"/></property>
+              <property name="activityDao"><ref bean="DAO_Activity"/></property>
+              <property name="routeDao"><ref bean="DAO_Route"/></property>
+              <property name="participantDao"><ref bean="DAO_Participant"/></property>
+              <property name="workItemDoingDao"><ref bean="DAO_WorkItemDoingDao"/></property>
+               <property name="workItemDoenDao"><ref bean="DAO_WorkItemDoenDao"/></property>
+               <property name="flowEngineDAO"><ref bean="DAO_FlowEngine"/></property>
+              <property name="buttonDao"><ref bean="DAO_buttonDao"/></property>
+            </bean>
+        </property>
+    </bean>
+      
+   <bean id="DAO_AppForm" class="com.youthor.bsp.core.wfss.dao.impl.AppFormDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_AppFormField" class="com.youthor.bsp.core.wfss.dao.impl.AppFormFieldDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_Process" class="com.youthor.bsp.core.wfss.dao.impl.ProcessDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_Activity" class="com.youthor.bsp.core.wfss.dao.impl.ActivityDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_Route" class="com.youthor.bsp.core.wfss.dao.impl.RouteDaoImpl" parent="baseDAO"/>  
+    <bean id="DAO_buttonDao" class="com.youthor.bsp.core.wfss.dao.impl.ButtonDaoImpl" parent="baseDAO"/>  
+   <bean id="DAO_CopyOfRoute" class="com.youthor.bsp.core.wfss.dao.impl.CopyOfRouteDaoImpl" parent="baseDAO"/>
+   
+    <bean id="DAO_Expression" class="com.youthor.bsp.core.wfss.dao.impl.ExpressionDaoImpl" parent="baseDAO"/> 
+    <bean id="DAO_Participant" class="com.youthor.bsp.core.wfss.dao.impl.ParticipantDaoImpl" parent="baseDAO"/>  
+    <bean id="DAO_FlowEngine" class="com.youthor.bsp.core.wfss.common.dao.impl.FlowEngineDAOImpl" parent="baseDAO"/> 
+     <bean id="DAO_WorkItemDoingDao" class="com.youthor.bsp.core.wfss.dao.impl.WorkItemDoingDaoImpl" parent="baseDAO"/>
+      <bean id="DAO_WorkItemDoenDao" class="com.youthor.bsp.core.wfss.dao.impl.WorkItemDoenDaoImpl" parent="baseDAO"/>
+                 
+</beans>

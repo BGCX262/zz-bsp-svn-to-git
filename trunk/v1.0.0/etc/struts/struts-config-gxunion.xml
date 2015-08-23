@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="BaseStationForm" type="com.youthor.gxunion.view.web.form.BaseStationForm" />    
+  </form-beans>
+  
+ <global-forwards>
+ </global-forwards>
+ 
+  <action-mappings>
+  	<!-- base station manage -->
+  	<action path="/listPageBaseStation" parameter="listPageBaseStation" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="baseStationList" path="/gxunion/base_station/base_station_list.jsp" />
+    </action>
+     <action path="/initBaseStation" parameter="initBaseStation" name="BaseStationForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="baseStationEdit" path="/gxunion/base_station/base_station_edit.jsp" />
+    </action>
+    <action path="/submitBaseStation" parameter="submitBaseStation" name="BaseStationForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="baseStationEdit" path="/gxunion/base_station/base_station_edit.jsp" />
+    </action>
+    <action path="/deleteBaseStation" parameter="deleteBaseStation" name="BaseStationForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/listPageBaseStation.do" />
+    </action>
+    <action path="/showBaseStation" parameter="showBaseStation" name="BaseStationForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="baseStationEdit" path="/gxunion/base_station/base_station_edit.jsp" />
+    </action>
+    <action path="/showBaseStationImg" parameter="showBaseStationImg" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="showBaseStationImg" path="/gxunion/base_station/base_station_img.jsp" />
+    </action>
+    <action path="/viewBaseStation" parameter="viewBaseStation" name="BaseStationForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="baseStationView" path="/gxunion/base_station/base_station_view.jsp" />
+    </action>
+    <!-- end base station manage -->
+    
+  </action-mappings>
+  
+
+   
+</struts-config>

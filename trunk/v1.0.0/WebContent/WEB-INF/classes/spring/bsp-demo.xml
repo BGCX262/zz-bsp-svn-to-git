@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="DAO_SimpleProcessDemo" class="com.youthor.bsp.core.demo.dao.impl.SimpleProcessDemoDAOImpl" parent="baseDAO"/>
+    
+    
+    
+    
+    <bean id="simpleProcessDemoService" parent="txProxyTemplate" >
+        <property name="target">
+            <bean class="com.youthor.bsp.core.demo.service.impl.SimpleProcessDemoServiceImpl">
+                <property name="simpleProcessDemoDAO"><ref bean="DAO_SimpleProcessDemo"/></property>
+                <property name="flowEngineDAO"><ref bean="DAO_FlowEngine"/></property>
+                
+            </bean>
+        </property>
+    </bean>
+</beans>

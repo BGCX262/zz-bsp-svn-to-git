@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menus>
+   <menu name="系统配置" show="Y" isLeaf="N">
+       <menu name="应用管理" url="/showAppByCode.do" show="Y" isLeaf="Y"/>
+       <menu name="桌面定义" url="/queryPageDesk.do" show="Y" isLeaf="Y"/>
+       <menu name="功能/资源定义" url="/bsp/urss/function/function_frame.jsp" show="Y" isLeaf="Y"/>
+   </menu>
+ 
+   
+   <menu name="权限管理" show="Y" isLeaf="N">
+     <menu name="角色定义" url="/bsp/urss/role/role_frame.jsp" show="Y" isLeaf="Y"/>
+     <menu name="角色权限分配" url="/queryPageDesk.do" show="Y" isLeaf="Y"/>
+     <menu name="用户权限分配" url="/queryPageDesk.do" show="Y" isLeaf="Y"/>
+   </menu>
+
+</menus>

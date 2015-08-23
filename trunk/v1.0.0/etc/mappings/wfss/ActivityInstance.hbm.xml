@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.wfss.model">
+    <class name="ActivityInstance" table="WFSS_ACTIVITY_INSTANCE">
+    
+        <id name="activityInstanceId" type="string" unsaved-value="">
+            <column name="activity_Instance_Id" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="parentActivityInstId" column="parent_Activity_Inst_Id" type="string"/>
+        <property name="processInstanceId" column="process_Instance_Id" type="string"/>
+        <property name="processId" column="process_Id" type="string"/>
+        <property name="activityId" column="activity_Id" type="string"/>
+        <property name="activityName" column="activity_Name" type="string"/>
+        <property name="toActivityId" column="to_activity_Id" type="string"/>
+        <property name="toActivityName" column="to_activity_Name" type="string"/>
+        <property name="appId" column="app_Id" type="string"/>
+        <property name="createDate" column="create_Date" type="java.util.Date"/>
+        <property name="notifyOrgIds" column="notify_Org_Ids" type="string"/>
+        <property name="notifyOrgNames" column="notify_Org_Names" type="string"/>
+        <property name="executorId" column="executor_Id" type="string"/>
+        <property name="executorName" column="executor_Name" type="string"/>    
+        <property name="status" column="status" type="string"/>
+        <property name="submitStatus" column="submit_Status" type="string"/>
+        
+        <property name="completeDate" column="complete_Date" type="java.util.Date"/>
+        <property name="executeMsg" column="execute_Msg" type="string"/>
+        <property name="showOrder" column="show_Order" type="int"/>
+        <property name="wantToActivityId" column="want_to_activity_id" type="string"/>
+        <property name="splitIds" column="SPLIT_IDS" type="string"/>
+        <property name="isAgentedOrgId" column="IS_AGENTED_ORG_ID" type="string"/>
+        <property name="isAgentedOrgName" column="IS_AGENTED_ORG_NAME" type="string"/>
+    </class>
+</hibernate-mapping> 

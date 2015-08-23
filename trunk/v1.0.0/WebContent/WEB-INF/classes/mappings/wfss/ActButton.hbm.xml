@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.wfss.model">
+	<class name="ActButton" table="WFSS_ACTIVITY_BUTTON">
+		<id name="actButId" type="string" unsaved-value="">
+			<column name="ACT_BUT_ID" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		 	    
+	    	       <property name="buttonStyleId" column="BUTTON_STYLE_ID" type="string"/>
+	    	       <property name="activityId" column="ACTIVITY_ID" type="string"/>
+	    	       <property name="buttonName" column="BUTTON_NAME" type="string"/>
+	    	       <property name="extJava" column="EXT_JAVA" type="string"/>
+	    	       <property name="jsMethod" column="JS_METHOD" type="string"/>
+	    	       <property name="buttonPosition" column="BUTTON_POSITION" type="string"/>
+	    	       <property name="buttonGroup" column="BUTTON_GROUP" type="string"/>
+	    	       <property name="orderIndex" column="order_index" type="int"/>
+	    	
+	</class>
+</hibernate-mapping>

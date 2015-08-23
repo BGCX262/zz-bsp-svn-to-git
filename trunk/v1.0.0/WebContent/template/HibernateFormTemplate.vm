@@ -1,0 +1,18 @@
+package $xmlModel.packageName;
+
+import com.fe.bsp.view.abdf.common.base.BaseForm;
+
+public class $xmlModel.className extends BaseForm{
+   #foreach($field in $fieldInfo)
+     private $field.propertyJavaDataType $field.propertyName;
+  #end
+  #foreach($field in $fieldInfo)
+      public $field.propertyJavaDataType get$field.getPropertyMethodDataType()(){
+         return $field.propertyName;
+      }
+       public $xmlModel.className set$field.getPropertyMethodDataType()($field.propertyJavaDataType $field.propertyName) {
+        this.$field.propertyName = $field.propertyName;
+        return this;
+      }
+   #end
+}

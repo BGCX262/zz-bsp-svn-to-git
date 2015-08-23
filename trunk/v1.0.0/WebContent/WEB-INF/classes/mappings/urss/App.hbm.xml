@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+    <class name="App" table="URSS_APP">
+        <id name="appId" type="string" unsaved-value="">
+            <column name="app_id" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="appName" column="app_name" type="string"/>
+        <property name="appCode" column="app_code" type="string"/>
+        <property name="comId" column="com_Id" type="string" update="false"/>
+        <property name="appType" column="app_type" type="string"/>
+        <property name="orderIndex" column="order_index" type="float"/>
+        <property name="status" column="status" type="string"/>
+        <property name="deskUrl" column="desk_url" type="string"/>
+        <property name="appAddress" column="app_address" type="string"/>    
+        <property name="turnOnMenu" column="turn_On_Menu" type="string"/>
+        <property name="appOutAddress" column="app_Out_Address" type="string"/>    
+        <property name="startupMenuCache" column="startup_Menu_Cache" type="string"/>
+    </class>
+</hibernate-mapping>

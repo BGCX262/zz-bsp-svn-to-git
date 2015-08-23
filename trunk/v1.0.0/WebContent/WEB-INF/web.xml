@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <display-name>FE-IT-BSP</display-name>
+    
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>
+        /WEB-INF/classes/spring/bsp-common.xml,
+        /WEB-INF/classes/spring/bsp-report.xml,
+        /WEB-INF/classes/spring/bsp-abdf.xml,
+        /WEB-INF/classes/spring/bsp-urss.xml,
+        /WEB-INF/classes/spring/bsp-wfss.xml,
+        /WEB-INF/classes/spring/bsp-demo.xml,
+        /WEB-INF/classes/spring/gxunion-all.xml,
+        /WEB-INF/classes/spring/gxunion-job.xml
+        </param-value>
+    </context-param>
+    
+     <filter>
+        <filter-name>SessionValidateFilter</filter-name>
+        <filter-class>com.youthor.bsp.view.abdf.common.filter.SessionValidateFilter</filter-class>
+         <init-param>
+         <param-name>noFilterURI</param-name>
+         <param-value>/,/userLogonOn_abdf.do,/index.jsp,/re_index.jsp,/forwardSelectUserOrg_abdf.do,/selectUserOrg_abdf.do</param-value>
+         </init-param>
+    </filter>
+    <!-- 
+     <filter>
+        <filter-name>RequestWrapperFilter</filter-name>
+        <filter-class>com.youthor.bsp.view.abdf.common.filter.RequestWrapperFilter</filter-class>
+    </filter>
+     -->
+     <filter>
+        <filter-name>EncodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    
+    <filter>
+        <filter-name>hibernateFilter</filter-name>
+        <filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>
+        <init-param>
+            <param-name>singleSession</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <!--  
+       <filter>
+        <filter-name>UrlPowerFilter</filter-name>
+        <filter-class>com.youthor.bsp.view.abdf.common.filter.UrlPowerFilter</filter-class>
+    </filter>
+    -->
+        <filter-mapping>
+        <filter-name>SessionValidateFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>SessionValidateFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+    <!--  
+    <filter-mapping>
+        <filter-name>RequestWrapperFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+   
+    <filter-mapping>
+        <filter-name>RequestWrapperFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+    -->
+    
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
+        <filter-name>EncodingFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+    
+    
+    <filter-mapping>
+        <filter-name>hibernateFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+    
+    <filter-mapping>
+        <filter-name>hibernateFilter</filter-name>
+        <url-pattern>*.jsp</url-pattern>
+    </filter-mapping>
+    <!--  
+        <filter-mapping>
+        <filter-name>UrlPowerFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping>
+    -->
+    
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    
+    <listener>
+        <listener-class>com.youthor.bsp.view.abdf.common.listener.ServletContextLoaderListener</listener-class>
+    </listener>
+    
+    
+    <servlet>
+    <servlet-name>action</servlet-name>
+        <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+        <init-param>
+            <param-name>config</param-name>
+            <param-value>
+                /WEB-INF/classes/struts/struts-config.xml,
+                /WEB-INF/classes/struts/struts-config-abdf.xml,
+                /WEB-INF/classes/struts/struts-config-demo.xml,
+                /WEB-INF/classes/struts/struts-config-urss.xml,
+                /WEB-INF/classes/struts/struts-config-wfss.xml,
+                /WEB-INF/classes/struts/struts-config-gxunion.xml
+                
+            </param-value>
+        </init-param>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>2</param-value>
+        </init-param>
+        <load-on-startup>2</load-on-startup>
+    </servlet>
+    
+    <servlet>
+     <servlet-name>image</servlet-name>
+     <servlet-class>net.sf.jasperreports.j2ee.servlets.ImageServlet</servlet-class>
+  </servlet>
+    
+    
+    
+    
+    <servlet-mapping>
+        <servlet-name>action</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    
+      <servlet-mapping>
+        <servlet-name>image</servlet-name>
+        <url-pattern>/image</url-pattern>
+    </servlet-mapping>
+    
+  
+    
+    
+    <taglib>
+        <taglib-uri>/WEB-INF/struts-bean.tld</taglib-uri>
+        <taglib-location>/WEB-INF/classes/tld/struts-bean.tld</taglib-location>
+    </taglib>
+    <taglib>
+        <taglib-uri>/WEB-INF/struts-html.tld</taglib-uri>
+        <taglib-location>/WEB-INF/classes/tld/struts-html.tld</taglib-location>
+    </taglib>
+    <taglib>
+        <taglib-uri>/WEB-INF/struts-logic.tld</taglib-uri>
+        <taglib-location>/WEB-INF/classes/tld/struts-logic.tld</taglib-location>
+    </taglib>
+    <taglib>
+        <taglib-uri>/WEB-INF/struts-nested.tld</taglib-uri>
+        <taglib-location>/WEB-INF/classes/tld/struts-nested.tld</taglib-location>
+    </taglib>
+    
+    <taglib>
+        <taglib-uri>/WEB-INF/fireeagle.tld</taglib-uri>
+        <taglib-location>/WEB-INF/classes/tld/fireeagle.tld</taglib-location>
+    </taglib>
+    
+    
+    
+    
+</web-app>

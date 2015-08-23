@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.wfss.model">
+	<class name="RouteInstance" table="WFSS_ROUTE_INSTANCE">
+	
+		<id name="routeInstanceId" type="string" unsaved-value="">
+			<column name="route_Instance_Id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		<property name="processInstanceId" column="process_Instance_Id" type="string"/>
+		<property name="fromActivityinstId" column="from_Activityinst_Id" type="string"/>
+		<property name="toActivityinstId" column="to_Activityinst_Id" type="string"/>
+		<property name="routeId" column="route_Id" type="string"/>
+		<property name="routeName" column="route_Name" type="string"/>
+		<property name="createDate" column="create_Date" type="java.util.Date"/>
+		
+	</class>
+</hibernate-mapping> 

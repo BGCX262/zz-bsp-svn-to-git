@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.abdf.model">
+	<class name="OnLineHelper" table="ABDF_ONLINE_HELPER">
+		<id name="onLineHelperId" type="string" unsaved-value="">
+			<column name="onLine_Helper_Id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		<property name="onLineHelperName" column="onLine_Helper_Name" type="string"/>
+		<property name="onLineHelperCode" column="onLine_Helper_Code" type="string"/>
+		<property name="parentId" column="parent_Id" type="string"/>
+		<property name="allParentId" column="all_Parent_Id" type="string" />
+		<property name="allParentName" column="all_Parent_Name" type="string" />
+		<property name="htmlContent" column="html_Content" type="string" />
+		<property name="orderShow" column="order_Show" type="float" />
+	</class>
+</hibernate-mapping>

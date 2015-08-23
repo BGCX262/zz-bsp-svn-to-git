@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="GBK"?>
+<validation-config>
+ <form name="BaseStationEdit" atClient="true" atServer="true" displayType="div" displayContent="all" serverType="handwork">
+ 
+  <field name="code" displayError="基站代号不能为空！">
+      <validation name="required"/> 
+  </field>
+  
+  <field name="name" displayError="基站名称不能为空！">
+    <validation name="required"/> 
+  </field>
+  
+  <field name="createTime" displayError="建站时间不能为空！">
+    <validation name="required"/>
+  </field>
+
+  <field name="northLatitude" displayError="北纬位置不能为空且必须为数字！">
+   <validation name="required"/>
+    <validation name="float"/>
+  </field>
+  
+  <field name="eastLongitude" displayError="东经位置不能为空且必须为数字！">
+   <validation name="required"/>
+    <validation name="float"/>
+  </field>
+  
+ </form>
+</validation-config>

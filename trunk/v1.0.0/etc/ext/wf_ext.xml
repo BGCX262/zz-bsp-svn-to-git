@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfExts>
+   <ext code="extText"  type="com.youthor.bsp.view.demo.wfwxt.ActivityStartEventTest" description="活动启动前事件测试"/>
+  <ext code="RouteFliterTest1"  type="com.youthor.bsp.view.demo.wfwxt.RouteFliterTest1" description="返回1的路由过滤策略"/>
+  <ext code="RouteFliterTest2"  type="com.youthor.bsp.view.demo.wfwxt.RouteFliterTest2" description="返回-1的路由过滤策略"/>
+  
+  <ext code="testFlowEndEvet"  type="com.youthor.bsp.view.demo.wfwxt.ProcessEndTest1" description="流程结束后事件"/>
+  
+   <ext code="initBaseForm"  type="com.youthor.gxunion.wfext.InitBaseFormEvent" description="初始化基站表单"/>
+   <ext code="backBaseForm"  type="com.youthor.gxunion.wfext.BackBaseFormEvent" description="回退时基站表单"/>
+   
+   <ext code="reDoEventTest"  type="com.youthor.gxunion.wfext.ReDoEventTest" description="重处理事件测试"/>
+    <ext code="cancelEventTest"  type="com.youthor.gxunion.wfext.CancelEventTest" description="流程取消事件"/>
+    <ext code="hangEventTest"  type="com.youthor.gxunion.wfext.HangEventTest" description="流程挂起事件"/>
+    
+    <ext code="initBranchForm1"  type="com.youthor.gxunion.wfext.InitBranchForm1" description="初始化分支表单1"/>
+    <ext code="initBranchForm2"  type="com.youthor.gxunion.wfext.InitBranchForm2" description="初始化分支表单2"/>
+    <ext code="initJoinA"  type="com.youthor.gxunion.wfext.InitJoinA" description="初始化聚合表单"/>
+    
+    
+     <ext code="routeSplitInitBranchForm"  type="com.youthor.gxunion.wfext.RouteSplitInitBranchForm" description="路由分单"/>
+    
+  
+</wfExts>

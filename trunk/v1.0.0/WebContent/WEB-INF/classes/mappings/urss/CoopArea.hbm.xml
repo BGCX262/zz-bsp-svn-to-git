@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+    <class name="CoopArea" table="URSS_COOP_AREA">
+        <id name="coopAreaId" type="string" unsaved-value="">
+            <column name="coop_area_id" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="coopAreaName" column="coop_area_name" type="string"/>
+        <property name="parentId" column="parent_id" type="string"/>
+        <property name="allParentName" column="all_Parent_Name" type="string"/>
+        
+        <property name="allParentId" column="all_parent_id" type="string"/>
+        <property name="coopAreaImg" column="coop_area_img" type="string"/>
+        <property name="isDynamic" column="is_dynamic" type="string"/>
+        <property name="implInf" column="impl_inf" type="string"/>
+        <property name="orderShow" column="order_show" type="float"/>
+        <property name="comId" column="com_Id" type="string"/>    
+    </class>
+</hibernate-mapping>

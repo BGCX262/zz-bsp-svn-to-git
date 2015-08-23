@@ -1,0 +1,16 @@
+#summary 如何配置环境.
+
+= Introduction =
+
+本系统使用strtus1 + spring2 + hibernate3 + mysql
+
+= Details =
+
+ * 把bsp\doc\sql\zzbsp.sql 导入到mysql中。
+ * 修改etc/jdbc/mysql.properties中的配置。
+ * SVN中的代码本身就是一个eclipse project,直接导入eclipse中就可以了
+ * 在Eclipse中配置好tomcat,在eclipse中运行tomcat,就可以访问
+ * 目前完成的工作主要是在用户权限管理和工作流程的定义
+ * 目前只支持在IE上运行
+
+就可以运行了。

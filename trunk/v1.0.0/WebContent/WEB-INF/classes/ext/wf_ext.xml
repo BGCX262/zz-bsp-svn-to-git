@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wfExts>
+   <ext code="extText"  type="com.youthor.bsp.view.demo.wfwxt.ActivityStartEventTest" description="活动启动前事件测试"/>
+  <ext code="RouteFliterTest1"  type="com.youthor.bsp.view.demo.wfwxt.RouteFliterTest1" description="返回1的路由过滤策略"/>
+  <ext code="RouteFliterTest2"  type="com.youthor.bsp.view.demo.wfwxt.RouteFliterTest2" description="返回-1的路由过滤策略"/>
+  
+  <ext code="testFlowEndEvet"  type="com.youthor.bsp.view.demo.wfwxt.ProcessEndTest1" description="流程结束后事件"/>
+</wfExts>

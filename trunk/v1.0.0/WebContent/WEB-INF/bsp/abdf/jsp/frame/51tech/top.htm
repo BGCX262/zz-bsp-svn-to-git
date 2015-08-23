@@ -1,0 +1,71 @@
+﻿
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<SCRIPT>
+  function ev_main(){
+	top.left.location.href="/bsp/abdf/jsp/frame/left.jsp";
+	if(parent.document.getElementById("mainFrame").cols=='0,10,*')
+	{
+		 top.leftIcon.resizeLeft();
+	}
+	var liObjs=document.getElementsByTagName("LI");
+		for(var i=0;i<liObjs.length;i++)
+		{
+		    liObjs[i].className="";
+		}
+		event.srcElement.parentElement.className="current";
+		 top.main.location.href="/bsp/abdf/jsp/frame/workDesk.jsp";
+	}
+	function ev_changeMenu(obj){
+		var sub_menu = document.getElementById("sub-menu");
+		//sub_menu.innerHTML = obj.innerHTML;
+		//协同区配置的链接url
+		var linkSrc = obj.getAttribute("linkSrc");
+        var funId = obj.getAttribute("funId");
+        var autoHidden = obj.getAttribute("autoHidden");
+		if(linkSrc!=""){
+		    if(autoHidden=='Y')
+		    {
+				if(parent.document.getElementById("mainFrame").cols=='0,10,*')
+				{
+				   top.leftIcon.resizeLeft();
+				}
+			}
+			top.main.lcation.href=linkSrc
+		}
+		top.left.location.href="/leftMenu_abdf.do?funId="+funId;
+		var liObjs=document.getElementsByTagName("LI");
+		for(var i=0;i<liObjs.length;i++)
+		{
+		    liObjs[i].className="";
+		}
+		obj.parentElement.className="current";
+	}
+</SCRIPT>
+
+<META content="MSHTML 6.00.2900.5583" name=GENERATOR></HEAD>
+<BODY style="MARGIN: 0px">
+<DIV align=center>
+<DIV style="WIDTH: 100%"><!-- top begin -->
+<DIV><LINK media=all href="skins/default/css/fe_bpaf_main.css" type=text/css 
+rel=stylesheet><LINK href="skins/default/css/mian.css" type=text/css 
+rel=stylesheet>
+<DIV>
+<DIV class=easyjfTopMenu>
+<DIV align=left>
+<UL>
+  <LI class=current><A onclick=ev_main() 
+  href="http://192.168.1.110/top_abdf.do#">首页</A> </LI>
+  <LI><A onclick=ev_changeMenu(this) href="http://192.168.1.110/top_abdf.do#" 
+  autoHidden="Y" linkSrc="" funId="ff8080811759435c011759487a470001">开发管理</A> 
+  </LI>
+  <LI><A href="http://192.168.1.110/top_abdf.do#">在线帮助</A> </LI></UL></DIV>
+<DIV class=box style="MARGIN-BOTTOM: 10px">
+<TABLE width="100%">
+  <TBODY>
+  <TR>
+    <TD width=150><STRONG><A 
+      href="http://192.168.1.110/top_abdf.do#">当前用户:刘正仁</A></STRONG></TD>
+    <TD>
+      <MARQUEE>公告： 
+<STRONG>这是公告内容</STRONG></MARQUEE></TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV></DIV></DIV></BODY></HTML>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update"
+    package="com.youthor.bsp.core.abdf.model">
+    <class name="MessageAccept" table="ABDF_MESSAGE_ACCEPT">
+        <id name="id" type="string" unsaved-value="">
+            <column name="ID" length="32" />
+            <generator class="uuid.hex" />
+        </id>
+
+        <property name="sendId" column="SEND_ID" type="string" />
+        <property name="ownerId" column="OWNER_ID" type="string" />
+        <property name="ownerName" column="OWNER_NAME" type="string" />
+        <property name="folderType" column="FOLDER_TYPE" type="string" />
+        <property name="folderIds" column="FOLDER_IDS" type="string" />
+        <property name="acceptTime" column="ACCEPT_TIME" type="java.util.Date" />
+        <property name="readFlag" column="READ_FLAG" type="string" />
+        <property name="readTime" column="READ_TIME" type="java.util.Date" />
+    </class>
+</hibernate-mapping>

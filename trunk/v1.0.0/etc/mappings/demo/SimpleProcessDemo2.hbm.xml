@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.youthor.bsp.core.demo.model.SimpleProcessDemo2" table="Simple_Process_Demo_2"  >
+		<id name="id" type="string"  column="id">
+          <generator class="uuid.hex"/>
+        </id>
+        <property name="name" type="string" >
+            <column name="name"  />
+        </property>
+        <property name="simpleId" type="string">
+            <column name="simple_Id" />
+        </property>
+        
+        
+       
+    </class>
+
+</hibernate-mapping>
+

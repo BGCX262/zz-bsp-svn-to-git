@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+	<class name="Resource" table="URSS_RESOURCE">
+		<id name="resourceId" type="string" unsaved-value="">
+			<column name="resource_Id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		<property name="resourceName" column="resource_Name" type="string"/>
+		<property name="resourceCode" column="resource_Code" type="string"/>
+		<property name="funModuleId" column="fun_Module_Id" type="string" />
+		<property name="isButton" column="is_Button" type="string"/>
+		<property name="buttonId" column="button_Id" type="string"/>
+		<property name="implJs" column="impl_Js" type="string"/>
+		<property name="groupName" column="group_Name" type="string"/>
+		<property name="implUrl" column="impl_Url" type="string"/>	
+		<property name="coopAreaId" column="coop_Area_Id" type="string"/> 
+		<property name="coopItemName" column="coop_Item_Name" type="string"/>
+		<property name="orderIndex" column="order_Index" type="float"/> 
+		<property name="orderIndexCoop" column="order_Index_Coop" type="float"/> 
+		<property name="coopImg" column="coop_Img" type="string"/> 
+		<property name="isMenuDisplay" column="is_Menu_Display" type="string"/> 
+		<property name="linkAssign" column="link_Assign" type="string"/>
+		<property name="assignMethod" column="assign_Method" type="string"/>
+		
+		<property name="haveOrgRight" column="have_Org_Right" type="string"/>
+		<property name="buttonStyle" column="button_Style" type="string"/>
+		<property name="linkAssignValue" column="link_Assign_Value" type="string"/>
+		<property name="parentResId" column="PARENT_RES_ID" type="string"/>
+		<property name="allParentResId" column="ALL_PARENT_RES_ID" type="string"/>
+		
+		<property name="appId" column="app_Id" type="string"/>
+		<property name="foldArea" column="fold_Area" type="string"/> 
+		<property name="processInfo" column="process_Info" type="string"/> 
+	</class>
+</hibernate-mapping>

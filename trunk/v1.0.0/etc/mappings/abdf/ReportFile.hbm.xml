@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping  package="com.youthor.bsp.core.abdf.model">
+    <class name="ReportFile" table="ABDF_REPORT_FILES">
+        <id name="id" type="string" >
+            <column name="ID" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="funModuleId" column="FUN_MODULE_ID" type="string"/>
+        <property name="fileName" column="FILE_NAME" type="string"/>
+        <property name="desc" column="MEMO" type="string"/>
+        <property name="funCode" column="FUN_CODE" type="string" update="false"/>
+        
+    </class>
+</hibernate-mapping>

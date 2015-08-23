@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.wfss.model">
+	<class name="Route" table="WFSS_ROUTE">
+	
+		<id name="routeId" type="string" unsaved-value="">
+			<column name="route_id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		<property name="processId" column="process_id" type="string"/>
+		<property name="activityId" column="activity_id" type="string"/>
+		<property name="routeName" column="route_name" type="string"/>
+		<property name="routeAlias" column="route_alias" type="string"/>
+		<property name="toProcessId" column="to_process_id" type="string"/>
+		<property name="toActivityRule" column="to_Activity_Rule" type="string"/>
+		<property name="toActivityId" column="to_Activity_Id" type="string"/>
+		<property name="toActivityEvent" column="to_Activity_Event" type="string"/>
+		<property name="fliterExpr" column="fliter_expr" type="string"/>
+		<property name="isPointToEnd" column="is_point_to_end" type="string"/>
+		<property name="isDefaultRoute" column="is_default_route" type="string"/>	
+		<property name="isRejectRoute" column="is_reject_route" type="string"/>
+		<property name="andRoute" column="and_route" type="string"/>
+		<property name="xorRoute" column="xor_route" type="string"/>
+		<property name="memo" column="memo" type="string"/>
+		<property name="orderIndex" column="order_index" type="float"/>
+		<property name="xorStrategy" column="xor_strategy" type="string"/>
+		<property name="xorStrategyScale" column="xor_strategy_scale" type="float"/>
+		<property name="isButton" column="is_button" type="string"/>
+		<property name="batchFlag" column="batch_flag" type="string"/>
+		
+	</class>
+</hibernate-mapping> 
+
+
+
+
+
+
+

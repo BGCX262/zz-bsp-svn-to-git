@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean name="/showButton,/saveButton,/deleteButton,/initButton,/listButton"
+          class="com.youthor.bsp.view.wfss.web.action.ButtonAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean>
+   
+ <bean name="/openRouteWindow,/wfOrgAsynSpread,/listWorkItemDoing,/showWorkItemDoing,
+ /listWorkItemDoen,/showWorkItemDoen,/showNextWorkItemDoing,/showLoopWorkItemDoen,/affirmDoThisWorkItem"
+          class="com.youthor.bsp.view.wfss.common.FlowAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean>
+
+
+   <bean name="/queryPageAppForm,/initAppForm,/saveAppForm,/deleteAppForm,/showAppForm"
+          class="com.youthor.bsp.view.wfss.web.action.AppFormAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean>
+ 	
+   <bean name="/getFormFieldByFormId,/initFormField,/showFormField,/saveFormField,/deleteFormField"
+          class="com.youthor.bsp.view.wfss.web.action.AppFormFieldAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean>
+ 	
+   <bean name="/queryPageProcess,/initProcess,/saveProcess,/deleteProcess,/showProcess"
+          class="com.youthor.bsp.view.wfss.web.action.ProcessAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+ 	   
+   </bean>
+ 	
+    <bean name="/initActivity,/saveActivity,/deleteActivity,/showActivity"
+          class="com.youthor.bsp.view.wfss.web.action.ActivityAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean>   
+   
+   <bean name="/initRoute,/saveRoute,/deleteRoute,/showRoute"
+          class="com.youthor.bsp.view.wfss.web.action.RouteAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean> 
+   
+   
+    <bean name="/listExpression,/saveExpression,/showExpression,/deleteExpression,/initExpression"
+          class="com.youthor.bsp.view.wfss.web.action.ExpressionAction" singleton="false">
+ 	    <property name="wfssServiceFacade"><ref bean="wfssServiceFacade"/></property>
+   </bean> 
+    
+</beans>

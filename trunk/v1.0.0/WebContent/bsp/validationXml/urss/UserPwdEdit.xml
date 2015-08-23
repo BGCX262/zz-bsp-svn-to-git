@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GBK"?>
+
+<validation-config>
+ <form name="UserPwdEdit" atClient="true" atServer="true" displayType="div" displayContent="all" >
+ <param index="0" page="true" value="pwd"/>
+  <field name="oldPwd" desc="原始密码">
+      <validation name="required" displayError="不能为空！"/> 
+  </field>
+  
+  <field name="pwd" desc="新密码">
+    <validation name="required" displayError="不能为空！"/> 
+  </field>
+  
+  <field name="rePwd" desc="重复新密码不能为空且与新密码必须相等！">
+    <validation name="required" displayError=""/> 
+    <validation name="equals" params="0" displayError=""/>
+  </field>
+ </form>
+</validation-config>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <form-beans>
+   <form-bean name="DictTypeForm" type="com.youthor.bsp.view.abdf.web.form.DictTypeForm" />
+    <form-bean name="DictForm" type="com.youthor.bsp.view.abdf.web.form.DictForm" />
+   <form-bean name="SubassemblyForm" type="com.youthor.bsp.view.abdf.web.form.SubassemblyForm" />
+    <form-bean name="DictTreeForm" type="com.youthor.bsp.view.abdf.web.form.DictTreeForm" />
+    <form-bean name="DictTypeTreeForm" type="com.youthor.bsp.view.abdf.web.form.DictTypeTreeForm" />
+    <form-bean name="OnLineHelperForm" type="com.youthor.bsp.view.abdf.web.form.OnLineHelperForm" />
+    <form-bean name="TreeForm" type="com.youthor.bsp.view.abdf.common.form.TreeForm" />
+    <form-bean name="InformationForm" type="com.youthor.bsp.view.abdf.web.form.InformationForm" />
+     <form-bean name="FavoriteItemForm" type="com.youthor.bsp.view.abdf.web.form.FavoriteItemForm" />
+    <form-bean name="InformationForm" type="com.youthor.bsp.view.abdf.web.form.InformationForm" />
+    <form-bean name="FavoriteItemForm" type="com.youthor.bsp.view.abdf.web.form.FavoriteItemForm" />
+    <form-bean name="MessageFolderForm" type="com.youthor.bsp.view.abdf.web.form.MessageFolderForm" />
+    <form-bean name="MessageAcceptForm" type="com.youthor.bsp.view.abdf.web.form.MessageAcceptForm" />
+    <form-bean name="MessageSendForm" type="com.youthor.bsp.view.abdf.web.form.MessageSendForm" />
+  </form-beans>
+  
+ <global-forwards>
+ </global-forwards>
+  <action-mappings>
+   <action path="/forwardWorkDesk_abdf" forward="/WEB-INF/bsp/abdf/jsp/frame/workDesk.jsp" />
+   <action path="/forwardIndex_abdf" forward="/index.jsp" />
+   <action path="/forwardReIndex_abdf" forward="/re_index.jsp" />
+   <action path="/forwardWindow_abdf" forward="/WEB-INF/bsp/abdf/jsp/frame/window.jsp" />
+   <action path="/forwardSyncTree_abdf" forward="/WEB-INF/bsp/abdf/jsp/component/tree/sync_tree.jsp" />
+   <action path="/forwardControlTreeForm_abdf" forward="/WEB-INF/bsp/control_tree/control_tree_form.jsp" />
+   <action path="/forwardDictTree_abdf" forward="/WEB-INF/bsp/abdf/jsp/dict_tree/dict_tree.jsp" />
+   <action path="/forwardControlTree_abdf" forward="/WEB-INF/bsp/control_tree/control_tree.jsp" />
+   <action path="/forwardDictTypeTree_abdf" forward="/WEB-INF/bsp/abdf/jsp/dict_type/dict_type_tree.jsp" />
+   <action path="/forwardTopLogo_abdf" forward="/WEB-INF/bsp/abdf/jsp/frame/top_logo.jsp" />
+   <action path="/forwardViewOnlineHelperFrame_abdf" forward="/WEB-INF/bsp/abdf/jsp/online_helper/view/online_helper_frame.jsp" />
+   <action path="/forwardTopWindow_abdf" forward="/WEB-INF/bsp/abdf/jsp/frame/top_window.jsp" />
+   <action path="/forwardLeft_abdf" forward="/WEB-INF/bsp/abdf/jsp/frame/left.jsp" />
+   <action path="/forwardMessageTree_abdf" forward="/WEB-INF/bsp/abdf/jsp/message/message_tree.jsp" />
+   <action path="/forwardOrgSelectFrame_abdf" forward="/WEB-INF/bsp/abdf/jsp/org_select/org_select_frame.jsp" />
+   <action path="/forwardViewOnlineHelperTree_abdf" forward="/WEB-INF/bsp/abdf/jsp/online_helper/view/online_helper_tree.jsp" />
+   <action path="/forwardViewOnlineHelperHome_abdf" forward="/WEB-INF/bsp/abdf/jsp/online_helper/view/online_helper_home.jsp" />
+   <action path="/forwardOnlineHelperTree_abdf" forward="/WEB-INF/bsp/abdf/jsp/online_helper/online_helper_tree.jsp" />
+   <action path="/forwardOfferOrgSelect_abdf" forward="/WEB-INF/bsp/abdf/jsp/org_select/offer_org_select.jsp" />
+   <action path="/forwardSelectHandle_abdf" forward="/WEB-INF/bsp/abdf/jsp/org_select/select_handle.jsp" />
+   <action path="/forwardSelectedOrg_abdf" forward="/WEB-INF/bsp/abdf/jsp/org_select/selected_org.jsp" /> 
+   <action path="/forwardBottomOrg_abdf" forward="/WEB-INF/bsp/abdf/jsp/org_select/bottom_org.jsp" /> 
+   <action path="/forwardSubassemblyTree_abdf" forward="/WEB-INF/bsp/abdf/jsp/subassembly/subassembly_tree.jsp" /> 
+   <action path="/forwardSubassemblyFrame_abdf" forward="/WEB-INF/bsp/abdf/jsp/subassembly/subassembly_frame.jsp" /> 
+   <action path="/forwardDictTypeFrame_abdf" forward="/WEB-INF/bsp/abdf/jsp/dict_type/dict_type_frame.jsp" /> 
+   <action path="/forwardOnlineHelperFrame_abdf" forward="/WEB-INF/bsp/abdf/jsp/online_helper/online_helper_frame.jsp" />
+   
+   <action path="/forwardDictFrame_addf" forward="/WEB-INF/bsp/abdf/jsp/dict/dict_frame.jsp" />
+   <action path="/forwardDictTypeFrame_abdf" forward="/WEB-INF/bsp/abdf/jsp/dict_type/dict_type_frame.jsp" />
+   
+  
+   <action path="/forwardNoPowerInfo_abdf" forward="/WEB-INF/bsp/abdf/no_power_info.jsp" />
+   
+   
+   
+  
+    <action path="/initFavorite_abdf" name="FavoriteItemForm" scope="request" parameter="initFavorite" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="initFavorite" path="/WEB-INF/bsp/abdf/jsp/favorite/add_favorite.jsp" />
+        </action>
+  
+  
+      <action path="/saveFavoriteItem_abdf" name="FavoriteItemForm" scope="request" parameter="saveFavoriteItem" type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="add_favorite_return" path="/WEB-INF/bsp/abdf/jsp/favorite/add_favorite_return.jsp" />
+     </action>
+     
+      <action path="/showFavorite_abdf" parameter="showFavorite" type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="showFavorite" path="/WEB-INF/bsp/abdf/jsp/favorite/show_favorite.jsp" />
+     </action>
+     
+     
+     
+  
+  
+  <action path="/initFavorite_abdf" name="FavoriteItemForm" scope="request" parameter="initFavorite" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="initFavorite" path="/WEB-INF/bsp/abdf/jsp/favorite/add_favorite.jsp" />
+        </action>
+  
+  
+      <action path="/saveFavoriteItem_abdf" name="FavoriteItemForm" scope="request" parameter="saveFavoriteItem" type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="add_favorite_return" path="/WEB-INF/bsp/abdf/jsp/favorite/add_favorite_return.jsp" />
+     </action>
+     
+      <action path="/showFavorite_abdf" parameter="showFavorite" type="org.springframework.web.struts.DelegatingActionProxy">
+        <forward name="showFavorite" path="/WEB-INF/bsp/abdf/jsp/favorite/show_favorite.jsp" />
+     </action>
+     
+  <action path="/downloadFile_abdf" parameter="downloadFile" type="org.springframework.web.struts.DelegatingActionProxy"/>
+
+  <action path="/getTopOnLineHelper_abdf" parameter="getTopOnLineHelper" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="onLineHelperList" path="/WEB-INF/bsp/abdf/jsp/online_helper/online_helper_list.jsp" />
+        </action>
+        
+        <action path="/initOnLineHelper_abdf" parameter="initOnLineHelper" name="OnLineHelperForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="onLineHelperEdit" path="/WEB-INF/bsp/abdf/jsp/online_helper/online_helper_edit.jsp" />
+        </action>
+        
+        
+        <action path="/deleteOnLineHelper_abdf" parameter="deleteOnLineHelper" name="OnLineHelperForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="onLineHelperEdit" path="/WEB-INF/bsp/abdf/jsp/online_helper/online_helper_edit.jsp" />
+              <forward name="delToList" path="/getTopOnLineHelper.do" />
+        </action>
+        
+        <action path="/deleteAttachHelp_abdf" parameter="deleteAttachHelp" name="OnLineHelperForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="delToList" path="/getTopOnLineHelper.do" />
+              
+        </action>
+        
+        <action path="/showOnLineHelperByCode_abdf" parameter="showOnLineHelperByCode" name="OnLineHelperForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="onLineHelperView" path="/WEB-INF/bsp/abdf/jsp/online_helper/view/online_helper_frame.jsp" />
+              
+        </action>
+        
+        
+    
+        <action path="/showOnLineHelper_abdf" parameter="showOnLineHelper" name="OnLineHelperForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="onLineHelperEdit" path="/WEB-INF/bsp/abdf/jsp/online_helper/online_helper_edit.jsp" />
+              <forward name="onLineHelperView" path="/WEB-INF/bsp/abdf/jsp/online_helper/view/online_helper_view.jsp" />
+        </action>
+        
+        
+        
+        
+         <action path="/moveOnLineHelper_abdf" parameter="moveOnLineHelper" name="OnLineHelperForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="onLineHelperEdit" path="/WEB-INF/bsp/abdf/jsp/online_helper/online_helper_edit.jsp" />
+              
+        </action>
+        
+         <action path="/saveOnLineHelper_abdf" parameter="saveOnLineHelper" name="OnLineHelperForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="onLineHelperEdit" path="/WEB-INF/bsp/abdf/jsp/online_helper/online_helper_edit.jsp" />
+        </action>
+        
+  
+    <action path="/getAllDictType_abdf"   parameter="getAllDictType" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictTypeList" path="/WEB-INF/bsp/abdf/jsp/dict_type/dict_type_list.jsp" />
+    </action>
+    
+    <action path="/initDictType_abdf"  name="DictTypeForm" scope="request"  parameter="initDictType" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictTypeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_type/dict_type_edit.jsp" />
+    </action>
+    
+    
+    <action path="/getDictTypeBymoduleName_abdf"   parameter="getDictTypeBymoduleName" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictTypeList" path="/WEB-INF/bsp/abdf/jsp/dict_type/dict_type_list.jsp" />
+    </action>
+    
+    <action path="/showDictType_abdf"   parameter="showDictType" name="DictTypeForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictTypeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_type/dict_type_edit.jsp" />
+    </action>
+    
+    <action path="/saveDictType_abdf"   parameter="saveDictType" name="DictTypeForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictTypeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_type/dict_type_edit.jsp" />
+    </action>
+    
+    <action path="/deleteDictType_abdf"   parameter="deleteDictType"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/getAllDictType.do" />
+    </action>
+    
+    <action path="/initDict_abdf"  name="DictForm" scope="request"  parameter="initDict" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictEdit" path="/WEB-INF/bsp/abdf/jsp/dict_type/dict/dict_edit.jsp" />
+    </action>
+    
+      <action path="/showDict_abdf"  name="DictForm" scope="request"  parameter="showDict" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictEdit" path="/WEB-INF/bsp/abdf/jsp/dict_type/dict/dict_edit.jsp" />
+    </action>
+    
+     <action path="/saveDict_abdf"  name="DictForm" scope="request"  parameter="saveDict" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictEdit" path="/WEB-INF/bsp/abdf/jsp/dict_type/dict/dict_edit.jsp" />
+    </action>
+    
+     <action path="/deleteDict_abdf"  name="DictForm" scope="request"  parameter="deleteDict" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="delToList" path="/WEB-INF/bsp/abdf/jsp/dict_type/dict/dict_edit.jsp" />
+    </action>
+    
+     <action path="/listDict_abdf"   scope="request"  parameter="listDict" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictList" path="/WEB-INF/bsp/abdf/jsp/dict_type/dict/dict_list.jsp" />
+    </action>
+    
+     <action path="/listDictTypeTree_abdf"   parameter="listDictTypeTree" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictTypeTreeList" path="/WEB-INF/bsp/abdf/jsp/dict_type_tree/dict_type_tree_list.jsp" />
+    </action>
+    
+    <action path="/initDictTypeTree_abdf"   parameter="initDictTypeTree" name="DictTypeTreeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictTypeTreeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_type_tree/dict_type_tree_edit.jsp" />
+    </action>
+    
+    <action path="/showDictTypeTree_abdf"   parameter="showDictTypeTree" name="DictTypeTreeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictTypeTreeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_type_tree/dict_type_tree_edit.jsp" />
+    </action>
+    
+     <action path="/saveDictTypeTree_abdf"   parameter="saveDictTypeTree" name="DictTypeTreeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dictTypeTreeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_type_tree/dict_type_tree_edit.jsp" />
+    </action>
+    
+    <action path="/getExeProperty_abdf"   parameter="getExeProperty"  type="org.springframework.web.struts.DelegatingActionProxy">
+    </action>
+    
+    
+    
+    <action path="/orgTree_abdf"   parameter="orgTree"   type="org.springframework.web.struts.DelegatingActionProxy">
+    </action>
+    
+     <action path="/getDataTable_abdf"   parameter="getDataTable"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="dataBaseList" path="/WEB-INF/bsp/abdf/jsp/database/database_list.jsp" />
+    </action>
+    
+    <action path="/buildXMLModelToText_abdf"   parameter="buildXMLModelToText"   type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="displayCodeToText" path="/WEB-INF/bsp/abdf/jsp/database/display_xml_model.jsp" />
+    </action>
+    
+      <action path="/buildXMLModelToFile_abdf"   parameter="buildXMLModelToFile"   type="org.springframework.web.struts.DelegatingActionProxy">
+    </action>
+    
+    
+    <action path="/linkDropDown_abdf"   parameter="linkDropDown"   type="org.springframework.web.struts.DelegatingActionProxy">
+    </action>
+    
+     <action path="/listTopNodeObjectByType_abdf"   parameter="listTopNodeObjectByType"   type="org.springframework.web.struts.DelegatingActionProxy">
+      <forward name="treeList" path="/WEB-INF/bsp/abdf/jsp/component/tree/top_tree_list.jsp" />
+    </action>
+    
+     <action path="/initTreeNodeObject_abdf"   parameter="initTreeNodeObject"  name="TreeForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+      <forward name="treeEdit" path="/WEB-INF/bsp/abdf/jsp/component/tree/tree_edit.jsp" />
+    </action>
+    
+   <action path="/saveTreeNodeObject_abdf"   parameter="saveTreeNodeObject" name="TreeForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+      <forward name="treeEdit" path="/WEB-INF/bsp/abdf/jsp/component/tree/tree_edit.jsp" />
+    </action>
+    
+     <action path="/showTreeNodeObject_abdf"   parameter="showTreeNodeObject" name="TreeForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+      <forward name="treeEdit" path="/WEB-INF/bsp/abdf/jsp/component/tree/tree_edit.jsp" />
+    </action>
+    
+         <action path="/moveTreeNode_abdf"   parameter="moveTreeNode" name="TreeForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+     
+    </action>
+    
+     <action path="/deleteTreeNodeObject_abdf"   parameter="deleteTreeNodeObject" name="TreeForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+     
+    </action>
+    
+    
+    
+    <action path="/top_abdf"   parameter="top"   type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="top" path="/WEB-INF/bsp/abdf/jsp/frame/top.jsp" />
+    </action>
+    
+      <action path="/leftCoopBarCode_abdf"   parameter="leftCoopBarByCode"   type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="leftCoopBarCode" path="/WEB-INF/bsp/abdf/jsp/frame/left_coop_bar.jsp" />
+    </action>
+    
+    
+    
+     <action path="/leftCoopBar_abdf"   parameter="leftCoopBar"   type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="leftCoopBar" path="/WEB-INF/bsp/abdf/jsp/frame/coop/leftCoop_mid.jsp" />
+    </action>
+    
+      <action path="/userCoopArea_abdf"   parameter="userCoopArea"   type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="userCoopArea" path="/WEB-INF/bsp/abdf/jsp/frame/coop_area_list.jsp" />
+    </action>
+    
+     <action path="/userCoopArea_abdf"   parameter="userCoopArea"   type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="userCoopArea" path="/WEB-INF/bsp/abdf/jsp/frame/coop_area_list.jsp" />
+    </action>
+    
+    <action path="/userLogonOn_abdf"   parameter="userLogonOn"   type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="userWindow" path="/WEB-INF/bsp/abdf/jsp/frame/window.jsp" />
+       <forward name="loginFail" path="/index.jsp" />
+       <forward name="mainWindow" path="/WEB-INF/bsp/abdf/jsp/frame/workDesk.jsp" />
+       
+    </action>
+    
+    <action path="/userLogOut_abdf"   parameter="userLogonOut"   type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="logoutSuccess" path="/index.jsp" />
+    </action>
+    
+     <action path="/selectUserOrg_abdf"   parameter="selectUserOrg"   type="org.springframework.web.struts.DelegatingActionProxy">
+    </action>
+    
+    <action path="/forwardSelectUserOrg_abdf" forward="/WEB-INF/bsp/abdf/jsp/frame/select_user_org.jsp"></action>
+    
+    
+    
+    
+    <action path="/leftMenu_abdf"   parameter="leftMenu"   type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="leftMenu" path="/WEB-INF/bsp/abdf/jsp/frame/left.jsp" />
+    </action>
+    
+    
+     <action path="/getAllSubassembly_abdf"   parameter="getAllSubassembly"   type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="subassemblyList" path="/WEB-INF/bsp/abdf/jsp/subassembly/subassembly_list.jsp" />
+    </action>
+    
+     <action path="/showSubassembly_abdf"   parameter="showSubassembly"  name="SubassemblyForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="subassemblyEdit2" path="/WEB-INF/bsp/abdf/jsp/subassembly/subassembly_edit_2.jsp" />
+    </action>
+    
+     <action path="/saveSubassembly_abdf"   parameter="saveSubassembly" name="SubassemblyForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="subassemblyEdit2" path="/WEB-INF/bsp/abdf/jsp/subassembly/subassembly_edit_2.jsp" />
+       <forward name="subassemblyFrame" path="/WEB-INF/bsp/abdf/jsp/subassembly/subassembly_frame.jsp" />
+    </action>
+    
+    <action path="/initSubassembly_abdf"   parameter="initSubassembly"  name="SubassemblyForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+       <forward name="subassemblyEdit1" path="/WEB-INF/bsp/abdf/jsp/subassembly/subassembly_edit_1.jsp" />
+    </action>
+    
+    
+        <action path="/getTopDictTreeByType_abdf" parameter="getTopDictTreeByType" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="dictTreeList" path="/WEB-INF/bsp/abdf/jsp/dict_tree/dict_tree_list.jsp" />
+        </action>
+        
+        <action path="/initDictTree_abdf" parameter="initDictTree" name="DictTreeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="dictTreeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_tree/dict_tree_form.jsp" />
+        </action>
+        
+        
+        <action path="/deleteDictTree_abdf" parameter="deleteDictTree" name="DictTreeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="delToList" path="/itsm/control_tree/control_tree_list_child.jsp" />
+              <forward name="dictTreeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_tree/dict_tree_form.jsp" />
+        </action>
+    
+        <action path="/showDictTree_abdf" parameter="showDictTree" name="DictTreeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="dictTreeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_tree/dict_tree_form.jsp" />
+        </action>
+        
+         <action path="/moveDictTree_abdf" parameter="moveDictTree" name="DictTreeForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="delToList" path="/WEB-INF/bsp/abdf/jsp/dict_tree/dict_tree_list.jsp" />
+              <forward name="dictTreeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_tree/dict_tree_form.jsp" />
+        </action>
+        
+         <action path="/saveDictTree_abdf" parameter="saveDictTree" name="DictTreeForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="dictTreeEdit" path="/WEB-INF/bsp/abdf/jsp/dict_tree/dict_tree_form.jsp" />
+        </action>
+        
+        <action path="/showSystemConf_abdf" parameter="showSystemConf"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="systemConfEdit" path="/WEB-INF/bsp/abdf/jsp/system_conf/system_conf_edit.jsp" />
+        </action>
+        <action path="/saveSystemConf_abdf" parameter="saveSystemConf"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="systemConfSave" path="/showSystemConf_abdf.do" />
+        </action>
+        
+        <!-- information  -->
+        <action path="/getInformationList_abdf" parameter="getInformationList" name="InformationForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="informationList" path="/WEB-INF/bsp/abdf/jsp/information/information_list.jsp" />
+        </action>
+        <action path="/initInformation_abdf" parameter="initInformation" name="InformationForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="informationEdit" path="/WEB-INF/bsp/abdf/jsp/information/information_edit.jsp" />
+        </action>
+        <action path="/deleteInformation_abdf" parameter="deleteInformation" name="InformationForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="delToList" path="/informationList.do" />
+        </action>
+        <action path="/deleteAttachInfor_abdf" parameter="deleteAttachInfor" name="InformationForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="informationEdit" path="/WEB-INF/bsp/abdf/jsp/information/information_edit.jsp" />
+        </action>
+        <action path="/viewInformation_abdf" parameter="viewInformation" name="InformationForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="informationView" path="/WEB-INF/bsp/abdf/jsp/information/information_view.jsp" />
+        </action>
+        <action path="/editInformation_abdf" parameter="editInformation" name="InformationForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="informationEdit" path="/WEB-INF/bsp/abdf/jsp/information/information_edit.jsp" />
+        </action>
+        <action path="/saveInformation_abdf" parameter="saveInformation" name="InformationForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="informationEdit" path="/WEB-INF/bsp/abdf/jsp/information/information_edit.jsp" />
+        </action>
+        <!--  end information  -->
+        
+        
+        <!-- message  -->
+        <action path="/enterUserMessage_abdf" parameter="initUserMessageFolder" name="MessageFolderForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="userFolderTree" path="/WEB-INF/bsp/abdf/jsp/message/message_frame.jsp" />
+        </action>
+        <action path="/listUserAllMessageAccept_abdf" parameter="getUserAllMessageAccept" name="MessageAcceptForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="userAllMessageAccept" path="/WEB-INF/bsp/abdf/jsp/message/message_accept_list.jsp" />
+        </action>
+        <action path="/editMessageSend_abdf" parameter="editMessageSend" name="MessageSendForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="messageSendEdit" path="/WEB-INF/bsp/abdf/jsp/message/message_send_edit.jsp" />
+        </action>
+        <action path="/saveMessageSend_abdf" parameter="saveMessageSend" name="MessageSendForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="messageSendEdit" path="/WEB-INF/bsp/abdf/jsp/message/message_send_edit.jsp" />
+        </action>
+        <action path="/listMessageSend_abdf" parameter="getMessageSendList" name="MessageSendForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="messageSendList" path="/WEB-INF/bsp/abdf/jsp/message/message_send_list.jsp" />
+        </action>
+        <action path="/sendMessageSend_abdf" parameter="sendMessageSend" name="MessageSendForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="messageSendResult" path="/WEB-INF/bsp/abdf/jsp/message/message_result.jsp" />
+        </action>
+        <action path="/deleteMessageSend_abdf" parameter="deleteMessageSend" name="MessageSendForm" scope="request"  type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="delToList" path="/WEB-INF/bsp/abdf/jsp/message/message_accept_edit.jsp" />
+        </action>
+        
+        <action path="/doReport_abdf" parameter="doReport"    type="org.springframework.web.struts.DelegatingActionProxy">
+        </action>
+        
+        
+        <action path="/getReportPage_abdf" parameter="getReportPage"   type="org.springframework.web.struts.DelegatingActionProxy">
+              <forward name="getReportPage" path="/WEB-INF/bsp/abdf/jsp/report/report_query_page.jsp" />
+        </action>
+        
+        
+        
+        
+        <!-- end message -->
+  </action-mappings>
+  
+  <controller>
+  </controller>
+  <plug-in className="com.youthor.bsp.view.abdf.common.plugin.InitURLDataPlugIn">
+       <set-property property="urlPath" value="/WEB-INF/classes/urls" />
+  </plug-in>
+  
+    <plug-in className="com.youthor.bsp.view.abdf.common.plugin.InitValdationPlugIn">
+       <set-property property="urlPath" value="/bsp/validationXml" />
+    </plug-in>
+</struts-config>

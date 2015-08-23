@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    <bean id="portalUrssServiceFacade"
+        class="com.youthor.bsp.core.facade.impl.PortalUrssServiceLocationFacade">
+        <property name="urssServiceFacade">
+            <ref bean="urssServiceFacade" />
+        </property>
+    </bean>
+
+
+    <bean id="abdfServiceFacade" parent="txProxyTemplate">
+        <property name="target">
+            <bean class="com.youthor.bsp.core.facade.impl.AbdfServiceImplFacade">
+                <property name="dictTypeDao">
+                    <ref bean="DAO_DictType" />
+                </property>
+                <property name="dictDao">
+                    <ref bean="DAO_Dict" />
+                </property>
+                <property name="dictTreeDao">
+                    <ref bean="DAO_DictTree" />
+                </property>
+                <property name="dictTreeTypeDao">
+                    <ref bean="DAO_DictTreeType" />
+                </property>
+                <property name="dataBaseDao">
+                    <ref bean="DAO_DataBase" />
+                </property>
+                <property name="subassemblyDao">
+                    <ref bean="DAO_Subassembly" />
+                </property>
+                <property name="formLayoutDao">
+                    <ref bean="DAO_FormLayout" />
+                </property>
+                <property name="treeComponentDao">
+                    <ref bean="DAO_TreeComponent" />
+                </property>
+                <property name="onLineHelperDao">
+                    <ref bean="DAO_OnLineHelper" />
+                </property>
+                <property name="attachmentDao">
+                    <ref bean="DAO_Attachment" />
+                </property>
+                <property name="systemConfDao">
+                    <ref bean="DAO_SystemConf" />
+                </property>
+                <property name="informationDao">
+                    <ref bean="DAO_Information" />
+                </property>
+                <property name="favoriteDao">
+                    <ref bean="DAO_Favorite" />
+                </property>
+                
+                <property name="messageSendDao">
+                    <ref bean="DAO_MessageSend" />
+                </property>
+                <property name="messageAcceptDao">
+                    <ref bean="DAO_MessageAccept" />
+                </property>
+                <property name="messageFolderDao">
+                    <ref bean="DAO_MessageFolder" />
+                </property>
+                <property name="orgDao">
+                    <ref bean="DAO_Org" />
+                </property>
+                
+                <property name="urlLogDao">
+                    <ref bean="DAO_UrlLog" />
+                </property>
+                
+                <property name="commonDao">
+                    <ref bean="DAO_Common" />
+                </property>
+                
+                <property name="reportQueryParaDao">
+                    <ref bean="DAO_ReportQueryPara" />
+                </property>
+                
+                <property name="reportFileDao">
+                    <ref bean="DAO_ReportFile" />
+                </property>
+                
+                
+            </bean>
+        </property>
+    </bean>
+
+
+    <bean id="DAO_DictType" class="com.youthor.bsp.core.abdf.dao.impl.DictTypeDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_Dict" class="com.youthor.bsp.core.abdf.dao.impl.DictDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_TreeComponent" class="com.youthor.bsp.core.abdf.dao.impl.TreeComponentImplDao"
+        parent="baseDAO" />
+    <bean id="DAO_DictTree" class="com.youthor.bsp.core.abdf.dao.impl.DictTreeDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_DataBase" class="com.youthor.bsp.core.abdf.dao.impl.DataBaseDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_Subassembly" class="com.youthor.bsp.core.abdf.dao.impl.SubassemblyDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_DictTreeType" class="com.youthor.bsp.core.abdf.dao.impl.DictTreeTypeDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_FormLayout" class="com.youthor.bsp.core.abdf.dao.impl.FormLayoutImplDao"
+        parent="baseDAO" />
+    <bean id="DAO_OnLineHelper" class="com.youthor.bsp.core.abdf.dao.impl.OnLineHelperDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_Attachment" class="com.youthor.bsp.core.abdf.dao.impl.AttachmentDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_SystemConf" class="com.youthor.bsp.core.abdf.dao.impl.SystemConfDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_Information" class="com.youthor.bsp.core.abdf.dao.impl.InformationDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_Favorite" class="com.youthor.bsp.core.abdf.dao.impl.FavoriteDaoImpl"
+        parent="baseDAO" />
+        
+    <bean id="DAO_MessageFolder" class="com.youthor.bsp.core.abdf.dao.impl.MessageFolderDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_MessageSend" class="com.youthor.bsp.core.abdf.dao.impl.MessageSendDaoImpl"
+        parent="baseDAO" />
+    <bean id="DAO_MessageAccept" class="com.youthor.bsp.core.abdf.dao.impl.MessageAcceptDaoImpl"
+        parent="baseDAO" />
+        
+    <bean id="DAO_UrlLog" class="com.youthor.bsp.core.abdf.dao.impl.UrlLogDaoImpl"
+        parent="baseDAO" />
+        
+    <bean id="DAO_Common" class="com.youthor.bsp.core.abdf.dao.impl.CommonDaoImpl"
+        parent="baseDAO" />
+        
+        <bean id="DAO_ReportQueryPara" class="com.youthor.bsp.core.abdf.dao.impl.ReportQueryParaDaoImpl"
+        parent="baseDAO" />
+        
+        <bean id="DAO_ReportFile" class="com.youthor.bsp.core.abdf.dao.impl.ReportFileDaoImpl"
+        parent="baseDAO" />
+        
+    <bean id="required" class="com.youthor.bsp.view.abdf.common.validation.impl.ValidationRequiredMethod"/>
+    <bean id="maxLength" class="com.youthor.bsp.view.abdf.common.validation.impl.ValidationMaxLengthMethod"/>    
+    <bean id="canNotSameValue" class="com.youthor.bsp.view.abdf.common.validation.impl.ValidationCanNotSameValueMethod"/>  
+    <bean id="hasForeignData" class="com.youthor.bsp.view.abdf.common.validation.impl.ValidationHasForeignDataValueMethod"/>
+        
+    
+</beans>

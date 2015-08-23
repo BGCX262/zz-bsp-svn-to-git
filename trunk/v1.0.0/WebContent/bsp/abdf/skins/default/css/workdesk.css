@@ -1,0 +1,70 @@
+HTML {
+	BACKGROUND: #fff; TEXT-ALIGN: center
+}
+BODY {
+	FONT: 12px/1.2 ����,'lucida grande',taho,verdana,'trebuchet ms',sans-serif; COLOR: #666; POSITION: relative; TEXT-ALIGN: left
+}
+
+DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px;
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px;
+	FONT-SIZE: 12px
+}
+
+.workdesk_container {
+	CLEAR: both; MARGIN-LEFT: auto! important; WIDTH: 800px; MARGIN-RIGHT: auto! important
+}
+
+#my_working {
+	FLOAT: left;WIDTH: 380px;BORDER-RIGHT: #d2d2d2 1px solid; BORDER-TOP: #d2d2d2 1px solid; 
+	BORDER-LEFT: #d2d2d2 1px solid; BORDER-BOTTOM: #d2d2d2 1px solid;
+	margin-left: 15px;margin-top: 15px
+}
+#my_working H2 {
+	BACKGROUND: url(/fe/bsp/abdf/skins/frame/images/workdesk/col_left1.jpg) no-repeat left top;
+	PADDING-RIGHT: 25px; PADDING-LEFT: 25px; PADDING-BOTTOM: 2px; MARGIN: -1px -1px 0px; COLOR: #fff; LINE-HEIGHT: 23px; PADDING-TOP: 6px; POSITION: relative; HEIGHT: 23px
+}
+#my_working UL {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 12px; LINE-HEIGHT: 23px; PADDING-TOP: 12px
+}
+#my_working LI {
+	BORDER-BOTTOM: #b7b7b7 1px dashed; HEIGHT: 23px; TEXT-ALIGN: right
+}
+#my_working LI A {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 240px; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+
+
+#my_worked {
+	FLOAT: right;WIDTH: 380px; BORDER-RIGHT: #d2d2d2 1px solid; BORDER-TOP: #d2d2d2 1px solid; 
+	BORDER-LEFT: #d2d2d2 1px solid; BORDER-BOTTOM: #d2d2d2 1px solid;
+	margin-left: 15px; margin-top: 15px;
+}
+#my_worked H2 {
+	BACKGROUND: url(/fe/bsp/abdf/skins/frame/images/workdesk/col_left1.jpg) no-repeat left top;
+	PADDING-RIGHT: 25px; PADDING-LEFT: 25px; PADDING-BOTTOM: 2px; MARGIN: -1px -1px 0px; COLOR: #fff; LINE-HEIGHT: 23px; PADDING-TOP: 6px; POSITION: relative; HEIGHT: 23px
+}
+#my_worked UL {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 12px; LINE-HEIGHT: 23px; PADDING-TOP: 12px
+}
+#my_worked LI {
+	BORDER-BOTTOM: #b7b7b7 1px dashed; HEIGHT: 23px; TEXT-ALIGN: right; 
+}
+#my_worked LI A {
+	FLOAT: left; OVERFLOW: hidden; WIDTH: 240px; TEXT-ALIGN: left; TEXT-DECORATION: none
+}

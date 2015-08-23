@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.wfss.model">
+	<class name="Expression" table="WFSS_EXPRESSION">
+	
+		<id name="expId" type="string" unsaved-value="">
+			<column name="exp_Id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		<property name="expName" column="exp_Name" type="string"/>
+		<property name="expType" column="exp_Type" type="string"/>
+		<property name="expContent" column="exp_Content" type="string"/>
+		<property name="expUseType" column="exp_Use_type" type="string"/>
+		<property name="comId" column="com_Id" type="string" update="false"/>
+		<property name="appId" column="app_Id" type="string"/>
+		<property name="appFormId" column="app_Form_Id" type="string"/>
+		
+				
+	</class>
+</hibernate-mapping>

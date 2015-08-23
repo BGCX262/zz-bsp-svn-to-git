@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dicts>
+   
+     <dict code="app" name="应用" type="com.youthor.bsp.view.urss.dict.AppDict"/>
+   <dict code="adminType" name="管理员类型" type="com.youthor.bsp.view.urss.dict.AdminType"/>
+   <dict code="appAdmin" name="应用管理员" type="com.youthor.bsp.view.urss.dict.AppAdmin"/>
+   <dict code="canAddUserComs" name="可注册公司用户的公司" type="com.youthor.bsp.view.urss.dict.RegComDict"/>
+   <dict code="orgType" name="组织架构类型" type="com.youthor.bsp.view.urss.dict.OrgTypeDict"/>
+   <dict code="ResourceDict" name="资源字典" type="com.youthor.bsp.view.urss.dict.ResourceDict"/>
+   <dict code="userRole" name="用户拥有的角色" type="com.youthor.bsp.view.urss.dict.UserRoleDict"/>
+   
+   <dict code="appForm" name="业务表单" type="com.youthor.bsp.view.wfss.dict.AppFormDict"/>
+   <dict code="pageInputType" name="页面控件类型" type="0">
+      <item value="text" text="文本框"/>
+      <item value="hidden" text="隐藏域"/>
+      <item value="textarea" text="多行文本域"/>
+      <item value="checkbox" text="多选框"/>
+      <item value="radio" text="单选框"/>
+      <item value="select" text="下拉框"/>
+      <item value="date" text="日期框"/>
+      <item value="dateTime" text="日期时间框"/>
+      <item value="childEditForm" text="子表"/>
+      <item value="file" text="单文件上传框"/>
+      <item value="fileList" text="多文件上传"/>
+      <item value="orgSelect" text="组织架构选择"/>
+      <item value="selectComp" text="选择组件"/>
+      <item value="dataStore" text="数据灵魂控件"/>
+      <item value="linkDown" text="联动下拉控件"/>
+      <item value="treeSelect" text="树型控件选择"/>
+   </dict>
+   <dict code="activity" name="根据流程id和得到环节列表" type="com.youthor.bsp.view.wfss.dict.ActivityDict"/>
+   <dict code="ProcessByAppId" name="根据应用id和得到流程" type="com.youthor.bsp.view.wfss.dict.ProcessDict"/>
+  
+</dicts>

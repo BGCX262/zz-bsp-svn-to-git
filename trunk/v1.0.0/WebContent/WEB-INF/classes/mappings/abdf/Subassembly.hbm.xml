@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.abdf.model">
+	<class name="Subassembly" table="ABDF_SUBASSEMBLY">
+		<id name="subassemblyId" type="string" unsaved-value="">
+			<column name="subassembly_Id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		 	     
+	    	       <property name="subassemblyName" column="SUBASSEMBLY_NAME" type="string"/>
+	    	       <property name="parentId" column="PARENT_ID" type="string"/>
+	    	       <property name="tableName" column="TABLE_NAME" type="string"/>
+	    	
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,264 @@
+BODY {
+	MARGIN: 0px; FONT: 12px/150% arial; BACKGROUND-COLOR: #fff
+}
+BODY {
+	WORD-BREAK: normal; WORD-WRAP: break-word
+}
+TABLE {
+	WORD-BREAK: normal; WORD-WRAP: break-word
+}
+TD {
+	WORD-BREAK: normal; WORD-WRAP: break-word
+}
+DIV {
+	WORD-BREAK: normal; WORD-WRAP: break-word
+}
+P {
+	WORD-BREAK: normal; WORD-WRAP: break-word
+}
+.win {
+	WORD-BREAK: normal; WORD-WRAP: break-word
+}
+.column {
+	WORD-BREAK: normal; WORD-WRAP: break-word
+}
+TD {
+	OVERFLOW: hidden
+}
+TH {
+	OVERFLOW: hidden
+}
+HR {
+	HEIGHT: 1px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+INPUT {
+	FONT: 13px Arial
+}
+SELECT {
+	FONT: 13px Arial
+}
+TEXTAREA {
+	FONT: 13px Arial
+}
+P {
+	MARGIN-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 4px 0px 4px 2px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+UL UL {
+	MARGIN-LEFT: 40px
+}
+A:link {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #b27c7c; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #fa7d3a; TEXT-DECORATION: underline
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H1 {
+	MARGIN: 15px 0px 10px; FONT: 2em/180% arial
+}
+H1.guide {
+	FONT-SIZE: 20px; MARGIN-BOTTOM: 10px; COLOR: #002858
+}
+H2 {
+	FONT: 1.5em/180% arial
+}
+H3 {
+	FONT: 1.4em/180% arial
+}
+#language {
+	MARGIN-TOP: 10px; FONT-SIZE: 12px; FLOAT: right
+}
+#language UL {
+	DISPLAY: inline
+}
+#language LI {
+	DISPLAY: block; BACKGROUND: url(../img/fe_bpaf/top/aliSearch_popBg.gif) #c4deed repeat-x 50% top; FLOAT: left; MARGIN-RIGHT: 4px
+}
+#language A:link {
+	DISPLAY: block; FONT: bold 11px/20px arial; WIDTH: 55px; HEIGHT: 21px; TEXT-ALIGN: center; TEXT-DECORATION: underline
+}
+#language A:visited {
+	DISPLAY: block; FONT: bold 11px/20px arial; WIDTH: 55px; HEIGHT: 21px; TEXT-ALIGN: center; TEXT-DECORATION: underline
+}
+.easyjfTopMenu {
+	CLEAR: both; MARGIN-TOP: 5px; BACKGROUND: url(../img/fe_bpaf/top/aliSearch_tabsBg.gif) #f5f8fb repeat-x 100% top
+}
+.easyjfTopMenu UL {
+	LIST-STYLE-IMAGE: none; MARGIN: 0px; LIST-STYLE-TYPE: none; HEIGHT: 30px
+}
+.easyjfTopMenu LI {
+	BACKGROUND: url(../img/fe_bpaf/top/aliSearch_tabsLeft.gif) #d6e5ee no-repeat left top; FLOAT: left; MARGIN-RIGHT: 2px
+}
+.easyjfTopMenu LI A {
+	PADDING-RIGHT: 10px; DISPLAY: block; PADDING-LEFT: 10px; BACKGROUND: url(../img/fe_bpaf/top/aliSearch_tabsRight.gif) #d6e5ee no-repeat right top; PADDING-BOTTOM: 7px; FONT: bold 13px/100% arial; MARGIN-LEFT: 2px; WIDTH: auto; COLOR: #455b80; PADDING-TOP: 7px
+}
+.easyjfTopMenu .box {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; BACKGROUND: url(../img/fe_bpaf/top/aliSearch_searchBg.gif) #3f80b1  left top; PADDING-BOTTOM: 6px; COLOR: #fff; PADDING-TOP: 6px; TEXT-ALIGN: center;repeat-x 100%
+}
+.easyjfTopMenu .box A {
+	COLOR: #fff
+}
+.easyjfTopMenu LI.current {
+	BACKGROUND: url(../img/fe_bpaf/top/aliSearch_current_tabsLeft.gif) #93c2de no-repeat left top; HEIGHT: 30px
+}
+.easyjfTopMenu LI.current A {
+	FONT-WEIGHT: bold; BACKGROUND: url(../img/fe_bpaf/top/aliSearch_current_tabsRight.gif) #93c2de no-repeat right top; COLOR: #172e54! important; TEXT-DECORATION: none
+}
+.easyjfTopMenu UL LI A {
+	outline: none
+}
+.easyjfTopMenu LI.other {
+	BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-LEFT: 20px
+}
+.easyjfTopMenu LI.other A {
+	FONT-WEIGHT: normal; FONT-SIZE: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; FONT-FAMILY: verdana
+}
+.missing {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; BACKGROUND: url(../img/fe_bpaf/top/aliSearch_popBg.gif) no-repeat 50% top; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+DIV.image75-left IMG {
+	CLEAR: both; FLOAT: left
+}
+DIV.image75-left P IMG {
+	CLEAR: none; FLOAT: none; WIDTH: auto
+}
+DIV.image75-left P {
+	MARGIN-BOTTOM: 0px; MARGIN-LEFT: 85px! important
+}
+DIV.image75-left LI IMG {
+	CLEAR: none; FLOAT: none; WIDTH: auto! important
+}
+DIV.image75-left P IMG {
+	CLEAR: none; FLOAT: none; WIDTH: auto! important
+}
+DIV.image75-left UL {
+	MARGIN-LEFT: 85px
+}
+.homeAd {
+	MARGIN-BOTTOM: 10px
+}
+#header {
+	BACKGROUND: url(../img/fe_bpaf/top/headCap.gif) #fff repeat-x;
+}
+#ejfLogo {
+	FLOAT: left; FONT: bold 10px verdana; MARGIN-RIGHT: 15px
+}
+#topADS IMG {
+	WIDTH: 650px! important
+}
+.header960 {
+	MARGIN: auto; WIDTH: 100%
+}
+.systemMenu {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; FONT: 0.85em verdana; PADDING-TOP: 3px; HEIGHT: 25px; TEXT-ALIGN: right
+}
+.systemMenu A:link {
+	FONT-SIZE: 12px; COLOR: #3d5376; TEXT-DECORATION: none
+}
+.systemMenu A:visited {
+	FONT-SIZE: 12px; COLOR: #3d5376; TEXT-DECORATION: none
+}
+.systemMenu A:hover {
+	FONT-SIZE: 12px; COLOR: #3d5376; TEXT-DECORATION: none
+}
+#topPage {
+	MARGIN: auto; WIDTH: 960px; TEXT-ALIGN: left; min-width: 760px; max-width: 960px
+}
+.importantNotice {
+	WIDTH: 100%; BORDER-BOTTOM: #aca899 1px solid; BACKGROUND-COLOR: #ffffe1; TEXT-ALIGN: center
+}
+.importantNotice A:link {
+	TEXT-DECORATION: underline
+}
+.win {
+	MARGIN-BOTTOM: 10px; MARGIN-RIGHT: 8px
+}
+.win H3 {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; FONT: bold 12px arial; MARGIN-LEFT: 2px; PADDING-TOP: 5px
+}
+.win H4 {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; FONT-SIZE: 1em; PADDING-BOTTOM: 0px; MARGIN: 0px -12px; COLOR: #888; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px dotted
+}
+.win .box {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 4px; LINE-HEIGHT: 20px; PADDING-TOP: 4px; TEXT-ALIGN: left
+}
+.winModelG {
+	BACKGROUND: url(../img/fe_bpaf/top/green/winModelLeft.gif) #b6e9bb no-repeat
+}
+.winModelG H3 {
+	BACKGROUND: url(../img/fe_bpaf/top/green/winModelRight.gif) #b6e9bb no-repeat right top; CURSOR: pointer; COLOR: #ffffff; BORDER-BOTTOM: #b6e9bb 1px solid
+}
+.winModelG H3 SPAN {
+	COLOR: #000
+}
+.winModelG .box {
+	BORDER-RIGHT: #b6e9bb 1px solid; BORDER-TOP: #b6e9bb 1px; BORDER-LEFT: #b6e9bb 1px solid; BORDER-BOTTOM: #b6e9bb 1px solid; BACKGROUND-COLOR: #e6ffee
+}
+.winModelGray {
+	BACKGROUND: url(../img/fe_bpaf/top/gray/winModelLeft.gif) #d0d1db no-repeat
+}
+.winModelGray H3 {
+	BACKGROUND: url(../img/fe_bpaf/top/gray/winModelRight.gif) #d0d1db no-repeat right top; CURSOR: pointer; BORDER-BOTTOM: #d0d1db 1px solid
+}
+.winModelGray .box {
+	BORDER-RIGHT: #d0d1db 1px solid; BORDER-TOP: #d0d1db 1px; BORDER-LEFT: #d0d1db 1px solid; BORDER-BOTTOM: #d0d1db 1px solid; BACKGROUND-COLOR: #efefef
+}
+.boxs A {
+	MARGIN: 10px 7px
+}
+.winModelBlue {
+	BACKGROUND: url(../img/fe_bpaf/top/blue/winModelLeft.gif) no-repeat
+}
+.winModelBlue H3 {
+	BACKGROUND: url(../img/fe_bpaf/top/blue/winModelRight.gif) #d0d1db no-repeat right top; CURSOR: pointer; BORDER-BOTTOM: #4b93ff 1px solid
+}
+.winModelBlue .box {
+	BORDER-RIGHT: #4b93ff 1px solid; BORDER-TOP: #4b93ff 1px; BORDER-LEFT: #4b93ff 1px solid; BORDER-BOTTOM: #4b93ff 1px solid; BACKGROUND-COLOR: #f1f4f9
+}
+.winModelD1ebf6 {
+	BACKGROUND: url(../img/fe_bpaf/top/d1ebf6/winModelLeft.gif) #d1ebf6 no-repeat
+}
+.winModelD1ebf6 H3 {
+	BACKGROUND: url(../img/fe_bpaf/top/d1ebf6/winModelRight.gif) #d1ebf6 no-repeat right top; CURSOR: pointer; BORDER-BOTTOM: #d1ebf6 1px solid
+}
+.winModelD1ebf6 .box {
+	BORDER-RIGHT: #d1ebf6 1px solid; BORDER-TOP: #d1ebf6 1px; BORDER-LEFT: #d1ebf6 1px solid; BORDER-BOTTOM: #d1ebf6 1px solid; BACKGROUND-COLOR: #f2fafd
+}
+.win .box LI {
+	LIST-STYLE-TYPE: none
+}
+.win .format {
+	PADDING-LEFT: 10px; LIST-STYLE-TYPE: none
+}
+.orglist {
+	FONT-WEIGHT: bold; COLOR: #000099; TEXT-ALIGN: center
+}
+.dotseparate406B8D {
+	PADDING-LEFT: 10px; BACKGROUND: url(../img/fe_bpaf/official_web/dot_406B8D.gif) no-repeat left center
+}
+.dotseparateBCC220 {
+	PADDING-LEFT: 10px; BACKGROUND: url(../img/fe_bpaf/official_web/dot_BCC220.gif) no-repeat left center
+}
+.dotseparateF72E2F {
+	PADDING-LEFT: 10px; BACKGROUND: url(../img/fe_bpaf/official_web/dot_F72E2F.gif) no-repeat left center
+}
+.dotseparatearrowhead {
+	PADDING-LEFT: 10px; BACKGROUND: url(../img/fe_bpaf/official_web/arrowhead.gif) no-repeat left center
+}

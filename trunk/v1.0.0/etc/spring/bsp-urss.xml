@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="urssServiceFacade" parent="txProxyTemplate" >
+        <property name="target">
+            <bean class="com.youthor.bsp.core.facade.impl.UrssServiceImplFacade">
+                <property name="regCompanyDao"><ref bean="DAO_RegCompany"/></property>
+                <property name="appDao"><ref bean="DAO_App"/></property>
+                 <property name="comUserDao"><ref bean="DAO_ComUser"/></property>
+                <property name="deskDao"><ref bean="DAO_Desk"/></property>
+                 <property name="roleDao"><ref bean="DAO_Role"/></property>
+                 <property name="functionDao"><ref bean="DAO_Function"/></property>
+                 <property name="resourceDao"><ref bean="DAO_Resource"/></property>
+                 <property name="orgDao"><ref bean="DAO_Org"/></property>
+                 <property name="coopAreaDao"><ref bean="DAO_CoopArea"/></property>
+                   <property name="userDao"><ref bean="DAO_User"/></property>
+                   <property name="postDao"><ref bean="DAO_Post"/></property>
+                   <property name="orgTypeDao"><ref bean="DAO_OrgType"/></property>
+                    <property name="rightDao"><ref bean="DAO_Right"/></property>
+                   <property name="postAssignDao"><ref bean="DAO_PostAssign"/></property>
+                    
+                   
+            </bean>
+        </property>
+    </bean>
+      
+   
+  <bean id="DAO_RegCompany" class="com.youthor.bsp.core.urss.dao.impl.RegCompanyDaoImpl" parent="baseDAO"/>
+  <bean id="DAO_App" class="com.youthor.bsp.core.urss.dao.impl.AppDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_ComUser" class="com.youthor.bsp.core.urss.dao.impl.ComUserDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_Desk" class="com.youthor.bsp.core.urss.dao.impl.DeskDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_Role" class="com.youthor.bsp.core.urss.dao.impl.RoleDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_Function" class="com.youthor.bsp.core.urss.dao.impl.FunctionDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_Resource" class="com.youthor.bsp.core.urss.dao.impl.ResourceDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_Org" class="com.youthor.bsp.core.urss.dao.impl.OrgDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_CoopArea" class="com.youthor.bsp.core.urss.dao.impl.CoopAreaDaoImpl" parent="baseDAO"/>
+    <bean id="DAO_User" class="com.youthor.bsp.core.urss.dao.impl.UserDaoImpl" parent="baseDAO"/>
+    <bean id="DAO_Post" class="com.youthor.bsp.core.urss.dao.impl.PostDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_OrgType" class="com.youthor.bsp.core.urss.dao.impl.OrgTypeDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_Right" class="com.youthor.bsp.core.urss.dao.impl.RightDaoImpl" parent="baseDAO"/>
+     <bean id="DAO_PostAssign" class="com.youthor.bsp.core.urss.dao.impl.PostAssignDaoImpl" parent="baseDAO"/>
+    
+    
+    
+</beans>

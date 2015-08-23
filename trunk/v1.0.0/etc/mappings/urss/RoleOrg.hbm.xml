@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+    <class name="RoleOrg" table="URSS_ROLE_ORG">
+        <id name="roleOrgId" type="string" unsaved-value="">
+            <column name="role_Org_Id" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="roleId" column="role_Id" type="string"/>
+        <property name="orgId" column="org_Id" type="string"/>
+        
+        <property name="createName" column="create_Name" type="string"/>
+        <property name="createId" column="create_Id" type="string"/>
+        <property name="createTime" column="create_Time" type="date"/>
+        <property name="systemIn" column="system_in" type="string"/>
+    </class>
+</hibernate-mapping>

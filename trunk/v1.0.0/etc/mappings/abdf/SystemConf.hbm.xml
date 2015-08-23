@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.abdf.model">
+	<class name="SystemConf" table="ABDF_SYSTEM_CONF">
+		<id name="key" type="string" unsaved-value="">
+			<column name="key" length="50"/>
+			<generator class="assigned" /> 
+		</id>
+	    	       <property name="value" column="VALUE" type="string"/>
+	    	       <property name="memo" column="MEMO" type="string" update="false"/>
+	    		   <property name="groupName" column="GROUP_NAME" type="string" update="false"/>
+	    		   <property name="inputType" column="INPUT_TYPE" type="string" update="false"/>
+	    		   <property name="dictTypeCode" column="DICT_TYPE_CODE" type="string" update="false"/>
+	    		   <property name="dictTypeValueType" column="DICT_TYPE_VALUE_TYPE" type="string" update="false"/>
+	    		   <property name="systemIn" column="SYSTEM_IN" type="string" update="false"/>
+	    		   <property name="notNull" column="not_null" type="string" update="false"/>
+	    		   
+	    		   
+	</class>
+</hibernate-mapping>

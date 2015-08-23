@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<!-- bean 映射到excel中的配置 -->
+<beanToExcel>
+	<sheet id="test1" name="测试1">
+		<column title="姓名" valueRef="name" defaultValue="张山" sortOrder="0" numberFlag="false" />
+		<column title="密码" valueRef="pwd" />
+		<column title="年龄" valueRef="age" defaultValue="18" sortOrder="2" numberFlag="true" />
+		<column title="其他" valueRef="other.other" defaultValue="18" sortOrder="3" numberFlag="false" />
+	</sheet>
+	<sheet id="test2" name="测试2">
+		<column title="title1" valueRef="name" />
+	</sheet>
+</beanToExcel>

@@ -1,0 +1,46 @@
+   <SCRIPT language=javascript>
+   function selectActivity(buttonTitle)
+   {
+      document.getElementById("workItemDoing_type").value=buttonTitle;
+   }
+Menu.prototype.cssFile = '<%=baseURL%>/bsp/abdf/skins/default/css/popmenu/officexp.css';
+ var defaultName = "全部待办";
+ var eMenuProcessType = new Menu();
+  eMenuProcessType.add(new MenuItem("全部待办", "javascript:addFavoriteURL()", "" ) );
+ <% List processList=WFCache.listProcess;;
+ if(processList!=null&&processList.size()>0)
+ {
+    for(int i=0;i<processList.size();i++)
+    {
+    	Process process=(Process)processList.get(i);
+    	%>
+    		
+    		var smProcess<%=i%> = new Menu();
+    		
+    		eMenuProcessType.add(new MenuItem("<%=process.getProcessName()%>", "#", "<%=baseURL%>/bsp/abdf/skins/default/img/toolbar/label.gif", smProcess<%=i%>));
+    	<%
+    	List childList=WFCache.listActivity;
+    	%>
+    	smProcess<%=i%>.add(new MenuItem("全部环节", "javascript:addFavoriteURL()", "" ) );
+    	<%
+    	
+    	for(int j=0;j<childList.size();j++)
+    	{
+    		Activity activity=(Activity)childList.get(j);
+    		if(activity.getProcessId().equals(process.getProcessId()))
+    		{
+    		%>
+    		smProcess<%=i%>.add(new MenuItem("<%=activity.getActivityName()%>", "javascript:selectActivity('<%=process.getProcessName()%>--<%=activity.getActivityName()%>')", "<%=baseURL%>/bsp/abdf/skins/default/img/toolbar/label.gif" ) );
+    		<%
+    		}
+    	}
+    }
+ }
+ %>
+ function showWorkItemDoing_type() {
+var el = window.event.srcElement;
+var left = window.event.screenX;
+var top = window.event.screenY;
+eMenuProcessType.show(left,top);
+}
+</SCRIPT>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.abdf.model">
+    <class name="FormLayout" table="abdf_form_layout">
+        <id name="formLayoutId" type="string" unsaved-value="">
+            <column name="FORM_LAYOUT_ID" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+                    
+                   <property name="propertyName" column="PROPERTY_NAME" type="string"/>
+                   <property name="propertyDes" column="PROPERTY_DES" type="string"/>
+                   <property name="inputType" column="INPUT_TYPE" type="string"/>
+                   <property name="inputKey" column="INPUT_KEY" type="string"/>
+                   <property name="cols" column="COLS" type="int"/>
+                   <property name="orderIndex" column="order_Index" type="int"/>
+                   <property name="parentId" column="parent_Id" type="string"/>
+                   <property name="propertyDataType" column="property_Data_Type" type="string"/>
+                   <property name="layoutGroup" column="layout_Group" type="string"/>
+                    
+                   
+            
+    </class>
+</hibernate-mapping>

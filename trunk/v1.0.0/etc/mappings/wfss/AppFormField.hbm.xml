@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.wfss.model">
+    <class name="AppFormField" table="WFSS_APP_FORM_FIELD">
+    
+        <id name="fieldId" type="string" unsaved-value="">
+            <column name="field_id" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="fieldName" column="field_name" type="string"/>
+        <property name="fieldAlias" column="field_alias" type="string"/>
+        <property name="fieldInputType" column="field_input_type" type="string"/>
+        <property name="appFormId" column="app_form_id" type="string"/>
+        <property name="isArray" column="is_array" type="string"/>
+        
+    </class>
+</hibernate-mapping>

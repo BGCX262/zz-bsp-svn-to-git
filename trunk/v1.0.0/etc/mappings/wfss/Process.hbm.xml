@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.wfss.model">
+    <class name="Process" table="WFSS_PROCESS">
+    
+        <id name="processId" type="string" unsaved-value="">
+            <column name="process_id" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="processName" column="process_name" type="string"/>
+        <property name="processAlias" column="process_alias" type="string"/>
+        <property name="orgId" column="org_id" type="string"/>
+        <property name="orgName" column="org_name" type="string"/>
+        <property name="orgTypeCode" column="org_type_code" type="string"/>
+        
+        <property name="appId" column="app_id" type="string"/>
+        <property name="appFormId" column="app_form_id" type="string"/>
+        <property name="firstActivityId" column="first_activity_id" type="string"/>
+        <property name="onStartEvent" column="on_start_event" type="string"/>
+        <property name="onEndEvent" column="on_end_event" type="string"/>
+        <property name="processImg" column="process_img" type="string"/>
+        <property name="cancellationEvent" column="cancellation_event" type="string"/>
+        <property name="hangEvent" column="hang_event" type="string"/>
+        <property name="editionId" column="edition_id" type="string"/>
+        <property name="isUsed" column="is_used" type="string"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,230 @@
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-size:12px;
+	font-family:Arial,宋体
+}
+
+/*超链接的样式（无下划线）*/
+A {color:#0033cc;  TEXT-DECORATION: none}
+A:hover{ color:#000099; }
+
+/*首页头部*/
+.top {
+	background-attachment: fixed;
+	background-image: url(images/title.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-bottom: 1px solid #2C59AA;
+	line-height: 61px;
+	height: 61px;
+}
+
+/*首页左栏*/
+.left_body {
+	background-color: #8DAAF4;
+	margin-top: 4px;
+	margin-right: 2px;
+	margin-left: 4px;
+	border-left: 1px solid #3657BF;
+	cursor: e-resize;
+	font-size: 12px;
+	
+}
+.right_body_left {
+	background-color: #FFFFFF;
+	border-left: 2px solid #8DAAF4;
+	border-right: 4px solid #8DAAF4;
+	border-top: 4px solid #8DAAF4;
+	cursor: e-resize;
+}
+
+.left_bt_l {
+	background-attachment: fixed;
+	background-image: url(images/left_bt_l.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 20px;
+	width: 16px;
+}
+
+.left_bt {
+	background-attachment: fixed;
+	background-image: url(images/left_bt_c.gif);
+	background-repeat: repeat-x;
+	background-position: center top;
+	height: 20px;
+	border-top: 1px solid #6C75D3;
+}
+
+.left_pin {
+	background-attachment: fixed;
+  width: 8; 
+  height: 14;
+  background-repeat: no-repeat; 
+  background-image: url(images/pin.gif); 
+  cursor:hand;
+}
+
+.left_pin_h {
+	background-attachment: fixed;
+  width: 14; 
+  height: 9;
+  background-repeat: no-repeat; 
+  background-image: url(images/pin_h.gif);     
+  cursor:hand;
+}
+
+/*首页右栏开始*/
+.right_body {
+	background-color: #FFFFFF;
+	border-left: 2px solid #8DAAF4;
+	border-right: 4px solid #8DAAF4;
+	border-top: 4px solid #8DAAF4;
+}
+.right_middle {
+	background-color: #FFFFFF;
+	border: 1px solid #6C75D3;
+	border-top: 0px solid;
+	overflow: auto;
+	width: 100%;
+	
+}
+
+.right_middle_left {
+	background-color: #FFFFFF;
+	border: 1px solid #6C75D3;
+	border-top: 0px solid;
+	overflow: auto;
+	width: 100%;
+	cursor:auto;
+	
+}
+
+.right_top {
+	background-color: #CEE2F9;
+	height: 30px;
+	border-left: 1px solid #6C75D3;
+	border-top: 1px solid #6C75D3;
+	border-right: 1px solid #6C75D3;	
+	font-size: 12px;
+	font-family: 宋体;
+}
+.right_left_top {
+	background-color: #CEE2F9;
+	height: 240px;
+	border-left: 1px solid #6C75D3;
+	border-top: 1px solid #6C75D3;
+	border-right: 1px solid #6C75D3;	
+	font-size: 12px;
+	font-family: 宋体;
+}
+
+.right_top_td {
+  border-bottom: 1px solid #6C75D3;
+}
+
+.right_bottom_left {
+	background-attachment: fixed;
+	background-image: url(images/right_bottom.gif);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	height: 21px;
+	background-color: #FFFFFF;
+	border-right: 1px solid #6C75D3;
+	border-left: 1px solid #6C75D3;
+	border-bottom: 1px solid #6C75D3;
+	font-size: 12px;
+	cursor:auto;
+}
+
+.right_bottom {
+	background-attachment: fixed;
+	background-image: url(images/right_bottom.gif);
+	background-repeat: repeat-x;
+	background-position: center bottom;
+	height: 21px;
+	background-color: #FFFFFF;
+	border-right: 1px solid #6C75D3;
+	border-left: 1px solid #6C75D3;
+	border-bottom: 1px solid #6C75D3;
+	font-size: 12px;
+}
+
+/*首页底部*/
+.bottom {
+	height: 7px;
+	width: 100%;
+}
+.bottom_l {
+	display: inline;
+	background-image: url(images/botbg_l.gif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: left top;
+	height: 7px;
+	width: 9px;
+}
+.bottom_r {
+	display: inline;
+	background-image: url(images/botbg_r.gif);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 7px;
+	width: 9px;
+}
+
+
+
+
+/*表单样式*/
+.tform {
+    font-size:12px;
+    border-left:1px solid #6C75D3;
+    border-top:1px solid #6C75D3;
+    background-color: #F3F8FD;
+}
+
+.tform td {
+    height: 15;
+    border-right:1px solid #6C75D3;
+    border-bottom:1px solid #6C75D3;
+    border-top:0px;
+    border-left:0px;
+    font-size:12px;
+    vertical-align: middle;
+}
+
+
+
+.tlist td {
+    height: 12;
+    border-right:1px solid #6C75D3;
+    border-bottom:1px solid #6C75D3;
+    border-top:0px;
+    border-left:0px;
+    font-size:12px;
+    vertical-align: middle;
+}
+
+.tlist thead {
+  COLOR: #000000; background-image: url(images/tlist_head.gif);; font-size: 9pt;
+}
+
+
+
+.tsearch td {
+    height: 22;
+    border-right:1px solid #6C75D3;
+    border-bottom:1px solid #6C75D3;
+    border-top:0px;
+    border-left:0px;
+    font-size:12px;
+    vertical-align: middle;
+}
+
+
+

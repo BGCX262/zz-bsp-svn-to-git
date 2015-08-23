@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update"
+	package="com.youthor.bsp.core.abdf.model">
+	<class name="Information" table="ABDF_INFORMATION">
+		<id name="infoId" type="string" unsaved-value="">
+			<column name="info_Id" length="32" />
+			<generator class="uuid.hex" />
+		</id>
+		<property name="infoType" column="INFO_TYPE" type="string" />
+		<property name="infoTitle" column="INFO_TITLE" type="string" />
+		<property name="htmlContent" column="HTML_CONTENT" type="string" />
+		<property name="infoStatus" column="INFO_STATUS" type="string" />
+		<property name="createTime" column="CREATE_TIME" type="java.util.Date" />
+		<property name="createOrgId" column="CREATE_ORG_ID" type="string" />
+		<property name="createOrgName" column="CREATE_ORG_NAME" type="string" />
+		<property name="abledDate" column="ABLED_DATE" type="java.util.Date" />
+		<property name="disabledDate" column="DISABLED_DATE" type="java.util.Date" />
+		<property name="url" column="URL" type="string" />
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+    <class name="Function" table="URSS_FUNCTION">
+        <id name="funModuleId" type="string" unsaved-value="">
+            <column name="fun_Module_Id" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="funModuleName" column="fun_Module_Name" type="string"/>
+        <property name="parentId" column="parent_Id" type="string"/>
+        <property name="allParentId" column="all_Parent_Id" type="string" />
+        <property name="allParentName" column="all_Parent_Name" type="string"/>
+        <property name="isMenu" column="is_Menu" type="string"/>
+        <property name="isPublic" column="is_Public" type="string"/>
+        <property name="implUrl" column="impl_Url" type="string"/>
+        <property name="smallImg" column="small_Img" type="string"/>    
+        <property name="bigImg" column="big_Img" type="string"/> 
+        <property name="funCode" column="fun_Code" type="string"/>
+        <property name="orderIndex" column="order_Index" type="float"/>  
+        <property name="appId" column="app_Id" type="string"/> 
+        <property name="windowStyle" column="window_Style" type="string"/> 
+        <property name="windowHeight" column="WINDOW_HEIGHT" type="int"/> 
+        <property name="windowWidth" column="WINDOW_WIDTH" type="int"/> 
+        <property name="foldArea" column="fold_Area" type="string"/>     
+    </class>
+</hibernate-mapping>

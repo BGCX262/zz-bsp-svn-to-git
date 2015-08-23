@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- 
+ * 精鹰中国javaScript 客户端验证框架xml配置文件示例
+ * 作者：刘正仁
+ * 创立时间:2006-07-20 22:07
+ */
+-->
+
+<!--   form
+(1)：name表单的名字，与actionForm中名字相同。与id也样同
+(2)：atClient是否要用客户端验证  
+(3): atServer是否要用服务端验证
+(4): displayType 显示方式，div 将创立层显示。alert 将用javascript的对话框显示
+(5): displayContent 否所有的错误信息全显示给用户
+-->
+
+<!--   field
+(1)：name表单字段域名与actionForm中的字段名一致。
+(2)：display-error发生错误是显示的信息
+(3):fevf(fireeagleValidationFlag的标示)  为draft时表示连保存为草稿也要验证
+(4):fire 点火这个验证的控件名 
+(5):value 点火这个验证的控件名的值 
+-->
+
+
+<!--   validation
+(1)：name验证名称，此名称是有限的，要根据实际使用不继完善。
+(2)：displayError发生错误是显示的信息
+-->
+
+<!--   param
+(1)：dataType此参数据的数据类型。  数据类型暂时没有用到
+(2)：page 是页面标示，为true时说明此参数据的值是从页面控件的值。此是value为页面控件的id.
+     为false时value的值就是参数的值
+(3):index地当是在子数据中并且page为true时此属性起作用，表明参数据是从此子数据的某一个控件的值。 且未用到，扩展后使用
+-->
+
+<!--   subForm  字表单
+(1)：name 代表用户总增加的数据条数，删除的也累加在内。
+(2):flagField子数据必填项，当此项为空，此条子数据一面的数据奖不做验证
+extJs="test()"
+-->
+
+
+<validation-config>
+ <form name="dictTypeEdit" atClient="true"  displayType="div" displayContent="all"  >
+  <field name="dictTypeCode" desc="字典类型代码" >
+  	<validation name="required" displayError="不能为空！" /> 
+  </field>
+  
+  <field name="dictTypeName" desc="字典类型名称"  >
+    <validation name="required" displayError="不能为空！"/> 
+  </field>
+  
+  <field name="moduleName" desc="所属模块不" >
+  	<validation name="required" displayError="不能为空！"/> 
+  </field>
+  
+
+ 
+  
+ </form>
+</validation-config>

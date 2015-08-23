@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+    <class name="Desk" table="URSS_DESK">
+    
+        <id name="deskId" type="string" unsaved-value="">
+            <column name="desk_id" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="deskName" column="desk_name" type="string"/>
+        <property name="initDisplay" column="init_display" type="string"/>
+        <property name="appId" column="app_id" type="string"/>
+        <property name="deskUrl" column="desk_url" type="string"/>
+        <property name="orderIndex" column="order_index" type="float"/>
+        <property name="comId" column="com_Id" type="string" update="false"/>    
+    </class>
+</hibernate-mapping>

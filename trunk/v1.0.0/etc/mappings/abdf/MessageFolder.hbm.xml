@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.abdf.model">
+	<class name="MessageFolder" table="ABDF_MESSAGE_FOLDER">
+		<id name="folderId" type="string" unsaved-value="">
+			<column name="folder_id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+	    	       <property name="folderName" column="FOLDER_NAME" type="string"/>
+	    	       <property name="systemIn" column="SYSTEM_IN" type="string"/>
+	    	       <property name="folderType" column="FOLDER_TYPE" type="string"/>
+	    	       <property name="parentId" column="PARENT_ID" type="string"/>
+	    	       <property name="allowSubFolder" column="ALLOW_SUB_FOLDER" type="string"/>
+	    	       <property name="putOrgIds" column="PUT_ORG_IDS" type="string"/>
+	    	       <property name="putOrgNames" column="PUT_ORG_NAMES" type="string"/>
+	    		   <property name="ownerId" column="OWNER_ID" type="string"/>
+	    		   <property name="ownerName" column="OWNER_NAME" type="string"/>
+	    		   <property name="parentIds" column="PARENT_IDS" type="string"/>
+	    		   <property name="parentNames" column="PARENT_NAMES" type="string"/>
+	</class>
+</hibernate-mapping>

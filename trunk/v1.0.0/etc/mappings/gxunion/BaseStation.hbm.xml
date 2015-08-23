@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.gxunion.core.model">
+	<class name="BaseStation" table="GXUNION_BASE_STATION">
+		<id name="id" type="string" unsaved-value="">
+			<column name="id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		 	      
+	    	       <property name="code" column="CODE" type="string"/>
+	    	       <property name="name" column="NAME" type="string"/>
+	    	       <property name="description" column="DESCRIPTION" type="string"/>
+	    	       <property name="northLatitude" column="NORTH_LATITUDE" type="float"/>
+	    	       <property name="eastLongitude" column="EAST_LONGITUDE" type="float"/>
+	    	       <property name="createOrgId" column="CREATE_ORG_ID" type="string"/>
+	    	       <property name="createOrgName" column="CREATE_ORG_NAME" type="string"/>
+	    	       <property name="createTime" column="CREATE_TIME" type="java.util.Date"/>
+	    	       <property name="updateOrgId" column="UPDATE_ORG_ID" type="string"/>
+	    	       <property name="updateOrgName" column="UPDATE_ORG_NAME" type="string"/>
+	    	       <property name="updateTime" column="UPDATE_TIME" type="java.util.Date"/>
+	    	       <property name="status" column="STATUS" type="string"/>
+	    	       <property name="memo" column="MEMO" type="string"/>
+	    	
+	</class>
+</hibernate-mapping>

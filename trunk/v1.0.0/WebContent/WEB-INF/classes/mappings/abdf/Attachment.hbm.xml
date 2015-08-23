@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.youthor.bsp.core.abdf.model.Attachment" table="abdf_attach"  >
+        <id name="attachId" type="string"  column="attach_Id">
+          <generator class="uuid.hex"/>
+        </id>
+
+        <property name="oriFileName" type="string" >
+            <column name="ori_File_Name"  not-null="true"/>
+        </property>
+   
+        <property name="filePath" type="string" >
+            <column name="file_Path"  />
+        </property>
+
+        <property name="realFileName" type="string">
+            <column name="real_File_Name" />
+        </property>
+        
+        <property name="fileSize" type="int" >
+            <column name="file_Size" />
+        </property>
+        
+        <property name="createId" type="string" update="false">
+            <column name="create_Id" />
+        </property>
+        
+         <property name="createName" type="string" update="false">
+            <column name="create_Name" />
+        </property>
+        
+          <property name="createTime" type="java.util.Date">
+            <column name="create_Time" />
+        </property>
+        
+        <property name="activityId" type="string" >
+            <column name="activity_Id" />
+        </property>
+
+  
+        <property name="activityName" type="string" >
+            <column name="activity_Name" />
+        </property>
+        
+          <property name="appId" type="string" >
+            <column name="app_Id" />
+        </property>
+
+    </class>
+
+</hibernate-mapping>
+

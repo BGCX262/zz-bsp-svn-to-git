@@ -1,0 +1,27 @@
+BODY {
+scrollbar-face-color:#3366CC;
+scrollbar-highlight-color:#FFFFFF;
+scrollbar-3dlight-color:#005100;
+scrollbar-darkshadow-color:#004000;
+scrollbar-shadow-color:#006000;
+scrollbar-arrow-color:#FFFFFF;
+scrollbar-track-color:#E0E0E0;
+font-size: 12px;
+}
+
+td {font-size: 12px}
+a {font-size: 12px; text-decoration: none; color: #000000}
+a:hover {font-size: 12px; color: #3366CC; text-decoration: underline}
+
+a.header {font-size: 12px; text-decoration: none; color: #000000}
+a.header:hover {font-size: 12px; color: #02CBFD}
+
+a.attach {font-size: 7pt; text-decoration: none; color: #3366CC}
+a.attach:hover {font-size: 7pt; color: #000000}
+
+.myinput { background-image:url(../images/bbk.gif);background-color:#D2EAFF;height=20;font-size:12px;border:#72BFFE 1px solid}
+.myinput3 { font-size:12px;border:#72BFFE 1px solid}
+.myinput2 { background-color:#D2EAFF;height=20;font-size:12px;border:#72BFFE 1px solid}
+.myselect {font-size:12px; background-color:#D2EAFF; border:#72BFFE 1px solid}
+.mytextarea { font-size:12px; line-height:150%; background-color:#D2EAFF; border:#72BFFE 1px solid}
+.myimg { border: 1 solid #000000}

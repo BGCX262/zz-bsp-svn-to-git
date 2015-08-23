@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.youthor.bsp.core.demo.model.SimpleProcessDemo" table="Simple_Process_Demo"  >
+		<id name="simpleId" type="string"  column="simple_Id">
+          <generator class="uuid.hex"/>
+        </id>
+        <property name="textDemo" type="string" >
+            <column name="text_Demo"  />
+        </property>
+        <property name="dateDemo" type="java.util.Date">
+            <column name="date_Demo" />
+        </property>
+        
+        <property name="selectDemo" type="string">
+            <column name="select_Demo" />
+        </property>
+        
+        <property name="checkBoxDemo" type="string" >
+            <column name="check_Box_Demo" />
+        </property>
+        
+         <property name="radioBoxDemo" type="string" >
+            <column name="radio_Box_Demo" />
+        </property>
+        
+       
+    </class>
+
+</hibernate-mapping>
+

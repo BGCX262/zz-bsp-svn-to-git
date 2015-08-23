@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="proxyTargetClass">
+            <value>true</value>
+        </property>
+        <property name="beanNames">
+            <list>
+                <value>/list*</value>
+                <value>/query*</value>
+            </list>
+        </property>
+        <property name="interceptorNames">
+            <list>
+                <value>pageAdvisor</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="pageAdvice" class="com.youthor.bsp.view.abdf.common.aop.page.PageAdvice" />
+
+    <bean id="pageAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice">
+            <ref local="pageAdvice" />
+        </property>
+        <property name="patterns">
+            <list>
+                <value>.*</value>
+            </list>
+        </property>
+    </bean>
+    
+    
+    <bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">
+        <property name="proxyTargetClass">
+            <value>true</value>
+        </property>
+        <property name="beanNames">
+            <list>
+                <value>/save*</value>
+                <value>/submit*</value>
+            </list>
+        </property>
+        <property name="interceptorNames">
+            <list>
+                <value>validationAdvisor</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="validationAdvice" class="com.youthor.bsp.view.abdf.common.aop.page.ValidationAdvice" />
+
+    <bean id="validationAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="advice">
+            <ref local="validationAdvice" />
+        </property>
+        <property name="patterns">
+            <list>
+                <value>.*</value>
+            </list>
+        </property>
+    </bean>
+    
+    <bean name="/initFavorite_abdf,/saveFavoriteItem_abdf,/showFavorite_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.FavoriteAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+   
+      <bean name="/getTopOnLineHelper_abdf,/initOnLineHelper_abdf,/saveOnLineHelper_abdf,/showOnLineHelper_abdf,/moveOnLineHelper_abdf,/deleteAttachHelp_abdf,
+      /deleteOnLineHelper_abdf,/showOnLineHelperByCode_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.OnLineHelperAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+  <bean name="/downloadFile_abdf"
+          class="com.youthor.bsp.view.abdf.common.action.AttachAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+   
+   <bean name="/getAllDictType_abdf,/initDictType_abdf,/getDictTypeBymoduleName_abdf,/showDictType_abdf,/saveDictType_abdf,/deleteDictType_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.DictTypeAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+   <bean name="/initDict_abdf,/showDict_abdf,/saveDict_abdf,/deleteDict_abdf,/listDict_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.DictAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+  
+  <bean name="/listDictTypeTree_abdf,/initDictTypeTree_abdf,
+       /showDictTypeTree_abdf,/saveDictTypeTree_abdf,/getExeProperty_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.DictTreeTypeAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+   <bean name="/listTopNodeObjectByType_abdf,/initTreeNodeObject_abdf,/saveTreeNodeObject_abdf,/showTreeNodeObject_abdf,/moveTreeNode_abdf,/deleteTreeNodeObject_abdf"
+          class="com.youthor.bsp.view.abdf.common.action.TreeComponentAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+  
+  
+  
+   
+ 
+  
+  <bean name="/orgTree_abdf"
+          class="com.youthor.bsp.view.abdf.common.action.OrgAction" singleton="false">
+        <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+  </bean>
+  
+     <bean name="/getDataTable_abdf,/buildXMLModelToText_abdf,/buildXMLModelToFile_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.CodeBuilderAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+  
+    <bean name="/linkDropDown_abdf"
+          class="com.youthor.bsp.view.abdf.common.action.ComponentAction" singleton="false">
+        
+  </bean>
+     <bean name="/top_abdf,/leftCoopBar_abdf,/leftMenu_abdf,/userLogonOn_abdf,/userLogOut_abdf,/userCoopArea_abdf,/selectUserOrg_abdf,/leftCoopBarCode_abdf"
+          class="com.youthor.bsp.view.abdf.common.action.WindowAction" singleton="false">
+         <property name="portalUrssServiceFacade"><ref bean="portalUrssServiceFacade"/></property>
+  </bean>
+  
+   <bean name="/getAllSubassembly_abdf,/initSubassembly_abdf,/saveSubassembly_abdf,/showSubassembly_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.SubassemblyAction" singleton="false">
+         <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+  </bean>
+  
+    <bean name="/getTopDictTreeByType_abdf,/initDictTree_abdf,/deleteDictTree_abdf,/showDictTree_abdf,/moveDictTree_abdf,/saveDictTree_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.DictTreeAction" singleton="false">
+          <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+     </bean>
+    
+    <bean name="/showSystemConf_abdf,/saveSystemConf_abdf"
+          class="com.youthor.bsp.view.abdf.web.action.SystemConfAction" singleton="false">
+          <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+     </bean>
+     
+     <bean name="/getInformationList_abdf,/initInformation_abdf,/deleteInformation_abdf,
+     /deleteAttachInfor_abdf,/viewInformation_abdf,/editInformation_abdf,/saveInformation_abdf" 
+         class="com.youthor.bsp.view.abdf.web.action.InformationAction" singleton="false">
+          <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+     </bean>
+     
+     <bean name="/enterUserMessage_abdf" 
+         class="com.youthor.bsp.view.abdf.web.action.MessageFolderAction" singleton="false">
+          <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+     </bean>
+     
+     <bean name="/listUserAllMessageAccept_abdf" 
+         class="com.youthor.bsp.view.abdf.web.action.MessageAcceptAction" singleton="false">
+          <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+     </bean>
+     
+     <bean name="/editMessageSend_abdf,/saveMessageSend_abdf,/sendMessageSend_abdf" 
+         class="com.youthor.bsp.view.abdf.web.action.MessageSendAction" singleton="false">
+          <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+     </bean>
+     
+     <bean name="/doReport_abdf,/getReportPage_abdf" 
+         class="com.youthor.bsp.view.abdf.web.action.ReportAction" singleton="false">
+          <property name="abdfServiceFacade"><ref bean="abdfServiceFacade"/></property>
+          <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+          <property name="jasperReportEngine"><ref bean="jasperReportEngine"/></property>
+          <property name="reportViewerMapping">
+            <map>
+                <entry key="htmlReportViewer"> 
+                    <ref bean="htmlReportViewer"></ref>
+                </entry>
+                <entry key="pdfReportViewer"> 
+                    <ref bean="pdfReportViewer"></ref>
+                </entry>
+                <entry key="excelReportViewer"> 
+                    <ref bean="excelReportViewer"></ref>
+                </entry>
+            </map>
+          </property>
+     </bean>
+</beans>

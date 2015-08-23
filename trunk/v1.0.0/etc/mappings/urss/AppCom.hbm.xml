@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+    <class name="AppCom" table="URSS_APP_COM">
+        <id name="appComId" type="string" unsaved-value="">
+            <column name="APP_COM_ID" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+                   <property name="appId" column="APP_ID" type="string"/>
+                   <property name="comId" column="COM_ID" type="string"/>
+                   <property name="status" column="STATUS" type="string"/>
+                   <property name="validDate" column="valid_date" type="java.util.Date"/>
+    </class>
+</hibernate-mapping>

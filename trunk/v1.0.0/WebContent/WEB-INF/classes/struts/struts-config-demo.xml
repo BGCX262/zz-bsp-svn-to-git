@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+  <form-beans>
+    <form-bean name="SimpleProcessDemoForm" type="com.youthor.bsp.view.demo.form.SimpleProcessDemoForm" />
+   
+  </form-beans>
+ <global-forwards>
+ </global-forwards>
+ 
+  <action-mappings>
+                                                   
+     <action path="/initSimpleProcessDemo_demo"   parameter="initSimpleProcessDemo"  name="SimpleProcessDemoForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoEdit" path="/bsp/abdf/jsp/demo/process/flow_demo_edit.jsp" />
+     </action>
+     
+      <action path="/showSimpleProcessDemo_demo"   parameter="showSimpleProcessDemo"  name="SimpleProcessDemoForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoEdit" path="/bsp/abdf/jsp/demo/process/flow_demo_edit.jsp" />
+     </action>
+     
+     
+    
+    <action path="/saveSimpleProcessDemo_demo"   parameter="saveSimpleProcessDemo"  name="SimpleProcessDemoForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoEdit" path="/bsp/abdf/jsp/demo/process/flow_demo_edit.jsp" />
+     </action>
+     
+     <action path="/submitSimpleProcessDemo_demo"   parameter="submitSimpleProcessDemo"  name="SimpleProcessDemoForm" scope="request" type="org.springframework.web.struts.DelegatingActionProxy">
+             <forward name="simpleProcessDemoEdit" path="/bsp/abdf/jsp/demo/process/flow_demo_edit.jsp" />
+     </action>
+     
+     
+    
+  </action-mappings>
+  
+  <controller>
+  </controller>
+ 
+</struts-config>

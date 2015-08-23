@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+	<class name="Right" table="URSS_RIGHT">
+		<id name="rightId" type="string" unsaved-value="">
+			<column name="right_Id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		<property name="resourceId" column="resource_Id" type="string"/>
+		<property name="funModuleId" column="fun_Module_Id" type="string"/>
+		<property name="appId" column="app_Id" type="string" />
+		<property name="memberId" column="member_Id" type="string"/>
+		<property name="memberType" column="member_Type" type="string"/>
+		<property name="orgIds" column="org_Ids" type="string"/>
+		<property name="orgNames" column="org_Names" type="string"/>
+		<property name="orgTypes" column="org_Types" type="string"/>	
+		<property name="orgFlag" column="org_Flag" type="string"/> 	
+	</class>
+</hibernate-mapping>

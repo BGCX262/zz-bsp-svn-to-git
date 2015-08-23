@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.abdf.model">
+    <class name="DictTreeType" table="ABDF_DICT_TREE_TYPE">
+        <id name="treeTypeId" type="string" unsaved-value="">
+            <column name="TREE_TYPE_ID" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+                   <property name="treeTypeName" column="TREE_TYPE_NAME" type="string"/>
+                   <property name="treeTypeCode" column="TREE_TYPE_CODE" type="string"/>
+                   <property name="modelClass" column="MODEL_CLASS" type="string"/>
+                   <property name="treeStyle" column="tree_Style" type="string"/>
+                   <property name="importJs" column="import_Js" type="string"/>
+                   <property name="extCheckMethod" column="ext_Check_Method" type="string"/>
+                   <property name="delMode" column="del_Mode" type="string"/>
+                   <property name="formId" column="form_id" type="string"/>
+                   <property name="moduleCode" column="module_code" type="string"/>
+                   <property name="deleteExt" column="delete_ext" type="string"/>
+            
+    </class>
+</hibernate-mapping>

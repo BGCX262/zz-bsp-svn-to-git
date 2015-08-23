@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.abdf.model">
+    <class name="DictType" table="ABDF_DICT_TYPE">
+        
+        <id name="dictTypeId" type="string" unsaved-value="">
+            <column name="dict_type_id" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="dictTypeName" column="dict_type_name" type="string"/>
+        <property name="dictTypeCode" column="dict_type_code" type="string"/>
+        <property name="moduleName" column="module_name" type="string"/>
+        <property name="comId" column="com_id" type="string" update="false"/>
+        
+    </class>
+</hibernate-mapping>

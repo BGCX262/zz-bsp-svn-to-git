@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+     <bean name="/initSimpleProcessDemo_demo,/saveSimpleProcessDemo_demo,/submitSimpleProcessDemo_demo,/showSimpleProcessDemo_demo,
+     /showSimpleProcessDemo1_demo,/submitSimpleProcessDemo1_demo,/showSimpleProcessDemo2_demo,/submitSimpleProcessDemo2_demo"
+          class="com.youthor.bsp.view.demo.action.SimpleProcessDemoAction" singleton="false">
+         <property name="simpleProcessDemoService"><ref bean="simpleProcessDemoService"/></property>
+   </bean>
+</beans>

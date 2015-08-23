@@ -1,0 +1,14 @@
+package $xmlModel.packageName;
+public class $xmlModel.className {
+   #foreach($field in $fieldInfo)
+     private $field.propertyJavaDataType $field.propertyName;
+  #end
+  #foreach($field in $fieldInfo)
+	  public $field.propertyJavaDataType get$field.getPropertyMethodDataType()(){
+		 return $field.propertyName;
+	  }
+	   public void set$field.getPropertyMethodDataType()($field.propertyJavaDataType $field.propertyName) {
+		this.$field.propertyName = $field.propertyName;
+	  }
+   #end
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.urss.model">
+    <class name="Role" table="URSS_ROLE">
+    
+        <id name="roleId" type="string" unsaved-value="">
+            <column name="role_Id" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="roleName" column="role_Name" type="string"/>
+        <property name="appId" column="app_Id" type="string"/>
+        <property name="comId" column="com_Id" type="string"/>
+        <property name="systemIn" column="SYSTEM_ID" type="string"/>
+        <property name="roleCode" column="ROLE_CODE" type="string"/>
+        
+    </class>
+</hibernate-mapping>

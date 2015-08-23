@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    <bean id="portalUrssServiceFacade" class="com.youthor.bsp.core.facade.impl.PortalUrssServiceLocationFacade" >
+     <property name="urssServiceFacade"><ref bean="urssServiceFacade"/></property>
+  </bean>
+
+  
+  <bean id="abdfServiceFacade" parent="txProxyTemplate" >
+        <property name="target">
+            <bean class="com.youthor.bsp.core.facade.impl.AbdfServiceImplFacade">
+                <property name="dictTypeDao"><ref bean="DAO_DictType"/></property>
+                <property name="dictDao"><ref bean="DAO_Dict"/></property>
+                <property name="dictTreeDao"><ref bean="DAO_DictTree"/></property>
+                 <property name="dictTreeTypeDao"><ref bean="DAO_DictTreeType"/></property>
+                <property name="dataBaseDao"><ref bean="DAO_DataBase"/></property>
+                <property name="subassemblyDao"><ref bean="DAO_Subassembly"/></property>
+                <property name="formLayoutDao"><ref bean="DAO_FormLayout"/></property>
+                <property name="treeComponentDao"><ref bean="DAO_TreeComponent"/></property>
+                <property name="onLineHelperDao"><ref bean="DAO_OnLineHelper"/></property>
+                 <property name="attachmentDao"><ref bean="DAO_Attachment"/></property>
+                
+            </bean>
+        </property>
+    </bean>
+      
+   
+  <bean id="DAO_DictType" class="com.youthor.bsp.core.abdf.dao.impl.DictTypeDaoImpl" parent="baseDAO"/>
+  <bean id="DAO_Dict" class="com.youthor.bsp.core.abdf.dao.impl.DictDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_TreeComponent" class="com.youthor.bsp.core.abdf.dao.impl.TreeComponentImplDao" parent="baseDAO"/>  
+   <bean id="DAO_DictTree" class="com.youthor.bsp.core.abdf.dao.impl.DictTreeDaoImpl" parent="baseDAO"/>
+  <bean id="DAO_DataBase" class="com.youthor.bsp.core.abdf.dao.impl.DataBaseDaoImpl" parent="baseDAO"/>
+   <bean id="DAO_Subassembly" class="com.youthor.bsp.core.abdf.dao.impl.SubassemblyDaoImpl" parent="baseDAO"/>  
+   <bean id="DAO_DictTreeType" class="com.youthor.bsp.core.abdf.dao.impl.DictTreeTypeDaoImpl" parent="baseDAO"/>  
+   <bean id="DAO_FormLayout" class="com.youthor.bsp.core.abdf.dao.impl.FormLayoutImplDao" parent="baseDAO"/>  
+   <bean id="DAO_OnLineHelper" class="com.youthor.bsp.core.abdf.dao.impl.OnLineHelperDaoImpl" parent="baseDAO"/>  
+    <bean id="DAO_Attachment" class="com.youthor.bsp.core.abdf.dao.impl.AttachmentDaoImpl" parent="baseDAO"/>  
+   
+   
+       
+</beans>

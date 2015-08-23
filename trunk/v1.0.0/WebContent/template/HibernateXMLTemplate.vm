@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="$xmlModel.packageName">
+	<class name="$xmlModel.className" table="$xmlModel.tableName">
+		<id name="$xmlModel.keyPropertyName" type="string" unsaved-value="">
+			<column name="$xmlModel.keyFieldName" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		 #foreach($field in $fieldInfo)
+	       <property name="$field.propertyName" column="$field.filedName" type="$field.propertyDataType"/>
+	    #end
+	
+	</class>
+</hibernate-mapping>

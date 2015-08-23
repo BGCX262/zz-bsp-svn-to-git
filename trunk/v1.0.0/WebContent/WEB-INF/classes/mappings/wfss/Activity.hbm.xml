@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.wfss.model">
+	<class name="Activity" table="WFSS_activity">
+	
+		<id name="activityId" type="string" unsaved-value="">
+			<column name="activity_id" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		<property name="processId" column="process_id" type="string"/>
+		<property name="activityName" column="activity_name" type="string"/>
+		<property name="activityAlias" column="activity_alias" type="string"/>
+		<property name="appFormId" column="app_form_id" type="string"/>
+		<property name="splitMode" column="split_mode" type="string"/>
+		<property name="splitStrategy" column="split_strategy" type="string"/>
+		<property name="splitId" column="split_id" type="string"/>
+		<property name="joinMode" column="join_mode" type="string"/>
+		<property name="joinStrategy" column="join_strategy" type="string"/>
+		<property name="joinId" column="join_id" type="string"/>
+		<property name="operateMode" column="operate_mode" type="string"/>	
+		<property name="operation" column="operation" type="string"/>
+		<property name="operateStrategy" column="operate_strategy" type="string"/>
+		<property name="isFirstNode" column="is_first_node" type="string"/>
+		<property name="onStartEvent" column="on_start_event" type="string"/>
+		<property name="onCompleteEvent" column="on_complete_event" type="string"/>
+		<property name="editFields" column="edit_fields" type="string"/>
+		<property name="notNullFields" column="not_null_fields" type="string"/>
+		<property name="editFieldsName" column="edit_fields_Name" type="string"/>
+		<property name="notNullFieldsName" column="not_null_fields_Name" type="string"/>
+		<property name="orderIndex" column="order_index" type="float"/>
+		<property name="allowUploadFile" column="allow_upload_file" type="string"/>	
+		<property name="appId" column="app_Id" type="string"/>	
+		<property name="startProcess" column="start_Process" type="string"/>	
+		
+	</class>
+</hibernate-mapping> 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+    <bean id="DAO_BaseStation" class="com.youthor.gxunion.core.dao.impl.BaseStationDAOImpl" parent="baseDAO"/>
+    
+    <bean id="baseStationService" parent="txProxyTemplate" >
+        <property name="target">
+            <bean class="com.youthor.gxunion.core.facade.impl.GxUnionServiceFacade">
+                <property name="baseStationDAO"><ref bean="DAO_BaseStation"/></property>   
+                  <property name="flowEngineDAO"><ref bean="DAO_FlowEngine"/></property>             
+            </bean>
+        </property>
+    </bean>
+    
+    <bean id="stockMonitorService" parent="txProxyTemplate" >
+        <property name="target">
+            <bean class="com.youthor.gxunion.core.facade.impl.StockMonitorFacade">
+            	<!-- 
+                <property name="baseStationDAO"><ref bean="DAO_BaseStation"/></property>
+                 -->                
+            </bean>
+        </property>
+    </bean>
+    
+</beans>

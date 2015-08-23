@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping  package="com.youthor.bsp.core.abdf.model">
+    <class name="ReportQueryPara" table="ABDF_REPORT_QUERY_PARA">
+        <id name="id" type="string" unsaved-value="">
+            <column name="ID" length="32"/>
+            <generator class="uuid.hex"/>
+        </id>
+        <property name="paraKey" column="PARA_KEY" type="string"/>
+        <property name="name" column="NAME" type="string"/>
+        
+        <property name="funModuleId" column="FUN_MODULE_ID" type="string"/>
+        
+        <property name="inputType" column="INPUT_TYPE" type="string"/>
+        <property name="dictTypeCode" column="DICT_TYPE_CODE" type="string"/>
+        <property name="notNull" column="NOT_NULL" type="string"/>
+        <property name="paraCol" column="PARA_COL" type="string"/>
+        <property name="dataType" column="DATA_TYPE" type="string"/>
+    </class>
+</hibernate-mapping>

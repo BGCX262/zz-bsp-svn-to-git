@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-cascade="save-update" package="com.youthor.bsp.core.abdf.model">
+	<class name="Favorite" table="ABDF_FAVORITE">
+		<id name="favoriteId" type="string" unsaved-value="">
+			<column name="FAVORITE_ID" length="32"/>
+			<generator class="uuid.hex"/>
+		</id>
+		 	     
+	    	       <property name="favoriteName" column="FAVORITE_NAME" type="string"/>
+	    	       <property name="parentId" column="PARENT_ID" type="string"/>
+	    	       <property name="orgId" column="ORG_ID" type="string"/>
+	    	       <property name="orgName" column="ORG_NAME" type="string"/>
+	    	       <property name="allParentId" column="all_Parent_Id" type="string" /> 
+		           <property name="allParentName" column="all_Parent_Name" type="string"/>
+		           <property name="orderIndex" column="order_Index" type="float"/> 
+	    	
+	</class>
+</hibernate-mapping>

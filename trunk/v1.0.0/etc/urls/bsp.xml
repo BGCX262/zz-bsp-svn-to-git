@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urls>
+       <!-- ABDF BEGIN -->
+        <url href="/userLogonOn_abdf.do" name="用户登陆" alertTime="5000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardSelectUserOrg_abdf.do" name="用户多身份选择界面显示" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/selectUserOrg_abdf.do" name="处理用户多身份选择" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardWindow_abdf.do" name="转入主界面" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardLeft_abdf.do" name="显示左边菜单" alertTime="5000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardWorkDesk_abdf.do" name="显示桌面" alertTime="5000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardTopWindow_abdf.do" name="顶部框架页" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardTopLogo_abdf.do" name="顶部Log" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/top_abdf.do" name="顶部菜单" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/leftCoopBarCode_abdf.do" name="协同菜单" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        
+        <url href="/showFavorite_abdf.do" name="展示收藏夹" alertTime="2000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardNoPowerInfo_abdf.do" name="显示没有权根页" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/userCoopArea_abdf.do" name="显示协同功能区" alertTime="2000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        
+        
+        <url href="/forwardOnlineHelperFrame_abdf.do" name="在级帮助框架页" alertTime="2000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/getTopOnLineHelper_abdf.do" name="在级帮助项层列表" alertTime="2000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardOnlineHelperTree_abdf.do" name="在级帮助树" alertTime="2000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/showOnLineHelper_abdf.do" name="在级帮助详细信息" alertTime="2000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/initOnLineHelper_abdf.do" name="在级帮助新增" alertTime="2000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/saveOnLineHelper_abdf.do" name="保存在级帮助" alertTime="2000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/deleteOnLineHelper_abdf.do" name="删除在级帮助" alertTime="2000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/deleteAttachHelp_abdf.do" name="删除在级帮助附件" alertTime="2000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/moveOnLineHelper_abdf.do" name="移动在级帮助" alertTime="2000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        
+        <url href="/forwardViewOnlineHelperFrame_abdf.do" name="在级帮助--查看" alertTime="2000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardViewOnlineHelperHome_abdf.do" name="在级帮助--查看主页码" alertTime="2000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardViewOnlineHelperTree_abdf.do" name="在级帮助--树" alertTime="2000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/initFavorite_abdf.do" name="添加到收藏夹" alertTime="2000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        
+        <url href="/saveFavoriteItem_abdf.do" name="保存收藏夹" alertTime="2000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        
+        <url href="/forwardOrgSelectFrame_abdf.do" name="选择组织架构架" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardOfferOrgSelect_abdf.do" name="提供组织选择" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardBottomOrg_abdf.do" name="选择组织构架-底部页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardSelectedOrg_abdf.do" name="选择组织构架-已选择组织" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardSelectHandle_abdf.do" name="选择组织构架-中间按钮页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/orgTree_abdf.do" name="选择组织构架-数据异常加裁页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/orgTree_abdf.do" name="选择组织构架-数据异常加裁页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        
+        <url href="/forwardDictTypeFrame_abdf.do" name="数据字典框架页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/getAllDictType_abdf.do" name="数据字典列表页" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/forwardDictTypeTree_abdf.do" name="数据字典树" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/showDictType_abdf.do" name="数据字典详细信息页" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/getDictTypeBymoduleName_abdf.do" name="数据字典-按名称分组" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/saveDictType_abdf.do" name="保存数据字典" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/addDictType_abdf.do" name="新增数据字典" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/deleteDictType_abdf.do" name="删除数据字典" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+         
+         
+         <url href="/listDictTypeTree_abdf.do" name="树型数据字典列表页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/showDictTypeTree_abdf.do" name="树型数据字典详细信息页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/initDictTypeTree_abdf.do" name="新增树型数据字典" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/saveDictTypeTree_abdf.do" name="保存树型数据字典" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/getExeProperty_abdf.do" name="树型数据字典--得到扩展属性" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         
+          <url href="/forwardFlowDemoList_demo.do" name="树型数据字典--得到扩展属性" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/userLogOut_abdf.do" name="用户退出" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         
+         <url href="/linkDropDown_abdf.do" name="联动下拉" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         
+         <url href="/getDataTable_abdf.do" name="代码生成器" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+          <url href="/buildXMLModelToText_abdf.do" name="代码生成器" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/downloadFile_abdf.do" name="下载附件" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         
+         
+         
+         <!-- ABDF END -->
+        
+        <!-- WFSS BEGIN -->
+        
+        
+        
+        <url href="/listWorkItemDoing_wfss.do" name="我的待办" alertTime="5000" isOftenUse="true" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/showWorkItemDoing_wfss.do" name="打开待办" alertTime="5000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/showSimpleProcessDemo_demo.do" name="处理流程DEMO待办" alertTime="5000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/initSimpleProcessDemo_demo.do" name="新建流程DEMO" alertTime="5000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/listProcessInstByOrgId_wfss.do" name="我的发起" alertTime="5000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        
+        <url href="/listButton_wfss.do" name="流程辅助按钮列表" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/showButton_wfss.do" name="流程辅助按钮详细信息" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/saveButton_wfss.do" name="保存流程辅助按钮" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        
+        <url href="/forwardAppFormFrame_wfss.do" name="业务表单框架页" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/queryPageAppForm_wfss.do" name="业务表单列表页" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/forwardAppFormTree_wfss.do" name="业务表单树" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/showAppForm_wfss.do" name="业务表单详细信息" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/saveAppForm_wfss.do" name="保存业务表单" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/getFormFieldByFormId_wfss.do" name="业务表单字段列表" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/initFormField_wfss.do" name="新增业务表单字段" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/initAppForm_wfss.do" name="新增业务表单" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/showFormField_wfss.do" name="业务表单字段详细信息" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/saveFormField_wfss.do" name="保存业务表单字段" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/deleteAppForm_wfss.do" name="删除业务表单" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/deleteFormField_wfss.do" name="删除业务表单字段" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        
+        
+        <url href="/queryPageProcess_wfss.do" name="流程定义列表页" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/forwardProcessEditFrame_wfss.do" name="流程定义--流程查看框架页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/showProcess_wfss.do" name="流程定义--流程详细信息页" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+        
+        <url href="/forwardProcessEditTree_wfss.do" name="流程定义--树" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+         <url href="/initProcess_wfss.do" name="流程定义--新增流程" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+        
+        <url href="/saveProcess_wfss.do" name="流程定义--保存流程" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/initActivity_wfss.do" name="流程定义--新增环节" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/showActivity_wfss.do" name="流程定义--环节详细信息页" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/saveActivity_wfss.do" name="流程定义--保存环节" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/initRoute_wfss.do" name="流程定义--新增路由" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/showRoute_wfss.do" name="流程定义--路由详细信息页" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/saveRoute_wfss.do" name="流程定义--保存路由" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+        
+        <url href="/deleteProcess_wfss.do" name="流程定义--删除流程" alertTime="1000" isOftenUse="true" isPublic="false" isLog="true" needLogData="false"/>
+        
+        <url href="/forwardEditFieldFrame_wfss.do" name="流程定义--选择可编辑字段框架页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardEditFieldOffer_wfss.do" name="流程定义--提供可编辑字段选择页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardEditFieldBottom_wfss.do" name="流程定义--提供可编辑字段按钮页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="true" needLogData="false"/>
+        
+        <url href="/forwardNotNullFieldFrame_wfss.do" name="流程定义--选择不为空字段框架页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardNotNullFieldOffer_wfss.do" name="流程定义--提供不为空字段选择页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardNotNullFieldBottom_wfss.do" name="流程定义--提供不为空字段按钮页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="true" needLogData="false"/>
+        
+        <url href="/forwardButtonSubmtView_wfss.do" name="打开流程意见输入-路由转按钮" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/openRouteWindow_wfss.do" name="打开路由选择页面" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardOrgSelectFrame_wfss.do" name="打开路由执行人选择" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardOfferOrgSelect_wfss.do" name="流程执行人选择--提供人员" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardSelectHandle_wfss.do" name="流程执行人选择--按钮页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardSelectOrg_wfss.do" name="流程执行人选择--已选执行人页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardBottomtOrg_wfss.do" name="流程执行人选择--底部按钮页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/wfOrgAsynSpread_wfss.do" name="流程执行人选择--执行人数据加载" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        
+        <url href="/showNextWorkItemDoing_wfss.do" name="继续处理下一条待办" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/listWorkItemDoen_wfss.do" name="已办" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/showWorkItemDoen_wfss.do" name="打开已办" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/redoWorkItem_wfss.do" name="重处理" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/cancelProcessInst_wfss.do" name="流程作废" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardWorkItemDoingQuery_wfss.do" name="流程查询" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        
+        
+        
+         <url href="/forwardProcessSelectFrame_wfss.do" name="流程选择框架页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardProcessSelectBottom_wfss.do" name="流程选择底部按钮页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/offerProcessSelect_wfss.do" name="提供流程选择" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/addProcessToEdition_wfss.do" name="增加流程到版本" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        
+        <url href="/showAgent_wfss.do" name="显示代理人主设置" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/saveAgent_wfss.do" name="保存代理人主设置" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+         
+          <url href="/forwardJumpActivitySelect_wfss.do" name="转向跳转页" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+         <url href="/assignOtherUserProcess_wfss.do" name="转他人处理" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+          <url href="/jumpToOtherActivity_wfss.do" name="跳转处理页" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+          
+           <url href="/initProcessAttach_wfss.do" name="上传附件初始页" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+            <url href="/saveProcessAttach_wfss.do" name="上传附件保存" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        
+        
+        <!-- WFSS END -->
+        
+        
+        <!-- URSS BEGIN -->
+        <url href="/forwardFunctionFrame_urss.do" name="功能定义框架页" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardFunctionTree_urss.do" name="展示功能树" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/getTopFunctionByAppId_urss.do" name="展示应用项层功能" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/initFunction_urss.do" name="新增功能" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/showFunction_urss.do" name="展示功能详细信息" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/saveFunction_urss.do" name="保存功能" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/getAllResourceByFunId_urss.do" name="展示功能下资源" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/moveFunction_urss.do" name="移动资源" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/initResource_urss.do" name="新增资源" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/showResource_urss.do" name="展示资源详细信息" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/saveResource_urss.do" name="保存资源" alertTime="1000" isOftenUse="false" isPublic="true" isLog="true" needLogData="false"/>
+        <url href="/forwardRoleRightFrame_urss.do" name="角色权根分配框架页" alertTime="1000" isOftenUse="false" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/forwardRoleRightTree_urss.do" name="角色权根分配角色树" alertTime="1000" isOftenUse="false" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/forwardRoleRightDes_urss.do" name="没有选择角色时的提示页" alertTime="500" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardRightFunctionTree_urss.do" name="角色/用户权根分配的功能树" alertTime="500" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/getFunctionByRoleId_urss.do" name="显示某角色的权根" alertTime="500" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/saveRoleRight_urss.do" name="保存角色权根" alertTime="500" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/deleteResource_urss.do" name="删除资源" alertTime="500" isOftenUse="false" isPublic="true" isLog="true" needLogData="true"/>
+        <url href="/getOrgTypeByComId_urss.do" name="显示组织架构类型列表" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/showOrgType_urss.do" name="显示组织架构类型详细信息" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/saveOrgType_urss.do" name="保存组织架构类型" alertTime="1000" isOftenUse="false" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/initOrgType_urss.do" name="新增组织架构类型" alertTime="1000" isOftenUse="ture" isPublic="false" isLog="true" needLogData="false"/>
+        <url href="/forwardOrgFrame_urss.do" name="组织架构框架页" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/forwardOrgTree_urss.do" name="组织架构树" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/showOrg_urss.do" name="查看组织详细信息" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/orgTree_urss.do" name="组织数据异步加载" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/initOrg_urss.do" name="新增组织" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/saveOrg_urss.do" name="保存组织" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/moveOrg_urss.do" name="移动组织" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="deleteOrg_urss.do" name="删除组织" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        
+        <url href="/getCoopAreaByComId_urss.do" name="协同区列表" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/initCoopArea_urss.do" name="新增协同区" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/saveCoopArea_urss.do" name="保存协同区" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/showCoopArea_urss.do" name="协同区详细信息" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/forwardSelectCoop_urss.do" name="协同区选择--框架页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardResCoopAreaTree_urss.do" name="协同区选择--协同区树" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/deleteCoopArea_urss.do" name="删除协同区" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        
+        <url href="/showAppByCode_urss.do" name="查看应用信息" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/saveApp_urss.do" name="保存应用信息" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        
+        <url href="/showSystemConf_abdf.do" name="查看系统参数配置信息" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/saveSystemConf_abdf.do" name="保存系统参数配置信息" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        
+        
+        <url href="/forwardUserFrame_urss.do" name="用户管理框架页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardUserTree_urss.do" name="用户管理--组织架构树" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/orgTreeUser_urss.do" name="用户管理--组织架构树--数据异步加载" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/listPageUnUserByOrgId_urss.do" name="未定义用户列表" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/listPageUserByOrgId_urss.do" name="已定义用户列表" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/showUser_urss.do" name="查看用户详细信息" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/initUser_urss.do" name="新建用户" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/saveUser_urss.do" name="保存用户" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/deleteUser_urss.do" name="删除查询角色下用户 " alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/deleteRoleOrg_urss.do" name="删除用户 " alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/forwardPwdEdit_urss.do" name="修改密码" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/validateOrgTypeIsUseing_urss.do" name="验证组织架构类型的停用/启用" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        
+        
+        
+        <url href="/forwardRoleFrame_urss.do" name="角色框架页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardRoleTree_urss.do" name="角色树" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/getTopRoleByAppIdAndComId_urss.do" name="角色列表" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/initRole_urss.do" name="新增角色" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/showRole_urss.do" name="角色详细信息" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/saveRole_urss.do" name="保存角色" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/listRoleOrgByRoleId_urss.do" name="管理角色下用户" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/saveRoleOrg_urss.do" name="保存角色下加用户" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/forwardRoleOrgQuery_urss.do" name="打开用户查询页" alertTime="1000" isOftenUse="true" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/deleteRole_urss.do" name="删除角色" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/queryRoleOrg_urss.do" name="查询角色下用户" alertTime="1000" isOftenUse="true" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/addRoleOrgFormQuery_urss.do" name="新增查询角色下用户" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/deleteRoleOrgFormQuery_urss.do" name="删除查询角色下用户" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        
+        <url href="/forwardUserRightFrame_urss.do" name="用户权限分配框架页" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/forwardUserRightDes_urss.do" name="用户权限分配描述页" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/orgTreeUserRight_urss.do" name="组织树" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/showUserRight_urss.do" name="显示用户权限" alertTime="1000" isOftenUse="false" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/saveUserRight_urss.do" name="保存用户权限" alertTime="1000" isOftenUse="false" isPublic="false" isLog="false" needLogData="false"/>
+        
+        <url href="/listProcessEdition_wfss.do" name="流程版本列表" alertTime="1000" isOftenUse="false" isPublic="false" isLog="false" needLogData="false"/>
+         <url href="/initProcessEdition_wfss.do" name="新增流程版本" alertTime="1000" isOftenUse="false" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/saveProcessEdition_wfss.do" name="保存流程版本" alertTime="1000" isOftenUse="false" isPublic="false" isLog="false" needLogData="false"/>
+        <url href="/showProcessEdition_wfss.do" name="流程版本详细信息" alertTime="1000" isOftenUse="false" isPublic="false" isLog="false" needLogData="false"/>
+        
+        
+       
+        <!-- URSS END -->
+        
+        
+        
+        <url href="/submitSimpleProcessDemo_demo.do" name="保存用户权限" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/showSimpleProcessDemo1_demo.do" name="保存用户权限" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+       <url href="/submitSimpleProcessDemo1_demo.do" name="保存用户权限" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+         
+         <url href="/showSimpleProcessDemo2_demo.do" name="保存用户权限" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/submitSimpleProcessDemo2_demo.do" name="保存用户权限" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        
+        <url href="/doReport_abdf.do" name="生成报表" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        <url href="/getReportPage_abdf.do" name="报表参数据页" alertTime="1000" isOftenUse="false" isPublic="true" isLog="false" needLogData="false"/>
+        
+    </urls>

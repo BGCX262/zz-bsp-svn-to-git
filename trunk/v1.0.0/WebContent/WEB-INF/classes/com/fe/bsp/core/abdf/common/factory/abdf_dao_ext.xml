@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<daoExts>
+  <ext code="BookTypeDeleteDAO"  type="com.youthor.bsp.oa.dao.ext.BookTypeDeleteDAO" description="图书类型删除接扩展"/>
+  
+</daoExts>

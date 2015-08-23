@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE taglib
+  PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+  "http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+<taglib>
+  <tlibversion>1.0</tlibversion>
+  <jspversion>1.1</jspversion>
+  <shortname>FireEagle Application Tag Library</shortname>
+  <uri>http://</uri>
+  <info>广东精鹰工作室自定义标签库 author:刘正仁</info>
+  
+  
+     <tag>
+    <name>wfProcessTrace</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.wf.ProcessTraceTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>流程跟踪</info>
+  </tag>
+   
+     <tag>
+    <name>wfAttachment</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.wf.ProcessAttachmentTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>流程附件</info>
+  </tag>
+    
+    
+     <tag>
+    <name>wfPageHead</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.wf.DisplayFlowHead</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>流程头</info>
+  </tag>
+    
+    <tag>
+    <name>powerTool</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.PowerToolTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>权限按钮标签</info>
+    
+     <attribute>
+      <name>funCode</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>groupName</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>parameter</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>type</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>favorite</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    
+  </tag>
+  
+  <tag>
+    <name>powerArea</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.PowerAreaTag</tagclass>
+    <bodycontent>jsp</bodycontent>
+    <info>权限按钮标签</info>
+    
+     <attribute>
+      <name>funCode</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>resourceCode</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>wfPowerTool</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.wf.WFPowerToolTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>流程权限按钮标签</info>
+    
+     <attribute>
+      <name>formId</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>moduleName</name>
+      <required>true</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    
+    
+    
+   
+  </tag>
+  
+  
+    <tag>
+    <name>body</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.BodyTag</tagclass>
+    <bodycontent>jsp</bodycontent>
+    <info>body标签：用于系统产生一些js的执行和页面加载后的扫尾工作</info>
+    
+     <attribute>
+      <name>onload</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>onunload</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>prompt</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>style</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>formId</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>moduleName</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>runFlow</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>className</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+
+  </tag>
+  
+   <tag>
+    <name>span</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.SpanTag</tagclass>
+    <bodycontent>jsp</bodycontent>
+    <info>span标签：用于系统工作区容器标签</info>
+    
+     <attribute>
+      <name>id</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>subHeight</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>className</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+   <tag>
+    <name>topTable</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.TopTableTag</tagclass>
+    <bodycontent>jsp</bodycontent>
+    <info>topTable标签：用于系统页面顶部显示区，主要用于按钮</info>
+    
+     <attribute>
+      <name>id</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>className</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+      
+     <attribute>
+      <name>width</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    
+    
+     <attribute>
+      <name>tdClassName</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>bottomTable</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.BottomTableTag</tagclass>
+    <bodycontent>jsp</bodycontent>
+    <info>bottomTable标签：用于系统页面底部显示区，主要用于是示和分页</info>
+    
+     <attribute>
+      <name>id</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>className</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+      <attribute>
+      <name>height</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+   
+
+  </tag>
+    
+    
+    <tag>
+    <name>codeToName</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.CodeToNameTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>代码转换成名称</info>
+    
+     <attribute>
+      <name>dictType</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>false</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>value</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>scope</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>name</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>property</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>struts</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>dynamic</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+    
+  <tag>
+    <name>dropDown</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.DropDownTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>下拉标签</info>
+    <attribute>
+      <name>defaultValue</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+     <attribute>
+      <name>dictType</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>valueType</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+
+    <attribute>
+      <name>onchange</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+ <attribute>
+      <name>title</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>styleClass</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>disabled</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+
+     <attribute>
+      <name>style</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>styleId</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+      <attribute>
+      <name>name</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+
+    <attribute>
+      <name>multiple</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>size</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+     <attribute>
+      <name>require</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+     <attribute>
+      <name>dynamic</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>property</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+      <attribute>
+      <name>scope</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>struts</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  
+   <tag>
+    <name>date</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.DateTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>日期标签</info>
+    <attribute>
+      <name>defaultValue</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+      <attribute>
+      <name>time</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+     
+
+    <attribute>
+      <name>disabled</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>readOnly</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    
+
+   
+
+  
+
+      <attribute>
+      <name>name</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+
+
+    
+     
+    <attribute>
+      <name>property</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+      <attribute>
+      <name>scope</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>struts</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  
+  
+  
+   <tag>
+    <name>checkBox</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.CheckBoxTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>多选标签标签</info>
+    <attribute>
+      <name>defaultValue</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+     <attribute>
+      <name>dictType</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>valueType</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>onchange</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>onclick</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+
+    <attribute>
+      <name>disabled</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+      <attribute>
+      <name>name</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+     <attribute>
+      <name>dynamic</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>property</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+      <attribute>
+      <name>scope</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>struts</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>addBr</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  <tag>
+    <name>radioBox</name>
+    <tagclass>com.youthor.bsp.view.abdf.common.taglib.RadioBoxTag</tagclass>
+    <bodycontent>empty</bodycontent>
+    <info>多选标签标签</info>
+    <attribute>
+      <name>defaultValue</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+     <attribute>
+      <name>dictType</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>valueType</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+    <attribute>
+      <name>onchange</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>onclick</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+
+    <attribute>
+      <name>disabled</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+      <attribute>
+      <name>name</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+
+     <attribute>
+      <name>dynamic</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+    <attribute>
+      <name>property</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+      <attribute>
+      <name>scope</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>struts</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    
+     <attribute>
+      <name>addBr</name>
+      <required>false</required>
+      <rtexprvalue>true</rtexprvalue>
+    </attribute>
+  </tag>
+  
+  
+    <tag>
+		<name>tabTitle</name>
+		<tagclass>com.youthor.bsp.view.abdf.common.taglib.SortTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>title</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>column</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>upImg</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>downImg</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>tdClass</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>isSort</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>align</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>width</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>nowrap</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>root</name>
+		<tagclass>com.youthor.bsp.view.abdf.common.taglib.PageTag</tagclass>
+		<bodycontent>empty</bodycontent>
+		<attribute>
+			<name>inputclass</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>formId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>param</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+  
+</taglib>

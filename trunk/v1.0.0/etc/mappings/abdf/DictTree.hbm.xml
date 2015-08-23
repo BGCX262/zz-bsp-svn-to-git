@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.youthor.bsp.core.abdf.model.DictTree" table="ABDF_DICT_TREE"  >
+		<id name="treeId" type="string"  column="tree_Id">
+          <generator class="uuid.hex"/>
+        </id>
+
+
+        <property name="treeName" type="string" >
+            <column name="tree_Name"  />
+        </property>
+   
+        <property name="treeType" type="string" >
+            <column name="tree_Type"  />
+        </property>
+
+        <property name="parentId" type="string">
+            <column name="parent_Id" />
+        </property>
+        
+        <property name="allParentId" type="string">
+            <column name="all_Parent_Id" />
+        </property>
+        
+        <property name="allParentName" type="string" >
+            <column name="all_Parent_Name" />
+        </property>
+        
+         <property name="orderShow" type="float" >
+            <column name="ORDER_SHOW" />
+        </property>
+        
+       
+    </class>
+
+</hibernate-mapping>
+
